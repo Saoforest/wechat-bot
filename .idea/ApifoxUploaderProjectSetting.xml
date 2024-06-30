@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApifoxUploaderProjectSetting">
+    <option name="apiAccessToken" value="APS-lpcIyyoKNLsUa9GP6dtz8I2GnPyFrgor" />
+    <option name="apiDataSchemaGroupByRequest" value="true" />
+    <option name="apiProjectIds">
+      <array>
+        <option value="&lt;byte-array&gt;rO0ABXNyADZjb20uaXRhbmdjZW50LmlkZWEucGx1Z2luLmFwaS5hY2NvdW50LlByb2plY3RBbmRNb2R1bGUAAAAAAAAAAQIAFVoABmVuYWJsZUwACG1vZHVsZUlkdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGb3RoZXIxcQB+AAFMAAdvdGhlcjEwcQB+AAFMAAdvdGhlcjExcQB+AAFMAAdvdGhlcjEycQB+AAFMAAZvdGhlcjJxAH4AAUwABm90aGVyM3EAfgABTAAGb3RoZXI0cQB+AAFMAAZvdGhlcjVxAH4AAUwABm90aGVyNnEAfgABTAAGb3RoZXI3cQB+AAFMAAZvdGhlcjhxAH4AAUwABm90aGVyOXEAfgABTAAKcGF0aEJlZm9yZXEAfgABTAANcHJvamVjdEZvbGRlcnEAfgABTAAPcHJvamVjdEZvbGRlcklkcQB+AAFMAAlwcm9qZWN0SWRxAH4AAUwAC3Byb2plY3ROYW1lcQB+AAFMAAxzY2hlbWFGb2xkZXJxAH4AAUwACHNjaGVtYUlkcQB+AAF4cAB0AAZoaWRkZW5wcHBwcHBwcHBwcHB0AApwYXRoQmVmb3JldAANcHJvamVjdEZvbGRlcnQAD3Byb2plY3RGb2xkZXJJZHQAC3Byb2plY3ROYW1ldAAIaGlkZGVuSWR0AABxAH4ACQ==&lt;/byte-array&gt;" />
+      </array>
+    </option>
+    <option name="apiSyncFolder" value="true" />
+    <option name="apifoxAccessToken" value="APS-mRkZQCdP9DcbfVse1w2SYceODpwBrQ3K" />
+    <option name="apifoxApiOverwriteMode" value="覆盖所有字段" />
+    <option name="treeNodes" value="" />
+    <option name="yapiTokens" value="" />
+  </component>
+</project>

@@ -1,0 +1,8 @@
+server:
+  port: 57001
+spring:
+  threads:
+    virtual:
+      enabled: true
+  application:
+    name: wechat-bot-callback
