@@ -3,7 +3,13 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-callback/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-callback/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -6,10 +6,10 @@
   <parent>
     <groupId>top.xiaolinz</groupId>
     <artifactId>wechat-bot</artifactId>
-    <version>1.0.0</version>
+    <version>${revision}</version>
   </parent>
 
-  <artifactId>wechat-bot-callback</artifactId>
+  <artifactId>wechat-bot-core</artifactId>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
@@ -18,15 +18,26 @@
   </properties>
 
   <dependencies>
+
     <dependency>
-      <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-web</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
     </dependency>
 
     <dependency>
       <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-response</artifactId>
+      <artifactId>tiegangan-starter-feign</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>net.dreamlu</groupId>
+      <artifactId>mica-auto</artifactId>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
-
 </project>
