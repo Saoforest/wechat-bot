@@ -9,8 +9,10 @@
   <version>${revision}</version>
   <packaging>pom</packaging>
   <modules>
-    <module>wechat-bot-server</module>
+    <module>wechat-bot-endpoint</module>
     <module>wechat-bot-core</module>
+    <module>wechat-bot-server</module>
+    <module>wechat-modules</module>
   </modules>
 
   <properties>
@@ -26,6 +28,38 @@
     <mapstruct-plus.version>1.4.3</mapstruct-plus.version>
     <lombok.version>1.18.32</lombok.version>
   </properties>
+
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <!-- 环境标识，需要与配置文件的名称相对应 -->
+        <profiles.active>dev</profiles.active>
+        <nacos.server>10.72.43.106:54002</nacos.server>
+        <nacos.discovery.group>DEFAULT_GROUP</nacos.discovery.group>
+        <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
+        <nacos.username>nacos</nacos.username>
+        <nacos.password>nacos</nacos.password>
+        <!-- <logstash.address>127.0.0.1:4560</logstash.address> -->
+      </properties>
+      <activation>
+        <!-- 默认环境 -->
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <profile>
+      <id>prod</id>
+      <properties>
+        <profiles.active>prod</profiles.active>
+        <nacos.server>10.72.43.106:54002</nacos.server>
+        <nacos.discovery.group>DEFAULT_GROUP</nacos.discovery.group>
+        <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
+        <nacos.username>nacos</nacos.username>
+        <nacos.password>nacos</nacos.password>
+        <!-- <logstash.address>127.0.0.1:4560</logstash.address> -->
+      </properties>
+    </profile>
+  </profiles>
 
   <dependencyManagement>
     <dependencies>

@@ -10,7 +10,7 @@ import lombok.Data;
  * @date 2024/7/2
  */
 @Data
-public class CallWechatRequestDTO {
+public class WechatClientRequestDTO {
 
     /**
      * 类型

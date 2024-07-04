@@ -1,5 +1,6 @@
 package top.xiaolinz.wechat.bot.server;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -12,7 +13,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @date 2024/7/1
  */
 @EnableFeignClients("top.xiaolinz.wechat.bot")
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "top.xiaolinz.wechat.bot")
+@MapperScan("top.xiaolinz.wechat.bot.**.mapper")
 public class WechatBot {
     public static void main(String[] args) {
         SpringApplication.run(WechatBot.class, args);

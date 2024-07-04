@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.event;
+package top.xiaolinz.wechat.bot.endpoint.model;
 
 import lombok.Data;
 
@@ -14,5 +14,4 @@ public class WechatCallBackRequest {
     private String data;
     private String wxid;
     private long   event;
-
 }

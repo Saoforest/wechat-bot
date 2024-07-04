@@ -3,7 +3,9 @@ package top.xiaolinz.wechat.bot.core.client;
 import feign.Response;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
-import top.xiaolinz.wechat.bot.core.model.dto.CallWechatRequestDTO;
+import org.springframework.web.bind.annotation.RequestBody;
+import top.xiaolinz.wechat.bot.core.model.dto.WechatClientRequestDTO;
+import top.xiaolinz.wechat.bot.core.model.dto.WechatClientResponseDTO;
 
 /**
  * 千寻微信客户端
@@ -12,8 +14,10 @@ import top.xiaolinz.wechat.bot.core.model.dto.CallWechatRequestDTO;
  * @version 1.0.0
  * @date 2024/7/2
  */
-@FeignClient(name = "QxWechatClient", url = "${wechat.remote.url:https://localhost:7777}")
-public interface QxWechatClient {
+@FeignClient(
+    name = "WechatClient", url = "${wechat.remote.url:https://localhost:7777}",
+    configuration = WechatClientConfiguration.class)
+interface WechatClient {
 
     /**
      * 调用微信接口
@@ -24,6 +28,6 @@ public interface QxWechatClient {
      * @date 2024/07/02
      */
     @PostMapping("/qianxun/httpapi")
-    Response callWeChat(CallWechatRequestDTO callRequest);
+    WechatClientResponseDTO wechatCall(@RequestBody WechatClientRequestDTO callRequest);
 
 }

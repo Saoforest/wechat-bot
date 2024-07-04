@@ -1,11 +1,13 @@
-package top.xiaolinz.wechat.bot.server.callback;
+package top.xiaolinz.wechat.bot.endpoint.callback;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.core.event.WechatCallBackRequest;
+import top.xiaolinz.wechat.bot.endpoint.WechatEventPublisher;
+import top.xiaolinz.wechat.bot.endpoint.model.WechatCallBackRequest;
 
 /**
  * 回调端点
@@ -17,11 +19,15 @@ import top.xiaolinz.wechat.bot.core.event.WechatCallBackRequest;
 @Slf4j
 @RequestMapping("wechat/callback")
 @RestController
+@RequiredArgsConstructor
 public class CallBackEndpoint {
+
+    private final WechatEventPublisher wechatEventPublisher;
 
     @PostMapping
     public void callback(@RequestBody WechatCallBackRequest event) {
-        log.info("收到 WeChat 回调事件: {}", event);
+        log.info("收到 WeChat 回调请求: {}", event);
+        wechatEventPublisher.publishEvent(event);
     }
 
 }

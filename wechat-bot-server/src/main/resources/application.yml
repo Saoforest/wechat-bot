@@ -2,7 +2,20 @@ spring:
   threads:
     virtual:
       enabled: true
-  application:
-    name: wechat-bot-server
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${global.postgresql.host}:${global.postgresql.port}/${postgresql.database}
+    username: ${global.postgresql.username}
+    password: ${global.postgresql.password}
+    hikari:
+      schema: ${postgresql.schema:public}
+      maximum-pool-size: 20
+      minimum-idle: 10
+      connection-timeout: 30000
+      validation-timeout: 5000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      keepalive-time: 30000
 server:
   port: 57001

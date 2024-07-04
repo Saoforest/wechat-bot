@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: wechat-bot
+  profiles:
+    active: @profiles.active@
+  cloud:
+    nacos:
+      username: @nacos.username@
+      password: @nacos.password@
+      server-addr: @nacos.server@
+      discovery:
+        # 注册组
+        group: @nacos.discovery.group@
+        namespace: ${spring.profiles.active}
+      #        ip: 10.72.43.191
+      config:
+        # 配置组
+        group: @nacos.config.group@
+        namespace: ${spring.profiles.active}
+  config:
+    import:
+      - optional:nacos:global-commons.yml
+      - optional:nacos:${spring.application.name}-${spring.profiles.active}.yml

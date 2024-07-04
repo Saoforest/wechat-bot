@@ -9,7 +9,7 @@
     <version>${revision}</version>
   </parent>
 
-  <artifactId>wechat-bot-server</artifactId>
+  <artifactId>wechat-modules</artifactId>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
@@ -19,30 +19,8 @@
 
   <dependencies>
     <dependency>
-      <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-web</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-response</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-nacos-starter</artifactId>
-    </dependency>
-
-
-    <dependency>
       <groupId>top.xiaolinz</groupId>
       <artifactId>wechat-bot-core</artifactId>
-      <version>${revision}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>top.xiaolinz</groupId>
-      <artifactId>wechat-bot-endpoint</artifactId>
       <version>${revision}</version>
     </dependency>
   </dependencies>
