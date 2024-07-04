@@ -9,7 +9,7 @@
     <version>${revision}</version>
   </parent>
 
-  <artifactId>wechat-bot-endpoint</artifactId>
+  <artifactId>wechat-bot-callback</artifactId>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>

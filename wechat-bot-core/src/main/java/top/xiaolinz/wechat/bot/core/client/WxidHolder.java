@@ -8,7 +8,7 @@ package top.xiaolinz.wechat.bot.core.client;
  * @date 2024/7/4
  */
 public class WxidHolder {
-    private static final ThreadLocal<String> headerHolder = new ThreadLocal<>();
+    private static final ThreadLocal<String> WXID = new ThreadLocal<>();
 
     /**
      * 获取 wxid
@@ -18,7 +18,7 @@ public class WxidHolder {
      * @date 2024/07/04
      */
     public static String getWxid() {
-        return headerHolder.get();
+        return WXID.get();
     }
 
     /**
@@ -29,7 +29,7 @@ public class WxidHolder {
      * @date 2024/07/04
      */
     public static void setWxid(String wxid) {
-        headerHolder.set(wxid);
+        WXID.set(wxid);
     }
 
     /**
@@ -39,6 +39,6 @@ public class WxidHolder {
      * @date 2024/07/04
      */
     public static void remove() {
-        headerHolder.remove();
+        WXID.remove();
     }
 }

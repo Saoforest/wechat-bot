@@ -27,9 +27,9 @@
           <entry name="$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure-processor/3.2.1/spring-boot-autoconfigure-processor-3.2.1.jar" />
         </processorPath>
         <module name="wechat-bot-core" />
-        <module name="wechat-bot-endpoint" />
         <module name="wechat-bot-server" />
         <module name="wechat-modules" />
+        <module name="wechat-bot-callback" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
@@ -41,9 +41,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="wechat-bot" options="-parameters" />
       <module name="wechat-bot-api" options="-parameters" />
+      <module name="wechat-bot-callback" options="-parameters" />
       <module name="wechat-bot-common" options="-parameters" />
       <module name="wechat-bot-core" options="-parameters" />
-      <module name="wechat-bot-endpoint" options="-parameters" />
       <module name="wechat-bot-server" options="-parameters" />
       <module name="wechat-modules" options="-parameters" />
     </option>

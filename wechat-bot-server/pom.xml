@@ -42,7 +42,7 @@
 
     <dependency>
       <groupId>top.xiaolinz</groupId>
-      <artifactId>wechat-bot-endpoint</artifactId>
+      <artifactId>wechat-bot-callback</artifactId>
       <version>${revision}</version>
     </dependency>
   </dependencies>

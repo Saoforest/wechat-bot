@@ -9,7 +9,7 @@
   <version>${revision}</version>
   <packaging>pom</packaging>
   <modules>
-    <module>wechat-bot-endpoint</module>
+    <module>wechat-bot-callback</module>
     <module>wechat-bot-core</module>
     <module>wechat-bot-server</module>
     <module>wechat-modules</module>
