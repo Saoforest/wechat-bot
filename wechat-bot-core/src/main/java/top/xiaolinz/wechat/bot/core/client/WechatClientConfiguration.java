@@ -28,7 +28,6 @@ public class WechatClientConfiguration {
     @Bean
     public RequestInterceptor wechatHeaderInterceptor() {
         return template -> {
-            template.header("wxid", WxidHolder.getWxid());
             template.header("secret", weChatConfig.getSecret());
         };
     }

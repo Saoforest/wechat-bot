@@ -27,6 +27,7 @@
     <tiegangan.version>1.0.0-SNAPSHOT</tiegangan.version>
     <mapstruct-plus.version>1.4.3</mapstruct-plus.version>
     <lombok.version>1.18.32</lombok.version>
+    <liteflow.version>2.12.1</liteflow.version>
   </properties>
 
   <profiles>
@@ -63,6 +64,13 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>com.yomahub</groupId>
+        <artifactId>liteflow-spring-boot-starter</artifactId>
+        <version>${liteflow.version}</version>
+      </dependency>
+
+
       <dependency>
         <groupId>xyz.tiegangan.tools</groupId>
         <artifactId>tiegangan-bom</artifactId>

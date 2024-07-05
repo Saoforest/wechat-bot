@@ -1,5 +1,6 @@
 package top.xiaolinz.wechat.bot.endpoint.model;
 
+import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;
 
 /**
@@ -11,7 +12,16 @@ import lombok.Data;
  */
 @Data
 public class WechatCallBackRequest {
-    private String data;
-    private String wxid;
-    private long   event;
+    /**
+     * 数据
+     */
+    private JSONObject data;
+    /**
+     * 微信 id，是哪个微信号发出的回调消息
+     */
+    private String     wxid;
+    /**
+     * 事件
+     */
+    private long       event;
 }

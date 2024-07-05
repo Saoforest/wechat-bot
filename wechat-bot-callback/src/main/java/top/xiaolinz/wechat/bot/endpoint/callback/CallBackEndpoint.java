@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.endpoint.WechatEventPublisher;
+import top.xiaolinz.wechat.bot.endpoint.WechatEventHandler;
 import top.xiaolinz.wechat.bot.endpoint.model.WechatCallBackRequest;
 
 /**
@@ -22,12 +22,12 @@ import top.xiaolinz.wechat.bot.endpoint.model.WechatCallBackRequest;
 @RequiredArgsConstructor
 public class CallBackEndpoint {
 
-    private final WechatEventPublisher wechatEventPublisher;
+    private final WechatEventHandler wechatEventHandler;
 
     @PostMapping
     public void callback(@RequestBody WechatCallBackRequest event) {
         log.info("收到 WeChat 回调请求: {}", event);
-        wechatEventPublisher.publishEvent(event);
+        wechatEventHandler.publishEvent(event);
     }
 
 }

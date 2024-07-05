@@ -19,3 +19,10 @@ spring:
       keepalive-time: 30000
 server:
   port: 57001
+
+
+# liteflow
+liteflow:
+  rule-source: rules/flow.el.xml
+  # 自定义异步线程池
+  main-executor-class: top.xiaolinz.wechat.bot.core.process.VirtualExecutorBuilder
