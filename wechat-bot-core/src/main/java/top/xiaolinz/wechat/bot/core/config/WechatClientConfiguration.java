@@ -1,7 +1,8 @@
-package top.xiaolinz.wechat.bot.core.client;
+package top.xiaolinz.wechat.bot.core.config;
 
 import feign.RequestInterceptor;
 import lombok.RequiredArgsConstructor;
+import org.dromara.hutool.core.lang.Assert;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +17,17 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class WechatClientConfiguration {
 
-    private final WeChatConfig weChatConfig;
+    private static final InheritableThreadLocal<String> WXID = new InheritableThreadLocal<>();
+    private final        WeChatConfig                   weChatConfig;
+
+    /**
+     * 设置微信ID
+     *
+     * @param wxid 微信ID
+     */
+    public static void setWxid(String wxid) {
+        WXID.set(wxid);
+    }
 
     /**
      * 微信header拦截器
@@ -28,6 +39,8 @@ public class WechatClientConfiguration {
     @Bean
     public RequestInterceptor wechatHeaderInterceptor() {
         return template -> {
+            Assert.notBlank(WXID.get(), "执行 wechat 调用 wxid 不能为空");
+            template.header("wxid", WXID.get());
             template.header("secret", weChatConfig.getSecret());
         };
     }

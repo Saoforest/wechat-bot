@@ -2,7 +2,7 @@ package top.xiaolinz.wechat.bot.core.process;
 
 import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;
-import top.xiaolinz.wechat.bot.core.enums.EventType;
+import top.xiaolinz.wechat.bot.core.enums.EventTypeEnum;
 
 /**
  * 微信回调上下文
@@ -13,17 +13,20 @@ import top.xiaolinz.wechat.bot.core.enums.EventType;
  */
 @Data
 public class WechatEventContext {
-
     /**
      * 来自 wxid
      */
-    private String     fromWxid;
+    private String        fromWxid;
     /**
      * 事件类型
      */
-    private EventType  type;
+    private EventTypeEnum type;
     /**
      * 数据
      */
-    private JSONObject data;
+    private JSONObject    data;
+    /**
+     * 节点支持的拓展列表
+     */
+    private String[]      supportExtends;
 }

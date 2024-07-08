@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.client;
+package top.xiaolinz.wechat.bot.core.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

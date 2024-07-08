@@ -27,8 +27,8 @@
           <entry name="$USER_HOME$/.m2/repository/org/springframework/boot/spring-boot-autoconfigure-processor/3.2.1/spring-boot-autoconfigure-processor-3.2.1.jar" />
         </processorPath>
         <module name="wechat-bot-core" />
-        <module name="wechat-modules" />
         <module name="wechat-bot-server" />
+        <module name="wechat-modules" />
         <module name="wechat-bot-callback" />
       </profile>
     </annotationProcessing>

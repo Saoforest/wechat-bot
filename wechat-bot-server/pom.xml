@@ -45,6 +45,7 @@
       <artifactId>wechat-bot-callback</artifactId>
       <version>${revision}</version>
     </dependency>
+
   </dependencies>
 
 </project>

@@ -1,7 +1,7 @@
 package top.xiaolinz.wechat.bot.core.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
-import top.xiaolinz.wechat.bot.core.model.entity.WechatUserEntity;
+import top.xiaolinz.wechat.bot.core.model.entity.WechatUsers;
 import xyz.tiegangan.tools.common.mybatis.core.BaseMapperX;
 
 /**
@@ -9,10 +9,8 @@ import xyz.tiegangan.tools.common.mybatis.core.BaseMapperX;
  *
  * @author huangmuhong
  * @version 1.0.0
- * @date 2024/7/4
- * @see BaseMapperX
+ * @date 2024/7/8
  */
 @Mapper
-public interface WechatUserMapper extends BaseMapperX<WechatUserEntity> {
-
+public interface WechatUsersMapper extends BaseMapperX<WechatUsers> {
 }

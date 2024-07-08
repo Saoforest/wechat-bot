@@ -24,5 +24,5 @@ server:
 # liteflow
 liteflow:
   rule-source: rules/flow.el.xml
-  # 自定义异步线程池
+  # 使用自己的协程线程池
   main-executor-class: top.xiaolinz.wechat.bot.core.process.VirtualExecutorBuilder
