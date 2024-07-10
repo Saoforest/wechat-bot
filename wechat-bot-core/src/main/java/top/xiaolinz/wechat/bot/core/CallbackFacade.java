@@ -1,6 +1,6 @@
 package top.xiaolinz.wechat.bot.core;
 
-import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBackRequest;
+import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 
 /**
  * 回调门面
@@ -20,5 +20,5 @@ public interface CallbackFacade {
      * @author huangmuhong
      * @date 2024/07/02
      */
-    void handle(WechatCallBackRequest request);
+    void handle(WechatCallBack request);
 }

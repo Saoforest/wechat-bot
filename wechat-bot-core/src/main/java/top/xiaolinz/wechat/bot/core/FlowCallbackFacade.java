@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import top.xiaolinz.wechat.bot.core.flow.callback.WechatEventContext;
-import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBackRequest;
+import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 
 /**
  * 基于流程的回调处理器
@@ -23,7 +23,7 @@ public class FlowCallbackFacade implements CallbackFacade {
     private final FlowExecutor flowExecutor;
 
     @Override
-    public void handle(WechatCallBackRequest request) {
+    public void handle(WechatCallBack request) {
         // 执行流程
         flowExecutor.execute2Future("wechatEventHandlerChain", request, WechatEventContext.class);
     }

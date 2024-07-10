@@ -11,7 +11,7 @@ import lombok.Data;
  * @date 2024/07/02
  */
 @Data
-public class WechatCallBackRequest {
+public class WechatCallBack {
     /**
      * 数据
      */

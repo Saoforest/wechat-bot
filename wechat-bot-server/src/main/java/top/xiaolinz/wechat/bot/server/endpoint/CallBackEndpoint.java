@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import top.xiaolinz.wechat.bot.core.CallbackFacade;
-import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBackRequest;
+import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 
 /**
  * 回调端点
@@ -24,8 +24,15 @@ public class CallBackEndpoint {
 
     private final CallbackFacade callbackFacade;
 
+    /**
+     * 回调
+     *
+     * @param event 事件
+     * @author huangmuhong
+     * @date 2024/07/10
+     */
     @PostMapping
-    public void callback(@RequestBody WechatCallBackRequest event) {
+    public void callback(@RequestBody WechatCallBack event) {
         callbackFacade.handle(event);
     }
 

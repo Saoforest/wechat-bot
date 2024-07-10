@@ -5,7 +5,7 @@ import com.yomahub.liteflow.core.NodeComponent;
 import top.xiaolinz.wechat.bot.core.client.QianXunWechatClient;
 import top.xiaolinz.wechat.bot.core.client.QianXunWechatClient.WxidHolder;
 import top.xiaolinz.wechat.bot.core.enums.EventTypeEnum;
-import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBackRequest;
+import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 
 /**
  * 上下文处理节点
@@ -25,8 +25,8 @@ public class ContextHandleNode extends NodeComponent {
 
     @Override
     public void process() throws Exception {
-        final WechatCallBackRequest data    = getRequestData();
-        final WechatEventContext    context = getFirstContextBean();
+        final WechatCallBack     data    = getRequestData();
+        final WechatEventContext context = getFirstContextBean();
 
         final EventTypeEnum type = EventTypeEnum.getEventType(data.getEvent());
         if (type == null) {
