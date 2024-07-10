@@ -3,8 +3,10 @@ package top.xiaolinz.wechat.bot.core.config;
 import feign.RequestInterceptor;
 import lombok.RequiredArgsConstructor;
 import org.dromara.hutool.core.lang.Assert;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+import top.xiaolinz.wechat.bot.core.client.QianXunWechatClient.WxidHolder;
 
 /**
  * 微信客户端配置
@@ -13,21 +15,12 @@ import org.springframework.stereotype.Component;
  * @version 1.0.0
  * @date 2024/7/3
  */
+@EnableConfigurationProperties(WeChatConfig.class)
 @Component
 @RequiredArgsConstructor
 public class WechatClientConfiguration {
 
-    private static final InheritableThreadLocal<String> WXID = new InheritableThreadLocal<>();
-    private final        WeChatConfig                   weChatConfig;
-
-    /**
-     * 设置微信ID
-     *
-     * @param wxid 微信ID
-     */
-    public static void setWxid(String wxid) {
-        WXID.set(wxid);
-    }
+    private final WeChatConfig weChatConfig;
 
     /**
      * 微信header拦截器
@@ -39,8 +32,9 @@ public class WechatClientConfiguration {
     @Bean
     public RequestInterceptor wechatHeaderInterceptor() {
         return template -> {
-            Assert.notBlank(WXID.get(), "执行 wechat 调用 wxid 不能为空");
-            template.header("wxid", WXID.get());
+            final String wxid = WxidHolder.get();
+            Assert.notBlank(wxid, "执行 wechat 调用 wxid 不能为空");
+            template.header("wxid", wxid);
             template.header("secret", weChatConfig.getSecret());
         };
     }

@@ -2,9 +2,9 @@ package top.xiaolinz.wechat.bot.core.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import top.xiaolinz.wechat.bot.core.event.AccountChangeEvent;
-import top.xiaolinz.wechat.bot.core.event.MessageRecallEvent;
-import top.xiaolinz.wechat.bot.core.event.ReceiveMessageEvent;
+import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
+import top.xiaolinz.wechat.bot.core.model.callback.MessageRecallCallback;
+import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
 
 /**
  * 事件类型
@@ -21,15 +21,15 @@ public enum EventTypeEnum {
     /**
      * 账号变动事件
      */
-    ACCOUNT_CHANGE(10014, "账号变动事件", AccountChangeEvent.class),
+    ACCOUNT_CHANGE(10014, "账号变动事件", AccountChangeCallback.class),
     /**
      * 收到群聊消息事件
      */
-    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageEvent.class),
+    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageCallback.class),
     /**
      * 收到私聊消息事件
      */
-    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageEvent.class),
+    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageCallback.class),
     /**
      * 自己发出消息事件
      */
@@ -41,7 +41,7 @@ public enum EventTypeEnum {
     /**
      * 撤回事件
      */
-    RECALL(10013, "撤回事件", MessageRecallEvent.class),
+    RECALL(10013, "撤回事件", MessageRecallCallback.class),
     /**
      * 好友请求事件
      */

@@ -3,8 +3,7 @@ package top.xiaolinz.wechat.bot.core;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 import top.xiaolinz.wechat.bot.core.enums.EventTypeEnum;
-import top.xiaolinz.wechat.bot.core.event.AccountChangeEvent;
-import top.xiaolinz.wechat.bot.core.service.WechatService;
+import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
 
 /**
  * 默认帐户更改扩展
@@ -12,23 +11,21 @@ import top.xiaolinz.wechat.bot.core.service.WechatService;
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/8
- * @see WechatExtension
+ * @see CallbackListener
  */
 @Component
 @RequiredArgsConstructor
-public class DefaultAccountChangeExtension implements WechatExtension {
-
-    private final WechatService wechatService;
+public class DefaultAccountChangeExtension implements CallbackListener<AccountChangeCallback> {
 
     @Override
-    public void process(Object event) throws Exception {
-        final AccountChangeEvent changeEvent = (AccountChangeEvent)event;
-        if (changeEvent.getType() == 1) {
+    public void process(AccountChangeCallback event) throws Exception {
+        if (event.getType()
+                 .equals("1")) {
             // 上线
-            wechatService.wechatOnline(changeEvent.getWxid(), changeEvent.getNick(), changeEvent.getAvatarUrl());
+            WechatUserHolder.put(event);
         } else {
-            // 离线
-            wechatService.offline(changeEvent.getWxid());
+            // 下线
+            WechatUserHolder.remove(event.getWxid());
         }
     }
 
@@ -37,8 +34,4 @@ public class DefaultAccountChangeExtension implements WechatExtension {
         return new EventTypeEnum[] {EventTypeEnum.ACCOUNT_CHANGE};
     }
 
-    @Override
-    public boolean supportSchedule() {
-        return false;
-    }
 }

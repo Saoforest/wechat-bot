@@ -2,7 +2,6 @@ package top.xiaolinz.wechat.bot.core.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 
 /**
  * wx 聊天配置
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
  * @version 1.0.0
  * @date 2024/7/2
  */
-@Component
 @Data
 @ConfigurationProperties(prefix = WeChatConfig.PREFIX)
 public class WeChatConfig {

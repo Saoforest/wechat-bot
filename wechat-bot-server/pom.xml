@@ -33,19 +33,17 @@
       <artifactId>tiegangan-nacos-starter</artifactId>
     </dependency>
 
-
     <dependency>
       <groupId>top.xiaolinz</groupId>
       <artifactId>wechat-bot-core</artifactId>
       <version>${revision}</version>
     </dependency>
 
-    <dependency>
-      <groupId>top.xiaolinz</groupId>
-      <artifactId>wechat-bot-callback</artifactId>
-      <version>${revision}</version>
-    </dependency>
-
+    <!-- <dependency> -->
+    <!--   <groupId>top.xiaolinz</groupId> -->
+    <!--   <artifactId>wechat-llm-module</artifactId> -->
+    <!--   <version>${revision}</version> -->
+    <!-- </dependency> -->
   </dependencies>
 
 </project>

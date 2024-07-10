@@ -1,0 +1,241 @@
+2024-07-10 10:15:44.475 信息:参_信息:● 欢迎使用千寻微信框架Pro，仅供测试、学习，请勿用于商业用途、违法内容等 | 参_响应:框架 | 参_类型:1001
+2024-07-10 10:15:44.477 信息:参_信息:● 开发接口文档、常见问题：https://qxpro.apifox.cn/ | 参_响应:框架 | 参_类型:1001
+2024-07-10 10:15:44.477 信息:参_信息:● 最新版本下载：https://daen.lanzoue.com/b01hsujsj | 参_响应:框架 | 参_类型:1001
+2024-07-10 10:15:44.477 信息:参_信息:● 官方QQ频道：https://pd.qq.com/s/7y37k9kc8 | 参_响应:框架 | 参_类型:1001
+2024-07-10 10:15:44.478 信息:参_信息:● 购买授权：https://qxpro.apifox.cn/doc-4380302 | 参_响应:框架 | 参_类型:1001
+2024-07-10 10:17:01.774 信息:参_信息:[HTTPAPI]已启动，端口[7777]，回调地址[] | 参_响应: | 参_类型:1003
+2024-07-10 10:17:23.408 信息:参_信息:[HTTPAPI]已停止，端口[7777]，回调地址[] | 参_响应: | 参_类型:1003
+2024-07-10 10:18:08.550 信息:参_信息:[HTTPAPI]已启动，端口[7777]，回调地址[http://10.211.55.2:57001/wechat/callback] | 参_响应: | 参_类型:1003
+2024-07-10 10:22:20.215 信息:参_信息:wxid_5sakecjc26an21：呵呵 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 10:26:54.832 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@小猪 11111 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 10:30:06.231 信息:参_信息:微信账号下线，wxid[wxid_cl0qb7aplcut12]，端口[7626] | 参_响应: | 参_类型:101
+2024-07-10 10:30:09.318 信息:参_信息:已启动微信[CFOpSuNYtaqUV5nV.dll]，端口[7070]，等待登录... | 参_响应: | 参_类型:1003
+2024-07-10 10:30:14.581 信息:参_信息:注入成功，端口[7070]，pid[6928] | 参_响应: | 参_类型:1003
+2024-07-10 10:30:45.311 信息:参_信息:微信账号上线,昵称[小猪]，wxid[wxid_cl0qb7aplcut12]，端口[7070]，授权到期时间[2024-08-09 10:20:16] | 参_响应: | 参_类型:100
+2024-07-10 10:32:13.071 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@小猪 111 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 10:34:46.476 信息:参_信息:群（44765526058@chatroom）wxid_ss9zc77nyory22：<msg><emoji fromusername="wxid_ss9zc77nyory22" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="384ed60e8d542227723053857ceb3162" len="51034" productid="" androidmd5="384ed60e8d542227723053857ceb3162" androidlen="51034" s60v3md5="384ed60e8d542227723053857ceb3162" s60v3len="51034" s60v5md5="384ed60e8d542227723053857ceb3162" s60v5len="51034" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=384ed60e8d542227723053857ceb3162&amp;filekey=30440201010430302e02016e0402534804203338346564363065386435343232323737323330353338353763656233313632020300c75a040d00000004627466730000000132&amp;hy=SH&amp;storeid=265fd302b00075d95a9429efc0000006e01004fb153480a661b01e7fb9bcf2&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=b47edac4a02e2afe74047296658be2e3&amp;filekey=30440201010430302e02016e0402534804206234376564616334613032653261666537343034373239363635386265326533020300c760040d00000004627466730000000132&amp;hy=SH&amp;storeid=265fd302b0007fc9ea9429efc0000006e02004fb253480a661b01e7fb9bd06&amp;ef=2&amp;bizid=1022" aeskey="4cf66c9192ff4c81a707b84b2993b84e" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=32a5f13149d6172ce1502dd0d0dba281&amp;filekey=3043020101042f302d02016e040253480420333261356631333134396436313732636531353032646430643064626132383102025de0040d00000004627466730000000132&amp;hy=SH&amp;storeid=265fd302b0008a415a9429efc0000006e03004fb353480a661b01e7fb9bd1f&amp;ef=3&amp;bizid=1022" externmd5="adf337e8e68236ba35e804d21d4abd69" width="960" height="960" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 10:38:42.903 信息:参_信息:[HTTPAPI]已停止，端口[7777]，回调地址[http://10.211.55.2:57001/wechat/callback] | 参_响应: | 参_类型:1003
+2024-07-10 10:38:53.582 信息:参_信息:[HTTPAPI]已启动，端口[7777]，回调地址[http://10.211.55.2:57001/callback] | 参_响应: | 参_类型:1003
+2024-07-10 10:41:27.300 信息:参_信息:wxid_5sakecjc26an21：ceshi | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 10:41:27.305 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 10:43:39.189 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:20:43.865 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 11:37:17.572 信息:参_信息:群（44765526058@chatroom）zhouyueqi002：[敲打] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 11:51:47.453 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="e3b674386bbd19b29eb70675c254f725" len="39629" productid="com.tencent.xin.emoticon.person.stiker_1719820325e52d642d47a532c0" androidmd5="e3b674386bbd19b29eb70675c254f725" androidlen="39629" s60v3md5="e3b674386bbd19b29eb70675c254f725" s60v3len="39629" s60v5md5="e3b674386bbd19b29eb70675c254f725" s60v5len="39629" cdnurl="http://wxapp.tc.qq.com/275/20304/stodownload?m=e3b674386bbd19b29eb70675c254f725&amp;filekey=30350201010421301f02020113040253480410e3b674386bbd19b29eb70675c254f7250203009acd040d00000004627466730000000132&amp;hy=SH&amp;storeid=26683c291000ba290b4590a760000011300004f50534810d33031568e9eafb&amp;bizid=1023" designerid="" thumburl="http://wxapp.tc.qq.com/275/20304/stodownload?m=ee83b7994f941f27f4a53d04a036d112&amp;filekey=30340201010420301e02020113040253480410ee83b7994f941f27f4a53d04a036d11202021430040d00000004627466730000000132&amp;hy=SH&amp;storeid=26683c291000a2a31b4590a760000011300004f5053481477c0d156d4de031&amp;bizid=1023" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=f86e0e407979c13c713723528d52d4b9&amp;filekey=30350201010421301f02020106040253480410f86e0e407979c13c713723528d52d4b90203009ad0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26683c292000390a9b4590a760000010600004f5053482e934b00b6d3cdd68&amp;bizid=1023" aeskey="0cfa31a546dcb1789d99610077cba1fd" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=8449705b0746e2ed615ebf5bd981f320&amp;filekey=30340201010420301e020201060402534804108449705b0746e2ed615ebf5bd981f32002024430040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668602460001c8552673e55f0000010600004f50534811907bd1e70a1a7be&amp;bizid=1023" externmd5="fd28f99985f971e3a0b91b90b7f35755" width="240" height="240" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc="ChQKB2RlZmF1bHQSCeaPieiCmuiCmg=="></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-10 11:53:59.852 信息:参_信息:wxid_5sakecjc26an21：殴打 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:54:54.265 信息:参_信息:wxid_5sakecjc26an21：殴打 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:55:45.703 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:55:55.932 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:56:17.800 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 11:57:47.847 信息:参_信息:wxid_5sakecjc26an21：测试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 13:49:01.604 信息:参_信息:newsapp：<?xml version="1.0"?>
+<mmreader>
+	<category type="20" sub_type="0" groupid="2024071001" count="4">
+		<name><![CDATA[腾讯新闻]]></name>
+		<topnew>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OHyMxk-3pmbj2Gaqcj1P6d_bSy3SX442G1QnJSZkDsOc4AA_752320/0]]></cover>
+			<width>640</width>
+			<height>320</height>
+		</topnew>
+		<item>
+			<title><![CDATA[重磅政论片｜划时代的伟大变革]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=0]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=0]]></longurl>
+			<pub_time>1720590541</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OHyMxk-3pmbj2Gaqcj1P6d_bSy3SX442G1QnJSZkDsOc4AA_752320/0]]></cover>
+			<tweetid>1793465947</tweetid>
+			<digest><![CDATA[重磅政论片｜划时代的伟大变革]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</item>
+		<newitem>
+			<title><![CDATA[重磅政论片｜划时代的伟大变革]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=0]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/WXN2024071000250900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=0&ft=0&grp_id=2300308902&newsGid=20240710_r684716&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=0]]></longurl>
+			<pub_time>1720590541</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OHyMxk-3pmbj2Gaqcj1P6d_bSy3SX442G1QnJSZkDsOc4AA_752320/0]]></cover>
+			<tweetid>1793465947</tweetid>
+			<digest><![CDATA[重磅政论片｜划时代的伟大变革]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[难得一见！30秒看火龙果开花惊艳瞬间 俏皮地“探出脑袋”舒展身姿]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/WXN2024071000235900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=1&ft=0&grp_id=2300308902&newsGid=20240710_r5328599&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=1]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/WXN2024071000235900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=1&ft=0&grp_id=2300308902&newsGid=20240710_r5328599&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/WXN2024071000235900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=1&ft=0&grp_id=2300308902&newsGid=20240710_r5328599&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=1]]></longurl>
+			<pub_time>1720590541</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OEGcJRxesf2PsmmMFcjW_5cpXdLYSiS_00jWHKicIMPpcAA_8080/0]]></cover>
+			<tweetid>1793465948</tweetid>
+			<digest><![CDATA[难得一见！30秒看火龙果开花惊艳瞬间 俏皮地“探出脑袋”舒展身姿]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[男子野外偶遇大熊猫林中漫步现场超萌：“我是宝兴的，让一下嘛”]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/WXN2024071000215100?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=2&ft=0&grp_id=2300308902&newsGid=20240710_r5130721&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=2]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/WXN2024071000215100?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=2&ft=0&grp_id=2300308902&newsGid=20240710_r5130721&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/WXN2024071000215100?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=2&ft=0&grp_id=2300308902&newsGid=20240710_r5130721&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=2]]></longurl>
+			<pub_time>1720590541</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OxQ1M1_MQiEoJ2lzG9ZWMh8VDJBpZbZvTjoAhTugr6Vg4AA_8080/0]]></cover>
+			<tweetid>1793465949</tweetid>
+			<digest><![CDATA[男子野外偶遇大熊猫林中漫步现场超萌：“我是宝兴的，让一下嘛”]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[16岁小孩哥每天去广场跳舞脚底像装了弹簧 网友：阿姨们遇到对手了]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/WXN2024071000211900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=3&ft=0&grp_id=2300308902&newsGid=20240710_r6228508&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=3]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/WXN2024071000211900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=3&ft=0&grp_id=2300308902&newsGid=20240710_r6228508&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/WXN2024071000211900?bat_id=2100308901&refer=nwx&_rp=2&cur_pos=3&ft=0&grp_id=2300308902&newsGid=20240710_r6228508&rate=0&pushid=2024071001&bkt=0&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&ext=%7B%22pl%22%3A0%7D&lrg=2&allcmsids=WXN2024071000250900_WXN2024071000235900_WXN2024071000215100_WXN2024071000211900&segmentNum=5435&groupid=1720590541&msgid=3]]></longurl>
+			<pub_time>1720590541</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OTvJBzspf9bYw0jLqWxxKlxba32yTA2Adg9bcxz5MOVocAA_8080/0]]></cover>
+			<tweetid>1793465950</tweetid>
+			<digest><![CDATA[16岁小孩哥每天去广场跳舞脚底像装了弹簧 网友：阿姨们遇到对手了]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+	</category>
+</mmreader>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2
+2024-07-10 15:38:42.022 信息:参_信息:newsapp：<?xml version="1.0"?>
+<mmreader>
+	<category type="20" sub_type="0" groupid="2024071002" count="5">
+		<name><![CDATA[腾讯新闻]]></name>
+		<topnew>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/Oz7jkzpykqsmAygeWc4Gr0XiJgFaHAjbXFS380dT220uUAA_752320/0]]></cover>
+			<width>640</width>
+			<height>320</height>
+		</topnew>
+		<item>
+			<title><![CDATA[村民上山拾菌发现2条眼镜王蛇，见人不跑护住落叶，消防掀开发现65枚蛇蛋]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=0]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=0]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/Oz7jkzpykqsmAygeWc4Gr0XiJgFaHAjbXFS380dT220uUAA_752320/0]]></cover>
+			<tweetid>1435098618</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</item>
+		<newitem>
+			<title><![CDATA[村民上山拾菌发现2条眼镜王蛇，见人不跑护住落叶，消防掀开发现65枚蛇蛋]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=0]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240708V036UD00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=0&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=0]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/Oz7jkzpykqsmAygeWc4Gr0XiJgFaHAjbXFS380dT220uUAA_752320/0]]></cover>
+			<tweetid>1435098618</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[云南大山发现一村落，至今不通公路靠马匹进出，真像是世外桃源]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240625V0ACAJ00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=1&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=1]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240625V0ACAJ00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=1&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240625V0ACAJ00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=1&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=1]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/O5MDCf_oJyKdxureMBpqmy1BZxJuSnD2AM_02tKGhTDIYAA_8080/0]]></cover>
+			<tweetid>1435098619</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[1962年，61岁的梁思成娶了34岁的林洙，当时林徽因已经病逝七年]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240709V00O8E00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=2&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=2]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240709V00O8E00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=2&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240709V00O8E00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=2&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=2]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/Oote347ac9csXZtJoipH3pkvtlZSPX1fwsIQjizEGvge0AA_8080/0]]></cover>
+			<tweetid>1435098620</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[美军咬牙决定，哪怕撑不过解放军第一波导弹，也要升级驻日军机]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240709V02QS100?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=3&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=3]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240709V02QS100?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=3&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240709V02QS100?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=3&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=3]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OOZWhhxPoIEuhrUV98ZPRr61Vc3PC6HMIuWMTXzgB_MTcAA_8080/0]]></cover>
+			<tweetid>1435098621</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+		<newitem>
+			<title><![CDATA[全红婵说暑假不想学习，自曝一看书就睡着成搞笑女，正积极备战奥运]]></title>
+			<url><![CDATA[https://view.inews.qq.com/w/20240709V04GDE00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=4&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=4]]></url>
+			<shorturl><![CDATA[https://view.inews.qq.com/w/20240709V04GDE00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=4&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435]]></shorturl>
+			<longurl><![CDATA[https://view.inews.qq.com/w/20240709V04GDE00?strategy=feature&rate=2&rg=101&refer=nwx&pushid=2024071002&bkt=4000&openid=o04IBAKTWEnUoUBC9t6E9MNfCHHY&tbkt=B2&ft=0&refer=nwx&cur_pos=4&uflag=2&ext=%7B%22pl%22%3A0%7D&lrg=2&tab_expid=11917224%2C9529030%2C7937200%2C11970385%2C11547976%2C11979950%2C11980674&allcmsids=20240708V036UD00_20240625V0ACAJ00_20240709V00O8E00_20240709V02QS100_20240709V04GDE00&segmentNum=5435&groupid=1720597121&msgid=4]]></longurl>
+			<pub_time>1720597121</pub_time>
+			<cover><![CDATA[https://inews.gtimg.com/news_ls/OYsHvA_SJNVLfpVGTLPixA3EPbw9hgsVwC1SAneLyZlOIAA_8080/0]]></cover>
+			<tweetid>1435098622</tweetid>
+			<digest><![CDATA[]]></digest>
+			<sources>
+				<source>
+					<name><![CDATA[腾讯新闻]]></name>
+				</source>
+			</sources>
+			<play_length>0</play_length>
+			<tweettype>1</tweettype>
+		</newitem>
+	</category>
+</mmreader>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:2

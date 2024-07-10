@@ -25,4 +25,6 @@ server:
 liteflow:
   rule-source: rules/flow.el.xml
   # 使用自己的协程线程池
-  main-executor-class: top.xiaolinz.wechat.bot.core.process.VirtualExecutorBuilder
+  main-executor-class: top.xiaolinz.wechat.bot.core.flow.VirtualExecutorBuilder
+  monitor:
+    enable-log: true
