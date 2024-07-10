@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.flow;
+package top.xiaolinz.wechat.bot.core.flow.callback;
 
 import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.flow;
+package top.xiaolinz.wechat.bot.core.flow.callback;
 
 import com.yomahub.liteflow.thread.ExecutorBuilder;
 import java.util.concurrent.ExecutorService;

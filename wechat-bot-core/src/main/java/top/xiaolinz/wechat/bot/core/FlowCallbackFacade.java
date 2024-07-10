@@ -4,7 +4,7 @@ import com.yomahub.liteflow.core.FlowExecutor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import top.xiaolinz.wechat.bot.core.flow.WechatEventContext;
+import top.xiaolinz.wechat.bot.core.flow.callback.WechatEventContext;
 import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBackRequest;
 
 /**
