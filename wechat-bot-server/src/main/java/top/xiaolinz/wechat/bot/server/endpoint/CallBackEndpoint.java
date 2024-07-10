@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.core.CallbackFacade;
+import top.xiaolinz.wechat.bot.core.WechatRobot;
 import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 
 /**
@@ -22,7 +22,7 @@ import top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack;
 @RequiredArgsConstructor
 public class CallBackEndpoint {
 
-    private final CallbackFacade callbackFacade;
+    private final WechatRobot wechatRobot;
 
     /**
      * 回调
@@ -33,7 +33,7 @@ public class CallBackEndpoint {
      */
     @PostMapping
     public void callback(@RequestBody WechatCallBack event) {
-        callbackFacade.handle(event);
+        wechatRobot.handleCallback(event);
     }
 
 }
