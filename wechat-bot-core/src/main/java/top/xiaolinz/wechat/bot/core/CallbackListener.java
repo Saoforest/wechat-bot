@@ -2,7 +2,7 @@ package top.xiaolinz.wechat.bot.core;
 
 import com.google.common.collect.Maps;
 import java.util.Map;
-import top.xiaolinz.wechat.bot.core.enums.EventTypeEnum;
+import top.xiaolinz.wechat.bot.core.enums.CallbackTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
 import top.xiaolinz.wechat.bot.core.model.callback.Callback;
 
@@ -16,22 +16,22 @@ import top.xiaolinz.wechat.bot.core.model.callback.Callback;
 public interface CallbackListener<T extends Callback<?>> {
 
     /**
-     * 扩展处理
+     * 监听
      *
-     * @param event 事件
+     * @param callback 回调
      * @author huangmuhong
      * @date 2024/07/08
      */
-    void process(T event) throws Exception;
+    void listen(T callback) throws Exception;
 
     /**
      * 支持类型
      *
-     * @return {@link EventTypeEnum[] }
+     * @return {@link CallbackTypeEnum }
      * @author huangmuhong
      * @date 2024/07/08
      */
-    EventTypeEnum[] supportTypes();
+    CallbackTypeEnum supportType();
 
     /**
      * 微信用户持有者

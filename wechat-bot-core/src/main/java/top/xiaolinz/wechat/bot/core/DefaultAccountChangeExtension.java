@@ -1,8 +1,7 @@
 package top.xiaolinz.wechat.bot.core;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import top.xiaolinz.wechat.bot.core.enums.EventTypeEnum;
+import top.xiaolinz.wechat.bot.core.enums.CallbackTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
 
 /**
@@ -14,24 +13,23 @@ import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
  * @see CallbackListener
  */
 @Component
-@RequiredArgsConstructor
 public class DefaultAccountChangeExtension implements CallbackListener<AccountChangeCallback> {
 
     @Override
-    public void process(AccountChangeCallback event) throws Exception {
-        if (event.getType()
-                 .equals("1")) {
+    public void listen(AccountChangeCallback callback) throws Exception {
+        if (callback.getType()
+                    .equals("1")) {
             // 上线
-            WechatUserHolder.put(event);
+            WechatUserHolder.put(callback);
         } else {
             // 下线
-            WechatUserHolder.remove(event.getWxid());
+            WechatUserHolder.remove(callback.getWxid());
         }
     }
 
     @Override
-    public EventTypeEnum[] supportTypes() {
-        return new EventTypeEnum[] {EventTypeEnum.ACCOUNT_CHANGE};
+    public CallbackTypeEnum supportType() {
+        return CallbackTypeEnum.ACCOUNT_CHANGE;
     }
 
 }

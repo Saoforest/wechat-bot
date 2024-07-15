@@ -10,7 +10,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wechat-bot-core" />
         <module name="wechat-bot-server" />
-        <module name="wechat-bot-extends" />
+        <module name="wechat-bot-extend-gpt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
@@ -24,6 +24,7 @@
       <module name="wechat-bot" options="-parameters" />
       <module name="wechat-bot-callback" options="-parameters" />
       <module name="wechat-bot-core" options="-parameters" />
+      <module name="wechat-bot-extend-gpt" options="-parameters" />
       <module name="wechat-bot-extends" options="-parameters" />
       <module name="wechat-bot-server" options="-parameters" />
       <module name="wechat-llm-module" options="-parameters" />

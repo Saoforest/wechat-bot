@@ -23,6 +23,7 @@
     <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
     <flatten-maven-plugin.version>1.6.0</flatten-maven-plugin.version>
 
+    <spring-ai-bom.version>1.0.0-SNAPSHOT</spring-ai-bom.version>
     <tiegangan.version>1.0.0-SNAPSHOT</tiegangan.version>
     <mapstruct-plus.version>1.4.3</mapstruct-plus.version>
     <lombok.version>1.18.32</lombok.version>
@@ -63,6 +64,14 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.springframework.ai</groupId>
+        <artifactId>spring-ai-bom</artifactId>
+        <version>${spring-ai-bom.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <dependency>
         <groupId>com.yomahub</groupId>
         <artifactId>liteflow-spring-boot-starter</artifactId>

@@ -31,13 +31,18 @@
 
     <dependency>
       <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-feign</artifactId>
+      <artifactId>tiegangan-starter-core</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>xyz.tiegangan.tools</groupId>
-      <artifactId>tiegangan-starter-mybatis-flex</artifactId>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>okhttp</artifactId>
     </dependency>
+
+    <!-- <dependency> -->
+    <!--   <groupId>xyz.tiegangan.tools</groupId> -->
+    <!--   <artifactId>tiegangan-starter-mybatis-flex</artifactId> -->
+    <!-- </dependency> -->
 
     <dependency>
       <groupId>com.yomahub</groupId>

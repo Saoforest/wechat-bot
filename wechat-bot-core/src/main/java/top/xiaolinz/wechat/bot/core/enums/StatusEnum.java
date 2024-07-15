@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.core.enums;
 
-import com.mybatisflex.annotation.EnumValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -26,7 +25,7 @@ public enum StatusEnum {
     /**
      * 值
      */
-    @EnumValue
+    // @EnumValue
     private final Integer code;
     /**
      * 描述

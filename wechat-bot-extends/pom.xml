@@ -10,6 +10,10 @@
   </parent>
 
   <artifactId>wechat-bot-extends</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+    <module>wechat-bot-extend-gpt</module>
+  </modules>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>

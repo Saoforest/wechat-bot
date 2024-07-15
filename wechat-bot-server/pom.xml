@@ -15,6 +15,8 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+
   </properties>
 
   <dependencies>
@@ -36,6 +38,12 @@
     <dependency>
       <groupId>top.xiaolinz</groupId>
       <artifactId>wechat-bot-core</artifactId>
+      <version>${revision}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>top.xiaolinz</groupId>
+      <artifactId>wechat-bot-extend-gpt</artifactId>
       <version>${revision}</version>
     </dependency>
 

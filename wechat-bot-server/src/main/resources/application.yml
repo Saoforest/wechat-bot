@@ -2,21 +2,20 @@ spring:
   threads:
     virtual:
       enabled: true
-  datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${global.postgresql.host}:${global.postgresql.port}/${postgresql.database}
-    username: ${global.postgresql.username}
-    password: ${global.postgresql.password}
-    hikari:
-      schema: ${postgresql.schema:public}
-      maximum-pool-size: 20
-      minimum-idle: 10
-      connection-timeout: 30000
-      validation-timeout: 5000
-      idle-timeout: 600000
-      max-lifetime: 1800000
-      keepalive-time: 30000
+  ai:
+    openai:
+      base-url: http://new-api.new-api.orb.local
+      api-key: sk-v3tuADE9Fuzb3tJS014819A800Bb439bB6D9BcDb85696b15
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.3
+    retry:
+      max-attempts: 3
+      onClientErrors: true
+      backoff:
+        max-interval: 10000
+
 server:
   port: 57001
 
@@ -25,6 +24,11 @@ server:
 liteflow:
   rule-source: rules/flow.el.xml
   # 使用自己的协程线程池
-  main-executor-class: top.xiaolinz.wechat.bot.core.flow.VirtualExecutorBuilder
   monitor:
     enable-log: true
+  when-max-workers: 64
+  main-executor-works: 128
+  parallel-max-workers: 64
+tiegangan:
+  wechat:
+    host: http://10.105.55.3:7777
