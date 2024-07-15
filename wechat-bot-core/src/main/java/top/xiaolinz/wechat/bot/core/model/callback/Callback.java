@@ -3,7 +3,7 @@ package top.xiaolinz.wechat.bot.core.model.callback;
 import lombok.Data;
 
 /**
- * 根据回调
+ * 回调属性
  *
  * @author huangmuhong
  * @version 1.0.0
