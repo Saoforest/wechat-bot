@@ -4,12 +4,14 @@ import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import org.commonmark.node.Node;
+import org.commonmark.parser.Parser;
+import org.commonmark.renderer.text.TextContentRenderer;
 import org.dromara.hutool.core.text.StrUtil;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.ChatClient.CallResponseSpec;
 import top.xiaolinz.wechat.bot.core.CallbackListener;
-import top.xiaolinz.wechat.bot.core.Wechat;
-import top.xiaolinz.wechat.bot.core.WxidHolder;
+import top.xiaolinz.wechat.bot.core.WechatHolder;
 import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
 
 /**
@@ -25,16 +27,15 @@ public abstract class AbstractGPTMessageCallback implements CallbackListener<Rec
                                                                         .expireAfterAccess(20, TimeUnit.SECONDS)
                                                                         .build();
     private final ChatClient                 chatClient;
-    private final Wechat                     wechat;
 
-    protected AbstractGPTMessageCallback(ChatClient.Builder chatClientBuilder, Wechat wechat) {
-        chatClient  = chatClientBuilder.build();
-        this.wechat = wechat;
+    protected AbstractGPTMessageCallback(ChatClient.Builder chatClientBuilder) {
+        chatClient = chatClientBuilder.build();
     }
 
     /**
      * 聊天
      *
+     * @param roomId  房间id
      * @param wxid    来自 wxid
      * @param message 信息
      * @param msgId   消息 id
@@ -63,13 +64,20 @@ public abstract class AbstractGPTMessageCallback implements CallbackListener<Rec
                                    .getContent();
         context.addMessage(content);
 
-        if (StrUtil.isNotBlank(roomId)) {
-            // 发送消息
-            wechat.sendReferText(roomId, content, msgId);
-        } else {
-            // 发送消息
-            wechat.sendReferText(wxid, content, msgId);
-        }
+        // TODO 由于大模型默认返回的是 markdown 格式，这里需要转换为文本
+        Parser parser = Parser.builder()
+                              .build();
+        Node document = parser.parse(content);
+        TextContentRenderer renderer = TextContentRenderer.builder()
+                                                          .build();
+        final String text = renderer.render(document);
+
+        final String sendWxid = roomId != null ? roomId : wxid;
+
+        // 发送消息
+        WechatHolder.getWechat()
+                    .sendReferText(sendWxid, text, msgId);
+
     }
 
     /**
@@ -97,7 +105,7 @@ public abstract class AbstractGPTMessageCallback implements CallbackListener<Rec
             return false;
         }
 
-        return wxidList.size() == 1 && wxidList.contains(WxidHolder.get());
+        return wxidList.size() == 1 && wxidList.contains(WechatHolder.getWxid());
 
     }
 }

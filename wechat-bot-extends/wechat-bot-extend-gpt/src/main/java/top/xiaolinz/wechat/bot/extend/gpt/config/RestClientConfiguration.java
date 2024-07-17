@@ -19,9 +19,9 @@ public class RestClientConfiguration {
     @Bean
     public OkHttp3ClientHttpRequestFactory httpRequestFactory() {
         OkHttp3ClientHttpRequestFactory requestFactory = new OkHttp3ClientHttpRequestFactory();
-        requestFactory.setConnectTimeout(60000);
-        requestFactory.setReadTimeout(60000);
-        requestFactory.setWriteTimeout(10000);
+        requestFactory.setConnectTimeout(600000);
+        requestFactory.setReadTimeout(600000);
+        requestFactory.setWriteTimeout(100000);
 
         return requestFactory;
     }

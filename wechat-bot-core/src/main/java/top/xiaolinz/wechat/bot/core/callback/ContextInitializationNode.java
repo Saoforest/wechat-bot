@@ -3,7 +3,7 @@ package top.xiaolinz.wechat.bot.core.callback;
 import com.yomahub.liteflow.annotation.LiteflowComponent;
 import com.yomahub.liteflow.core.NodeComponent;
 import lombok.RequiredArgsConstructor;
-import top.xiaolinz.wechat.bot.core.WxidHolder;
+import top.xiaolinz.wechat.bot.core.WechatHolder;
 import top.xiaolinz.wechat.bot.core.enums.CallbackTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBack;
 
@@ -36,6 +36,6 @@ public class ContextInitializationNode extends NodeComponent {
         context.setType(type);
 
         // 设置当前操作的微信ID
-        WxidHolder.set(data.getWxid());
+        WechatHolder.setWxid(data.getWxid());
     }
 }

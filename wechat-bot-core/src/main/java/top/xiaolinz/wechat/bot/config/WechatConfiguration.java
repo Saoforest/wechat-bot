@@ -1,12 +1,17 @@
 package top.xiaolinz.wechat.bot.config;
 
+import cn.zhxu.okhttps.HTTP;
+import cn.zhxu.okhttps.HTTP.OkConfig;
+import cn.zhxu.okhttps.OkHttps;
+import java.util.concurrent.TimeUnit;
 import lombok.RequiredArgsConstructor;
-import org.dromara.hutool.http.client.ClientConfig;
-import org.dromara.hutool.http.client.engine.ClientEngine;
-import org.dromara.hutool.http.client.engine.okhttp.OkHttpEngine;
+import okhttp3.ConnectionPool;
+import okhttp3.OkHttpClient;
+import okhttp3.logging.HttpLoggingInterceptor;
+import okhttp3.logging.HttpLoggingInterceptor.Level;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * 微信客户端配置
@@ -16,38 +21,43 @@ import org.springframework.stereotype.Component;
  * @date 2024/7/3
  */
 @EnableConfigurationProperties(WeChatProperties.class)
-@Component
+@Configuration
 @RequiredArgsConstructor
 public class WechatConfiguration {
 
     private final WeChatProperties weChatProperties;
 
     /**
-     * 客户端配置
+     * okhttp 配置
      *
-     * @return {@link ClientConfig }
+     * @return {@link OkConfig }
      * @author huangmuhong
-     * @date 2024/07/14
+     * @date 2024/07/17
      */
     @Bean
-    public ClientConfig clientConfig() {
-        return ClientConfig.of()
-                           .setTimeout(weChatProperties.getTimeout())
-                           .setReadTimeout(weChatProperties.getTimeout());
+    public OkConfig okConfig() {
+        return (OkHttpClient.Builder builder) -> {
+            builder.connectionPool(new ConnectionPool(40, 5, TimeUnit.MINUTES));
+            builder.connectTimeout(weChatProperties.getTimeout(), TimeUnit.MILLISECONDS);
+            builder.readTimeout(weChatProperties.getTimeout(), TimeUnit.MILLISECONDS);
+            final HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();
+            loggingInterceptor.level(Level.BASIC);
+            builder.addInterceptor(loggingInterceptor);
+        };
     }
 
     /**
-     * 客户端引擎
+     * 千寻 http 客户端
      *
-     * @param config 配置
-     * @return {@link ClientEngine }
+     * @return {@link HTTP }
      * @author huangmuhong
-     * @date 2024/07/14
+     * @date 2024/07/17
      */
     @Bean
-    public ClientEngine clientEngine(ClientConfig config) {
-        final OkHttpEngine httpEngine = new OkHttpEngine();
-        httpEngine.init(config);
-        return httpEngine;
+    public HTTP qianXunHttpClient(OkConfig okConfig) {
+        return OkHttps.newBuilder()
+                      .baseUrl(weChatProperties.getHost())
+                      .config(okConfig)
+                      .build();
     }
 }

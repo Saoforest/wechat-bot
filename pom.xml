@@ -28,6 +28,7 @@
     <mapstruct-plus.version>1.4.3</mapstruct-plus.version>
     <lombok.version>1.18.32</lombok.version>
     <liteflow.version>2.12.1</liteflow.version>
+    <okhttp.version>4.0.2</okhttp.version>
   </properties>
 
   <profiles>
@@ -76,6 +77,12 @@
         <groupId>com.yomahub</groupId>
         <artifactId>liteflow-spring-boot-starter</artifactId>
         <version>${liteflow.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cn.zhxu</groupId>
+        <artifactId>okhttps-fastjson2</artifactId>
+        <version>${okhttp.version}</version>
       </dependency>
 
 

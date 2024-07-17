@@ -1,8 +1,9 @@
 package top.xiaolinz.wechat.bot.extend.gpt;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
-import top.xiaolinz.wechat.bot.core.Wechat;
 import top.xiaolinz.wechat.bot.core.enums.CallbackTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
 import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback.MessageData;
@@ -18,10 +19,10 @@ import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback.Messag
 @Service
 public class GroupGPTMessageCallback extends AbstractGPTMessageCallback {
 
-    private static final String AT_REGEX = "@[\\u4e00-\\u9fa5\\w]+\\s";
+    private static final String AT_REGEX = "@[^\\s]+\\s*";
 
-    public GroupGPTMessageCallback(ChatClient.Builder chatClientBuilder, Wechat wechat) {
-        super(chatClientBuilder, wechat);
+    public GroupGPTMessageCallback(ChatClient.Builder chatClientBuilder) {
+        super(chatClientBuilder);
     }
 
     @Override
@@ -51,10 +52,12 @@ public class GroupGPTMessageCallback extends AbstractGPTMessageCallback {
     private String removeAt(String msg) {
         // @格式为：@昵称+空格,使用正则匹配
         // 例如：@小明 你好
-        // 匹配结果为：@小明
-        // 用空格替换匹配结果
-        // 最终结果为： 你好
-        return msg.replaceAll(AT_REGEX, "");
+        // 使用 Pattern.compile() 方法编译正则表达式
+        Pattern compiledPattern = Pattern.compile(AT_REGEX);
+
+        // 使用 Matcher 对象进行匹配和替换
+        Matcher matcher = compiledPattern.matcher(msg);
+        return matcher.replaceAll("");
     }
 
     @Override

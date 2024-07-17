@@ -22,6 +22,16 @@ public interface ChatContext {
     List<Message> getMessages();
 
     /**
+     * 添加系统消息
+     *
+     * @param message
+     * @return {@link ChatContext }
+     * @author huangmuhong
+     * @date 2024/07/18
+     */
+    ChatContext addSystemMessage(String message);
+
+    /**
      * 添加消息
      *
      * @param message 消息
@@ -29,5 +39,5 @@ public interface ChatContext {
      * @date 2024/07/14
      */
     ChatContext addMessage(String message);
-    
+
 }

@@ -23,9 +23,6 @@ server:
 # liteflow
 liteflow:
   rule-source: rules/flow.el.xml
-  # 使用自己的协程线程池
-  monitor:
-    enable-log: true
   when-max-workers: 64
   main-executor-works: 128
   parallel-max-workers: 64

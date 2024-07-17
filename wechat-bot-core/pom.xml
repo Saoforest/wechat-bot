@@ -15,6 +15,7 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <transmittable-thread-local.version>2.14.4</transmittable-thread-local.version>
   </properties>
 
   <dependencies>
@@ -39,6 +40,16 @@
       <artifactId>okhttp</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>com.squareup.okhttp3</groupId>
+      <artifactId>logging-interceptor</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>cn.zhxu</groupId>
+      <artifactId>okhttps-fastjson2</artifactId>
+    </dependency>
+
     <!-- <dependency> -->
     <!--   <groupId>xyz.tiegangan.tools</groupId> -->
     <!--   <artifactId>tiegangan-starter-mybatis-flex</artifactId> -->
@@ -52,6 +63,12 @@
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>transmittable-thread-local</artifactId>
+      <version>${transmittable-thread-local.version}</version>
     </dependency>
 
     <dependency>

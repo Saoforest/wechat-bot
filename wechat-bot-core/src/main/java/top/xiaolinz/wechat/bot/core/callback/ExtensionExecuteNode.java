@@ -1,11 +1,15 @@
 package top.xiaolinz.wechat.bot.core.callback;
 
+import com.alibaba.ttl.threadpool.TtlExecutors;
 import com.yomahub.liteflow.annotation.LiteflowComponent;
 import com.yomahub.liteflow.core.NodeComponent;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import top.xiaolinz.wechat.bot.core.CallbackListener;
-import top.xiaolinz.wechat.bot.core.WxidHolder;
 import top.xiaolinz.wechat.bot.core.enums.CallbackTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.Callback;
 
@@ -17,10 +21,12 @@ import top.xiaolinz.wechat.bot.core.model.callback.Callback;
  * @date 2024/7/8
  * @see NodeComponent
  */
+@SuppressWarnings("all")
 @LiteflowComponent("extensionExecuteNode")
 public class ExtensionExecuteNode extends NodeComponent {
 
-    private final List<CallbackListener> callbackListeners;
+    private static final Logger                 log = LoggerFactory.getLogger(ExtensionExecuteNode.class);
+    private final        List<CallbackListener> callbackListeners;
 
     public ExtensionExecuteNode(ObjectProvider<CallbackListener> provider) {
         callbackListeners = provider.orderedStream()
@@ -43,12 +49,19 @@ public class ExtensionExecuteNode extends NodeComponent {
         final Callback<?> data = (Callback<?>)context.getData()
                                                      .toJavaObject(type.getEventClass());
 
-        // 执行具体的回调监听器
-        for (final CallbackListener callbackListener : extension) {
-            callbackListener.listen(data);
-        }
+        // 创建虚拟线程池
+        final ExecutorService executor =
+            TtlExecutors.getTtlExecutorService(Executors.newVirtualThreadPerTaskExecutor());
 
-        // 清理 wxid
-        WxidHolder.clear();
+        // 使用线程池执行
+        for (final CallbackListener callbackListener : extension) {
+            executor.submit(() -> {
+                try {
+                    callbackListener.listen(data);
+                } catch (Exception e) {
+                    log.error("扩展执行失败", e);
+                }
+            });
+        }
     }
 }

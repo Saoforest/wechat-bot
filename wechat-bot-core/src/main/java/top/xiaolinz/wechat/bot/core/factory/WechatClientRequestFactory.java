@@ -14,8 +14,11 @@ public interface WechatClientRequestFactory<T> {
     /**
      * 创建请求对象
      *
+     *
+     *
      * 入参为泛型属性顺序对应的参数
      *
+     * @param params 参数
      * @return {@link WechatClientRequest }
      * @author huangmuhong
      * @date 2024/07/12
