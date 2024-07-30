@@ -1,7 +1,8 @@
-package top.xiaolinz.wechat.bot.core;
+package top.xiaolinz.wechat.bot.core.message;
 
-import top.xiaolinz.wechat.bot.core.enums.MessageTypeEnum;
-import top.xiaolinz.wechat.bot.core.model.callback.Callback;
+import top.xiaolinz.wechat.bot.core.WechatClient;
+import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
+import top.xiaolinz.wechat.bot.core.model.message.WechatMessage;
 import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
 
 /**
@@ -11,7 +12,7 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
  * @version 1.0.0
  * @date 2024/7/26
  */
-interface WechatMessageListener<T extends BaseMessageListenerProperties, R extends Callback<?>> {
+interface WechatMessageListener<T extends BaseMessageListenerProperties, R extends WechatMessage<?>> {
 
     /**
      * 监听
@@ -31,7 +32,7 @@ interface WechatMessageListener<T extends BaseMessageListenerProperties, R exten
      * @author huangmuhong
      * @date 2024/07/28
      */
-    boolean support(MessageTypeEnum type);
+    boolean support(WechatMessageTypeEnum type);
 
     /**
      * 获取配置

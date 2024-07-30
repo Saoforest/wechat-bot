@@ -1,16 +1,16 @@
-package top.xiaolinz.wechat.bot.core.model.callback;
+package top.xiaolinz.wechat.bot.core.model.message;
 
 import lombok.Data;
 
 /**
- * 回调属性
+ * 微信消息
  *
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/8
  */
 @Data
-public class Callback<T> {
+public class WechatMessage<T> {
     private String type;
     private String des;
     private Long   port;

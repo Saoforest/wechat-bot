@@ -1,10 +1,11 @@
-package top.xiaolinz.wechat.bot.core;
+package top.xiaolinz.wechat.bot.core.message;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Service;
+import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
 
 /**

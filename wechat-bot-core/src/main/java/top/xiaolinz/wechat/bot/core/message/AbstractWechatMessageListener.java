@@ -1,10 +1,10 @@
-package top.xiaolinz.wechat.bot.core;
+package top.xiaolinz.wechat.bot.core.message;
 
 import org.dromara.hutool.core.lang.Assert;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContextAware;
-import top.xiaolinz.wechat.bot.core.model.callback.Callback;
+import top.xiaolinz.wechat.bot.core.model.message.WechatMessage;
 import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
 
 /**
@@ -17,7 +17,7 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
  * @see ApplicationContextAware
  */
 @SuppressWarnings("all")
-public abstract class AbstractWechatMessageListener<T extends BaseMessageListenerProperties, R extends Callback<?>>
+public abstract class AbstractWechatMessageListener<T extends BaseMessageListenerProperties, R extends WechatMessage<?>>
     implements WechatMessageListener<T, R>, InitializingBean {
 
     @Autowired(required = false)

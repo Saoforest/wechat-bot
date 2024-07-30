@@ -7,7 +7,7 @@ package top.xiaolinz.wechat.bot.core.model.client;
 import lombok.Data;
 
 /**
- * 调用微信响应dto
+ * 调用客户端响应
  *
  * @author huangmuhong
  * @version 1.0.0

@@ -3,9 +3,8 @@ package top.xiaolinz.wechat.bot.core.enums;
 import com.alibaba.fastjson2.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import top.xiaolinz.wechat.bot.core.model.callback.AccountChangeCallback;
-import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageCallback;
-import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
+import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
+import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
 
 /**
  * 回调类型
@@ -17,20 +16,20 @@ import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
  */
 @Getter
 @AllArgsConstructor
-public enum MessageTypeEnum {
+public enum WechatMessageTypeEnum {
 
     /**
      * 账号变动事件
      */
-    ACCOUNT_CHANGE(10014, "账号变动事件", AccountChangeCallback.class),
+    // ACCOUNT_CHANGE(10014, "账号变动事件", AccountChangeWechatMessage.class),
     /**
      * 收到群聊消息事件
      */
-    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageCallback.class),
+    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageWechatMessage.class),
     /**
      * 收到私聊消息事件
      */
-    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageCallback.class),
+    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageWechatMessage.class),
     /**
      * 自己发出消息事件
      */
@@ -42,7 +41,7 @@ public enum MessageTypeEnum {
     /**
      * 撤回事件
      */
-    RECALL(10013, "撤回事件", RecallMessageCallback.class),
+    RECALL(10013, "撤回事件", RecallMessageWechatMessage.class),
     /**
      * 好友请求事件
      */
@@ -75,13 +74,13 @@ public enum MessageTypeEnum {
      * 获取事件类型
      *
      * @param event 事件
-     * @return {@link MessageTypeEnum }
+     * @return {@link WechatMessageTypeEnum }
      * @author huangmuhong
      * @date 2024/07/05
      */
     @JSONField(serialize = false)
-    public static MessageTypeEnum getEventType(long event) {
-        for (MessageTypeEnum value : MessageTypeEnum.values()) {
+    public static WechatMessageTypeEnum getEventType(long event) {
+        for (WechatMessageTypeEnum value : WechatMessageTypeEnum.values()) {
             if (value.getEvent() == event) {
                 return value;
             }

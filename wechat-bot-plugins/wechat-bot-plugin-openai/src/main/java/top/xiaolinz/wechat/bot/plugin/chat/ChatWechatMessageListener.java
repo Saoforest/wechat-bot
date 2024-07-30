@@ -22,12 +22,12 @@ import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
-import top.xiaolinz.wechat.bot.core.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.WechatConfigHolder;
-import top.xiaolinz.wechat.bot.core.enums.MessageTypeEnum;
-import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback;
-import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageCallback.MessageData;
+import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
+import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
+import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
+import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage.MessageData;
 import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties;
 import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupChatConfig;
 
@@ -41,7 +41,7 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.
  */
 @Service
 public class ChatWechatMessageListener
-    extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageCallback> {
+    extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageWechatMessage> {
 
     private static final String                    AT_REGEX     = "@.+\\p{Zs}+";
     private final        Cache<String, ChatMemory> cacheMemorys = Caffeine.newBuilder()
@@ -56,7 +56,7 @@ public class ChatWechatMessageListener
      * @author huangmuhong
      * @date 2024/07/14
      */
-    protected boolean isAtMe(ReceiveMessageCallback.MessageData messageData) {
+    protected boolean isAtMe(ReceiveMessageWechatMessage.MessageData messageData) {
         final List<String> wxidList = messageData.getAtWxidList();
         if (wxidList.isEmpty()) {
             return false;
@@ -86,7 +86,7 @@ public class ChatWechatMessageListener
     }
 
     @Override
-    public void listener(ReceiveMessageCallback data, WechatClient wechatClient) {
+    public void listener(ReceiveMessageWechatMessage data, WechatClient wechatClient) {
         final MessageData messageData = data.getData();
         final String      roomId      = messageData.getFromWxid();
         final ChatClient  chatClient  = createChatClient(getConfig(), roomId);
@@ -158,7 +158,7 @@ public class ChatWechatMessageListener
     }
 
     @Override
-    public boolean support(MessageTypeEnum type) {
-        return type.equals(MessageTypeEnum.GROUP_MESSAGE);
+    public boolean support(WechatMessageTypeEnum type) {
+        return type.equals(WechatMessageTypeEnum.GROUP_MESSAGE);
     }
 }
