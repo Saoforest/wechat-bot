@@ -5,6 +5,8 @@
 # maven flatt插件额外生成的 pom
 .flattened-pom.xml
 
+千寻微信框架Pro
+
 ### Maven template
 target/
 pom.xml.tag
