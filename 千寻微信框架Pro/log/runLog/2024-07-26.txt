@@ -16344,3 +16344,528 @@ No-solution: 出不来的话该收手就收受
 2024-07-30 18:07:41.729 信息:参_信息:群（44765526058@chatroom）zhouyueqi002：<msg><emoji fromusername="zhouyueqi002" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="8e6c7f166288291492746d0dc0b489ec" len="26396" productid="" androidmd5="8e6c7f166288291492746d0dc0b489ec" androidlen="26396" s60v3md5="8e6c7f166288291492746d0dc0b489ec" s60v3len="26396" s60v5md5="8e6c7f166288291492746d0dc0b489ec" s60v5len="26396" cdnurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=8e6c7f166288291492746d0dc0b489ec&amp;filekey=30340201010420301e020201060402534804108e6c7f166288291492746d0dc0b489ec0202671c040d00000004627466730000000132&amp;hy=SH&amp;storeid=26317ae89000627d4000000000000010600004f5053482e267b40b64ecd317&amp;bizid=1023" designerid="" thumburl="" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=d2fe52644b1f88703b62d4b6710caed8&amp;filekey=30340201010420301e02020106040253480410d2fe52644b1f88703b62d4b6710caed802026720040d00000004627466730000000132&amp;hy=SH&amp;storeid=26317ae8900083c39000000000000010600004f50534813cd2a00b77bb5a70&amp;bizid=1023" aeskey="d52e13d67983b724f2e8d05af62d08bd" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=005115154386920362c4c85c9432c40d&amp;filekey=30340201010420301e02020106040253480410005115154386920362c4c85c9432c40d020203d0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26317ae89000a4970000000000000010600004f5053481d767b40b64e86612&amp;bizid=1023" externmd5="3edc2d29747dd5da708061f926cdce57" width="24" height="24" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
 2024-07-30 18:08:13.398 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="8e6c7f166288291492746d0dc0b489ec" len="26396" productid="" androidmd5="8e6c7f166288291492746d0dc0b489ec" androidlen="26396" s60v3md5="8e6c7f166288291492746d0dc0b489ec" s60v3len="26396" s60v5md5="8e6c7f166288291492746d0dc0b489ec" s60v5len="26396" cdnurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=8e6c7f166288291492746d0dc0b489ec&amp;filekey=30340201010420301e020201060402535a04108e6c7f166288291492746d0dc0b489ec0202671c040d00000004627466730000000131&amp;hy=SZ&amp;storeid=32303231303632373033303231303030306630373935373965633231343262376461356630393030303030313036&amp;bizid=1023" designerid="" thumburl="" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=d2fe52644b1f88703b62d4b6710caed8&amp;filekey=30340201010420301e020201060402535a0410d2fe52644b1f88703b62d4b6710caed802026720040d00000004627466730000000131&amp;hy=SZ&amp;storeid=32303231303632373033303231313030303234323931373965633231343236343132356630393030303030313036&amp;bizid=1023" aeskey="d52e13d67983b724f2e8d05af62d08bd" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=005115154386920362c4c85c9432c40d&amp;filekey=30340201010420301e020201060402535a0410005115154386920362c4c85c9432c40d020203d0040d00000004627466730000000131&amp;hy=SZ&amp;storeid=32303231303632373033303231313030303432343236373965633231343237626464356630393030303030313036&amp;bizid=1023" externmd5="3edc2d29747dd5da708061f926cdce57" width="24" height="24" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
 2024-07-30 18:08:50.946 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：这东西是真牛逼 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:18:50.497 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：我发现流式比阻塞快多了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:20:30.040 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：赫赫 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:20:37.523 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：流肯定比阻塞快啊 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:20:40.145 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你快试试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:20:54.076 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = 不是你理解的流 微信又不能流消息 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:21:00.721 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：只是阻塞的时机不同 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:21:33.896 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你不是读取文件的方式采取流式么 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:21:36.129 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@小猪 查找一下极兔科技公司的信息 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:21:48.024 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：不是。。 是大模型的输出是流 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:22:31.679 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：但是我得阻塞他获取所有文本 拼接 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:22:33.912 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：然后发给微信 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:22:34.316 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:22:39.961 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：微信不能发流式消息 没有办法 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:08.254 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：那不还是要等它全部文件输出了以后你才能返回 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:19.363 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：没有文件啊 接口 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:34.004 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你把文件理解成概念词 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:36.356 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：[pic=C:\Mac\Home\Documents\DaenWxHookCache\aa647a4d12e8426187406d5fa4543241.png,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:42.263 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：讯息，数据 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:44.479 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = 哦 我懂了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:47.295 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：呵呵 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:49.338 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你是抽象 boy | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:23:52.358 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:03.102 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：<msg><emoji fromusername = "wxid_unv93i503c0622" tousername = "44765526058@chatroom" type="2" idbuffer="media:0_0" md5="322b3d316cfce545e15f40a6022436e2" len = "39439" productid="" androidmd5="322b3d316cfce545e15f40a6022436e2" androidlen="39439" s60v3md5 = "322b3d316cfce545e15f40a6022436e2" s60v3len="39439" s60v5md5 = "322b3d316cfce545e15f40a6022436e2" s60v5len="39439" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=322b3d316cfce545e15f40a6022436e2&amp;filekey=30440201010430302e02016e04025348042033323262336433313663666365353435653135663430613630323234333665320203009a0f040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668fba00000ea2a72693d2be0000006e01004fb153481b83003156855eb9f&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=a43c3f99f156420ef7476bffbb5d743f&amp;filekey=30440201010430302e02016e04025348042061343363336639396631353634323065663734373662666662623564373433660203009a10040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668fba00000f2aa62693d2be0000006e02004fb253481b83003156855ebb4&amp;ef=2&amp;bizid=1022" aeskey= "f9391937093240f2a5691568cd1a3505" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=c572f9bb271708f24922706bdee07cb4&amp;filekey=3043020101042f302d02016e040253480420633537326639626232373137303866323439323237303662646565303763623402021130040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668fba01000074202693d2be0000006e03004fb353481b83003156855ebca&amp;ef=3&amp;bizid=1022" externmd5 = "0afb2efdae639ec1776d0492daf458e7" width= "200" height= "197" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> </msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:14.627 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你快问他几个暴力问题 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:29.370 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：还有一点很傻逼的小 bug 我发现不同客户端的@信息会不一样 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:31.597 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：贼抽象 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:35.027 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：有些是普通空格 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:46.996 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：有些尼玛是 unicode | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:24:49.217 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：@小猪\u2005黄沐鸿的三颗蛋蛋什么时候全部脱落 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:11.253 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：呵呵 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:13.453 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你是手机？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:25.645 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：[pic=C:\Mac\Home\Documents\DaenWxHookCache\402bde683cd4ec2de26266b4a235f802.png,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:29.828 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你的空格变成了 unicode | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:34.096 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：然后我一个正则全给删除了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:35.476 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:39.505 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:47.962 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你这个碧油鸡小字 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:55.657 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：这关我屁事 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:25:58.876 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：我也是刚刚发现 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:02.121 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：如此抽象的问题 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:14.264 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：@小猪 黄沐鸿的三颗蛋蛋什么时候全部脱落 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:23.158 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：这下它应该识别出来了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:36.476 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：呵呵没有 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:43.346 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：[pic=C:\Mac\Home\Documents\DaenWxHookCache\51a92c67a530ec3a4e251fab945f1b94.png,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:44.168 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：我复制的你消息 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:45.351 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你没@上 我改一下 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:51.640 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：微信的@是特殊占位 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:26:54.053 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：复制就没了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:27:31.720 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：@小猪\u2005黄沐鸿的三颗蛋蛋什么时候全部脱落 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:27:51.889 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：呵呵 还是带特殊字符 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:27:53.118 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：我改一下代码 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:27:53.937 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：稍等 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:27:56.753 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：赫赫 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:28:03.439 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：碧油鸡小汁 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:29:39.825 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="3e80f3b9b8ec3ab0292cf4af8c1c4cbc" len="54420" productid="" androidmd5="3e80f3b9b8ec3ab0292cf4af8c1c4cbc" androidlen="54420" s60v3md5="3e80f3b9b8ec3ab0292cf4af8c1c4cbc" s60v3len="54420" s60v5md5="3e80f3b9b8ec3ab0292cf4af8c1c4cbc" s60v5len="54420" cdnurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=3e80f3b9b8ec3ab0292cf4af8c1c4cbc&amp;filekey=30350201010421301f020201060402535a04103e80f3b9b8ec3ab0292cf4af8c1c4cbc020300d494040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266a06e330004286e1b9abc1d0000010600004f50535a11ff30115001befeb&amp;bizid=1023" designerid="" thumburl="" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=b3978359f7745ff195bf3f6d738ad430&amp;filekey=30350201010421301f020201060402535a0410b3978359f7745ff195bf3f6d738ad430020300d4a0040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266a06e330007095a1b9abc1d0000010600004f50535a1b16dbc1e792d2554&amp;bizid=1023" aeskey="863c28f1b49c3fc300c0d2d63a939051" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=7dfcc5faef2ce17e375b7f2112fd7023&amp;filekey=30340201010420301e020201060402535a04107dfcc5faef2ce17e375b7f2112fd702302023120040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266a06fdf000590f0adcd9b140000010600004f50535a1f16ebc1e67cbc72d&amp;bizid=1023" externmd5="415c26bdd84fdf1d67ff161ddcd5578a" width="200" height="200" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:30:29.102 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@小猪 林超凡是不是傻呗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:30:48.436 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：哟西 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:30:52.428 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：没给他删掉 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:30:54.047 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：让我再试试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:31:02.322 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你的机器人 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:31:06.953 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：怎么有点弱智的感觉 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:31:08.774 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:31:17.267 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="1" idbuffer="media:0_0" md5="90d6ee0ecbbb71ee007351965dd1ee36" len="36877" productid="" androidmd5="90d6ee0ecbbb71ee007351965dd1ee36" androidlen="36877" s60v3md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v3len="36877" s60v5md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v5len="36877" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=90d6ee0ecbbb71ee007351965dd1ee36&amp;filekey=30440201010430302e02016e0402534804203930643665653065636262623731656530303733353139363564643165653336020300900d040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b90009dbd5cd89f4320000006e01004fb153480953103156f545628&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=ac40ae1228e78a2d2bd3513d422f3fe0&amp;filekey=30440201010430302e02016e04025348042061633430616531323238653738613264326264333531336434323266336665300203009010040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000aa1fbcd89f4320000006e02004fb253480953103156f54564b&amp;ef=2&amp;bizid=1022" aeskey="f612408c9b6e4bb99c31aab4ec8d5185" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=126092c1c9d573f34e7cb180b003f616&amp;filekey=3043020101042f302d02016e040253480420313236303932633163396435373366333465376362313830623030336636313602020b80040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000b3f1acd89f4320000006e03004fb353480953103156f54566d&amp;ef=3&amp;bizid=1022" externmd5="f9112951d4dabea91a2631398082bc17" width="155" height="155" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:32:03.975 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@小猪 你是狗吗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:32:15.851 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@大漠月亮猫 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:32:28.442 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@大漠月亮猫 再试一下 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:15.128 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:20.580 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你人呢 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:34.130 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：我在回家的路上啊 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:39.767 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你在问他一下 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:40.366 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:40.769 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：准话沙发躺躺了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:33:43.203 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：<msg><emoji fromusername = "wxid_unv93i503c0622" tousername = "44765526058@chatroom" type="2" idbuffer="media:0_0" md5="4764d027f60d26d6a0ce9ab83ae4e599" len = "67524" productid="" androidmd5="4764d027f60d26d6a0ce9ab83ae4e599" androidlen="67524" s60v3md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v3len="67524" s60v5md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v5len="67524" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=4764d027f60d26d6a0ce9ab83ae4e599&amp;filekey=30440201010430302e02016e040253480420343736346430323766363064323664366130636539616238336165346535393902030107c4040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500047121428a51210000006e01004fb1534808260b01e7187ea11&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=526e11310f9483b01c846659bc8b145a&amp;filekey=30440201010430302e02016e040253480420353236653131333130663934383362303163383436363539626338623134356102030107d0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500052395428a51210000006e02004fb2534808260b01e7187ea1c&amp;ef=2&amp;bizid=1022" aeskey= "9e58667b45a4455a962e74f3b56b8bb0" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=78aecd16b628566768f5a9ad049fae26&amp;filekey=3043020101042f302d02016e040253480420373861656364313662363238353636373638663561396164303439666165323602020f80040d00000004627466730000000132&amp;hy=SH&amp;storeid=266648235000637f1428a51210000006e03004fb3534808260b01e7187ea2f&amp;ef=3&amp;bizid=1022" externmd5 = "c2165bdbad15d5833b83026461d6dac2" width= "300" height= "226" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> </msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:00.762 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：你的奇怪比有几给你修复一下 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:15.714 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：@Curtain.\u2005黄沐鸿的三颗蛋蛋什么时候全部脱落 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:22.213 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@错了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:23.013 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:23.392 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：<msg><emoji fromusername = "wxid_unv93i503c0622" tousername = "44765526058@chatroom" type="2" idbuffer="media:0_0" md5="4764d027f60d26d6a0ce9ab83ae4e599" len = "67524" productid="" androidmd5="4764d027f60d26d6a0ce9ab83ae4e599" androidlen="67524" s60v3md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v3len="67524" s60v5md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v5len="67524" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=4764d027f60d26d6a0ce9ab83ae4e599&amp;filekey=30440201010430302e02016e040253480420343736346430323766363064323664366130636539616238336165346535393902030107c4040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500047121428a51210000006e01004fb1534808260b01e7187ea11&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=526e11310f9483b01c846659bc8b145a&amp;filekey=30440201010430302e02016e040253480420353236653131333130663934383362303163383436363539626338623134356102030107d0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500052395428a51210000006e02004fb2534808260b01e7187ea1c&amp;ef=2&amp;bizid=1022" aeskey= "9e58667b45a4455a962e74f3b56b8bb0" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=78aecd16b628566768f5a9ad049fae26&amp;filekey=3043020101042f302d02016e040253480420373861656364313662363238353636373638663561396164303439666165323602020f80040d00000004627466730000000132&amp;hy=SH&amp;storeid=266648235000637f1428a51210000006e03004fb3534808260b01e7187ea2f&amp;ef=3&amp;bizid=1022" externmd5 = "c2165bdbad15d5833b83026461d6dac2" width= "300" height= "226" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> </msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:26.232 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：不 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:28.720 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：我是故意的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:31.703 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：= = | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:32.507 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：呵呵 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:34:39.375 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：@小猪\u2005黄沐鸿的三颗蛋蛋什么时候全部脱落 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:35:08.445 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：牛逼 还是不行 你在试一下 我进断点看看吧 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:35:47.464 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你个煞笔 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:35:50.927 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：你怎么还没下班 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:29.318 信息:参_信息:群（44765526058@chatroom）wxid_ss9zc77nyory22：你怎么还没下班 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:37.740 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：因为我十点到 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:38.224 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：兄弟 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:39.350 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：有没有问题 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:44.405 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：一句话把黄沐鸿 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:38:47.052 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：干沉默了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:39:05.451 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="1" idbuffer="media:0_0" md5="90d6ee0ecbbb71ee007351965dd1ee36" len="36877" productid="" androidmd5="90d6ee0ecbbb71ee007351965dd1ee36" androidlen="36877" s60v3md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v3len="36877" s60v5md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v5len="36877" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=90d6ee0ecbbb71ee007351965dd1ee36&amp;filekey=30440201010430302e02016e0402534804203930643665653065636262623731656530303733353139363564643165653336020300900d040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b90009dbd5cd89f4320000006e01004fb153480953103156f545628&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=ac40ae1228e78a2d2bd3513d422f3fe0&amp;filekey=30440201010430302e02016e04025348042061633430616531323238653738613264326264333531336434323266336665300203009010040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000aa1fbcd89f4320000006e02004fb253480953103156f54564b&amp;ef=2&amp;bizid=1022" aeskey="f612408c9b6e4bb99c31aab4ec8d5185" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=126092c1c9d573f34e7cb180b003f616&amp;filekey=3043020101042f302d02016e040253480420313236303932633163396435373366333465376362313830623030336636313602020b80040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000b3f1acd89f4320000006e03004fb353480953103156f54566d&amp;ef=3&amp;bizid=1022" externmd5="f9112951d4dabea91a2631398082bc17" width="155" height="155" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:39:09.673 信息:参_信息:群（44765526058@chatroom）wxid_ss9zc77nyory22：<msg><emoji fromusername="wxid_ss9zc77nyory22" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="e0b190c5fe81c560a61191612053a810" len="13127" productid="" androidmd5="e0b190c5fe81c560a61191612053a810" androidlen="13127" s60v3md5="e0b190c5fe81c560a61191612053a810" s60v3len="13127" s60v5md5="e0b190c5fe81c560a61191612053a810" s60v5len="13127" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=e0b190c5fe81c560a61191612053a810&amp;filekey=3043020101042f302d02016e040253480420653062313930633566653831633536306136313139313631323035336138313002023347040d00000004627466730000000132&amp;hy=SH&amp;storeid=262ce4d600009ef9a4fa152e20000006e01004fb1534828ac59609648cf886&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=6a10d0b40ed25f5e8f17eff5c416d138&amp;filekey=3043020101042f302d02016e040253480420366131306430623430656432356635653866313765666635633431366431333802023350040d00000004627466730000000132&amp;hy=SH&amp;storeid=262ce4d60000a88794fa152e20000006e02004fb2534828ac59609648cf8a7&amp;ef=2&amp;bizid=1022" aeskey="93f215c420f741fa87122cd64e2ef9f4" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=5feb0fd3dbaf4551a190534e9a9f29b3&amp;filekey=3043020101042f302d02016e040253480420356665623066643364626166343535316131393035333465396139663239623302020c60040d00000004627466730000000132&amp;hy=SH&amp;storeid=262ce4d60000af3364fa152e20000006e03004fb3534828ac59609648cf8b9&amp;ef=3&amp;bizid=1022" externmd5="b5c20c979e1e1d3be414df8d3be16b05" width="56" height="48" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:39:16.349 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：攻击力太低 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:48:56.056 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：@大漠月亮猫 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:49:03.320 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：在@下机器人 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:49:04.108 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：修好了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:49:05.326 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：快 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:49:08.752 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：完事我撤了 下班班了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 18:51:17.123 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005奖励我 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.698 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：真的吗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.699 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：那你现在撤了嘛 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.729 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：我在吃饭 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.807 信息:参_信息:群（44765526058@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="44765526058@chatroom" type="2" idbuffer="media:0_0" md5="760cf291a18a05afa06225571cd00bf2" len="31753" productid="" androidmd5="760cf291a18a05afa06225571cd00bf2" androidlen="31753" s60v3md5="760cf291a18a05afa06225571cd00bf2" s60v3len="31753" s60v5md5="760cf291a18a05afa06225571cd00bf2" s60v5len="31753" cdnurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=760cf291a18a05afa06225571cd00bf2&amp;filekey=30340201010420301e020201060402535a0410760cf291a18a05afa06225571cd00bf202027c09040d00000004627466730000000132&amp;hy=SZ&amp;storeid=2656ad9f7000d01efccfef41d0000010600004f50535a1ae67bc1e782c58fd&amp;bizid=1023" designerid="" thumburl="" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=3e8dd3109675991d5e8235520a52a3e3&amp;filekey=30340201010420301e020201060402535a04103e8dd3109675991d5e8235520a52a3e302027c10040d00000004627466730000000132&amp;hy=SZ&amp;storeid=2656ad9f7000e159bccfef41d0000010600004f50535a11af0011568dfbd5c&amp;bizid=1023" aeskey="87d84d8fc9d3116e32f4d4f8b7d0dc10" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=ca1bd4e9e38693d7fabff1c93b4fbd82&amp;filekey=30340201010420301e020201060402535a0410ca1bd4e9e38693d7fabff1c93b4fbd8202023990040d00000004627466730000000132&amp;hy=SZ&amp;storeid=2656adaa4000e4075ccfef41d0000010600004f50535a07bf90115780b4bd5&amp;bizid=1023" externmd5="6314b779c098ac71caed3309fc3c89b9" width="91" height="66" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.836 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：<msg><emoji fromusername = "wxid_unv93i503c0622" tousername = "44765526058@chatroom" type="2" idbuffer="media:0_0" md5="4764d027f60d26d6a0ce9ab83ae4e599" len = "67524" productid="" androidmd5="4764d027f60d26d6a0ce9ab83ae4e599" androidlen="67524" s60v3md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v3len="67524" s60v5md5 = "4764d027f60d26d6a0ce9ab83ae4e599" s60v5len="67524" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=4764d027f60d26d6a0ce9ab83ae4e599&amp;filekey=30440201010430302e02016e040253480420343736346430323766363064323664366130636539616238336165346535393902030107c4040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500047121428a51210000006e01004fb1534808260b01e7187ea11&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=526e11310f9483b01c846659bc8b145a&amp;filekey=30440201010430302e02016e040253480420353236653131333130663934383362303163383436363539626338623134356102030107d0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26664823500052395428a51210000006e02004fb2534808260b01e7187ea1c&amp;ef=2&amp;bizid=1022" aeskey= "9e58667b45a4455a962e74f3b56b8bb0" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=78aecd16b628566768f5a9ad049fae26&amp;filekey=3043020101042f302d02016e040253480420373861656364313662363238353636373638663561396164303439666165323602020f80040d00000004627466730000000132&amp;hy=SH&amp;storeid=266648235000637f1428a51210000006e03004fb3534808260b01e7187ea2f&amp;ef=3&amp;bizid=1022" externmd5 = "c2165bdbad15d5833b83026461d6dac2" width= "300" height= "226" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> </msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:30:19.994 信息:参_信息:群（44765526058@chatroom）wxid_unv93i503c0622：我在沙发上躺着 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:42:35.209 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：@小猪 奖励我 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:42:49.483 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：@Wonwayshon 试试看哈哈 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:09.449 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 天津天气 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:25.316 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005野生的东条英鸡会捕获三角函数吗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:30.488 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：<msg><emoji fromusername="wxid_mpuerkv9oxfj22" tousername="45763396254@chatroom" type="2" idbuffer="media:0_0" md5="5027b01d2b4ae8833ba7bac46d6d03ea" len="7729" productid="" androidmd5="5027b01d2b4ae8833ba7bac46d6d03ea" androidlen="7729" s60v3md5="5027b01d2b4ae8833ba7bac46d6d03ea" s60v3len="7729" s60v5md5="5027b01d2b4ae8833ba7bac46d6d03ea" s60v5len="7729" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=5027b01d2b4ae8833ba7bac46d6d03ea&amp;filekey=3043020101042f302d02016e040253480420353032376230316432623461653838333362613762616334366436643033656102021e31040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313036313530393338323630303062303964316166316330353266373936626234306230303030303036653031303034666231&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=516a83740501f18cfccf35cd4cc1299d&amp;filekey=3043020101042f302d02016e040253480420353136613833373430353031663138636663636633356364346363313239396402021e40040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313036313530393338323630303062613835626166316330353266373936626234306230303030303036653032303034666232&amp;ef=2&amp;bizid=1022" aeskey="3d024b58ba89434faf5fde7e554643fb" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=2537b333fe1c5f753aec36e34fd02a7f&amp;filekey=3043020101042f302d02016e040253480420323533376233333366653163356637353361656333366533346664303261376602021410040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313036313530393338323630303063376236346166316330353266373936626234306230303030303036653033303034666233&amp;ef=3&amp;bizid=1022" externmd5="dabd4902d69545f8b69096fda6024e4a" width="122" height="122" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:32.918 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：<msg><emoji fromusername="wxid_mpuerkv9oxfj22" tousername="45763396254@chatroom" type="2" idbuffer="media:0_0" md5="7fa163abdbd930e05fe451287f585e60" len="1243961" productid="" androidmd5="7fa163abdbd930e05fe451287f585e60" androidlen="1243961" s60v3md5="7fa163abdbd930e05fe451287f585e60" s60v3len="1243961" s60v5md5="7fa163abdbd930e05fe451287f585e60" s60v5len="1243961" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=7fa163abdbd930e05fe451287f585e60&amp;filekey=30440201010430302e02016e0402534804203766613136336162646264393330653035666534353132383766353835653630020312fb39040d00000004627466730000000132&amp;hy=SH&amp;storeid=26392c2d4000bc6fa82e900e30000006e01004fb153481c8168e0b79e5d636&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=ffc2a0c845a3dd668ac95d6d7ba60ab5&amp;filekey=30440201010430302e02016e0402534804206666633261306338343561336464363638616339356436643762613630616235020312fb40040d00000004627466730000000132&amp;hy=SH&amp;storeid=26392c2d4000dca4c82e900e30000006e02004fb253481c8168e0b79e5d668&amp;ef=2&amp;bizid=1022" aeskey="98e5c5253fb7431aa917b55f5d804b18" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=040a81d37b76c6b55895bf229c80186f&amp;filekey=30440201010430302e02016e040253480420303430613831643337623736633662353538393562663232396338303138366602030a93a0040d00000004627466730000000132&amp;hy=SH&amp;storeid=26392c2d50000a98882e900e30000006e03004fb353481c8168e0b79e5d694&amp;ef=3&amp;bizid=1022" externmd5="51890f13218943b2105537cf2107d88f" width="256" height="256" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:42.431 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：红鼻子掉啦@Curtain.\u2005 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:43:48.281 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="45763396254@chatroom" type="1" idbuffer="media:0_0" md5="90d6ee0ecbbb71ee007351965dd1ee36" len="36877" productid="" androidmd5="90d6ee0ecbbb71ee007351965dd1ee36" androidlen="36877" s60v3md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v3len="36877" s60v5md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v5len="36877" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=90d6ee0ecbbb71ee007351965dd1ee36&amp;filekey=30440201010430302e02016e0402534804203930643665653065636262623731656530303733353139363564643165653336020300900d040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b90009dbd5cd89f4320000006e01004fb153480953103156f545628&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=ac40ae1228e78a2d2bd3513d422f3fe0&amp;filekey=30440201010430302e02016e04025348042061633430616531323238653738613264326264333531336434323266336665300203009010040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000aa1fbcd89f4320000006e02004fb253480953103156f54564b&amp;ef=2&amp;bizid=1022" aeskey="f612408c9b6e4bb99c31aab4ec8d5185" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=126092c1c9d573f34e7cb180b003f616&amp;filekey=3043020101042f302d02016e040253480420313236303932633163396435373366333465376362313830623030336636313602020b80040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000b3f1acd89f4320000006e03004fb353480953103156f54566d&amp;ef=3&amp;bizid=1022" externmd5="f9112951d4dabea91a2631398082bc17" width="155" height="155" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:02.679 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：笑死我了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:03.206 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005byd还挺聪明 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:15.161 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005当期彩票中奖号码 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:36.302 信息:参_信息:群（45763396254@chatroom）dingyunxiang：尿歪了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:38.704 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：哦 忘记把这个群配上去了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:44:39.923 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：稍等 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:45:15.918 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005你爹叫你回家 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:45:34.469 信息:参_信息:群（45763396254@chatroom）dingyunxiang：[旺柴]这么牛 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:45:36.930 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 天津天气 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:45:52.678 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005\u2005当期彩票中奖号码 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:04.363 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="52472822431@chatroom" type="1" idbuffer="media:0_0" md5="90d6ee0ecbbb71ee007351965dd1ee36" len="36877" productid="" androidmd5="90d6ee0ecbbb71ee007351965dd1ee36" androidlen="36877" s60v3md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v3len="36877" s60v5md5="90d6ee0ecbbb71ee007351965dd1ee36" s60v5len="36877" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=90d6ee0ecbbb71ee007351965dd1ee36&amp;filekey=30440201010430302e02016e0402534804203930643665653065636262623731656530303733353139363564643165653336020300900d040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b90009dbd5cd89f4320000006e01004fb153480953103156f545628&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=ac40ae1228e78a2d2bd3513d422f3fe0&amp;filekey=30440201010430302e02016e04025348042061633430616531323238653738613264326264333531336434323266336665300203009010040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000aa1fbcd89f4320000006e02004fb253480953103156f54564b&amp;ef=2&amp;bizid=1022" aeskey="f612408c9b6e4bb99c31aab4ec8d5185" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=126092c1c9d573f34e7cb180b003f616&amp;filekey=3043020101042f302d02016e040253480420313236303932633163396435373366333465376362313830623030336636313602020b80040d00000004627466730000000132&amp;hy=SH&amp;storeid=26684b9b9000b3f1acd89f4320000006e03004fb353480953103156f54566d&amp;ef=3&amp;bizid=1022" externmd5="f9112951d4dabea91a2631398082bc17" width="155" height="155" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:09.246 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：刚才重启了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:16.966 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：没接到 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:18.521 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：笑死 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:45.835 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 骂一下惊百里 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:53.892 信息:参_信息:群（45763396254@chatroom）dingyunxiang：[破涕为笑] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:56.356 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：这不比垃圾小智好玩 还能联网 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:46:57.344 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005叫一声 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:01.958 信息:参_信息:群（45763396254@chatroom）dingyunxiang：你这是添加了啥 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:15.681 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：乐 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:17.561 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="52472822431@chatroom" type="1" idbuffer="media:0_0" md5="d25d61dcb0800458225c0454533dc0de" len="208697" productid="" androidmd5="d25d61dcb0800458225c0454533dc0de" androidlen="208697" s60v3md5="d25d61dcb0800458225c0454533dc0de" s60v3len="208697" s60v5md5="d25d61dcb0800458225c0454533dc0de" s60v5len="208697" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=d25d61dcb0800458225c0454533dc0de&amp;filekey=30440201010430302e02016e04025348042064323564363164636230383030343538323235633034353435333364633064650203032f39040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000b800d0ddcca4d0000006e01004fb153482ac68b40b78288a63&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=5f6204c272334175bd111308720803e5&amp;filekey=30440201010430302e02016e04025348042035663632303463323732333334313735626431313133303837323038303365350203032f40040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000c5cad0ddcca4d0000006e02004fb253482ac68b40b78288a70&amp;ef=2&amp;bizid=1022" aeskey="bfb5b6f7ad7b412382a29b15dd481832" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=217e8a16c6048521040b091afc12ae3f&amp;filekey=3043020101042f302d02016e040253480420323137653861313663363034383532313034306230393161666331326165336602021960040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000d29190ddcca4d0000006e03004fb353482ac68b40b78288a7a&amp;ef=3&amp;bizid=1022" externmd5="326d3979073ea765d1f8f4077b8476d8" width="405" height="402" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:19.365 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：有点意思 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:21.031 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：太幽默了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:27.722 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：这都是 dify 配出来的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:29.084 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：哈哈 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:30.899 信息:参_信息:群（45763396254@chatroom）dingyunxiang：哈哈，笑死 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:35.072 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：agent 真的牛逼 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:47:44.940 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：他这些说法倒是挺翻译腔的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:03.330 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：因为 prompt 是纯英文的。。 我在最后一句让他说中问 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:06.093 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：中文 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:11.045 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：难怪 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:15.727 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005对秦始皇做个中肯的评价 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:24.757 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005展示一下英语水平 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:26.618 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：[pic=C:\Mac\Home\Documents\DaenWxHookCache\988e1d635ddc472c3df079296147e397.png,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:48:57.493 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005骂你自己 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:17.172 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005来点太君话 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:25.591 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：笑死我了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:29.262 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：他能识别出来吗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:29.283 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005评价一下毛爷爷 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:34.491 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：我操 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:35.316 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：我测 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:35.336 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：哈哈哈哈 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:53.861 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：你妈的 我得把大日本帝国加到关键词黑名单里 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:49:58.295 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：容易出问题 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:03.206 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：这小机器人整挺好 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:06.406 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：还有什么习 xx | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:15.957 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：被举报直接寄 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:19.598 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005你对毛泽东怎么看 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:23.409 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:50:26.422 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：不要问奇怪问题 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:02.626 信息:参_信息:群（45763396254@chatroom）dingyunxiang：…… | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:09.111 信息:参_信息:群（45763396254@chatroom）dingyunxiang：这要被封的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:13.535 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：好了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:17.192 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：我把审查开起来了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:23.872 信息:参_信息:群（45763396254@chatroom）dingyunxiang：[旺柴] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:37.118 信息:参_信息:自己撤回了一条发在群聊45763396254@chatroom的消息：<msg>
+    <fromusername>wxid_cl0qb7aplcut12</fromusername>
+    <scene>0</scene>
+    <commenturl></commenturl>
+    <appmsg appid="" sdkver="0">
+        <title>毛泽东这个老辣头，那可真是个传奇人物！他从小兵干到最高领袖，带领着中国人民打跑了日本鬼子，还赶走了老蒋，建立了新中国。这股拼劲儿，可不是一般人能比的。不过呢，他晚年的时候搞了些瞎折腾——大跃进、文化大革命啥的，弄得民不聊生，搞得一团糟。所以咱们说，他是个既伟大又复杂的领导者。&#x0A;有时候我也想，这老头要是能少些独裁，多听听别人的意见，或许中国的发展会更顺利些。不过管他呢，反正历史没法重来。他的功过，是一笔绕不开的账，毛爷爷既是功臣也是罪人。不服？那你去和历史掰手腕吧，哈哈！</title>
+        <des></des>
+        <action>view</action>
+        <type>57</type>
+        <showtype>0</showtype>
+        <content></content>
+        <url></url>
+        <dataurl></dataurl>
+        <lowurl></lowurl>
+        <lowdataurl></lowdataurl>
+        <recorditem></recorditem>
+        <thumburl></thumburl>
+        <messageaction></messageaction>
+        <laninfo></laninfo>
+        <refermsg>
+            <svrid>8714825366048630228</svrid>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:13
+2024-07-30 20:51:40.995 信息:参_信息:群（45763396254@chatroom）dingyunxiang：还有审查？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:51:51.091 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：对呀 不然兜不住乱问 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:52:03.663 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005来点带英笑话 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:52:23.453 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：王德发 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:53:24.022 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：太危险辣 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:53:27.634 信息:参_信息:群（45763396254@chatroom）dingyunxiang：@小猪小号\u2005叫声爸爸听听 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:53:34.458 信息:参_信息:群（45763396254@chatroom）dingyunxiang：[破涕为笑] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:53:45.179 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005展现一下东方的神秘力量 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:54:19.511 信息:参_信息:群（45763396254@chatroom）dingyunxiang：你是连得外网吧 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:54:32.088 信息:参_信息:群（45763396254@chatroom）dingyunxiang：这回答肯定不是国内的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:54:41.368 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：@小猪\u2005文明的形容一下蠢货 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:54:42.356 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：国内大模型用不得 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:55:33.753 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：现在上下文有点长 我打算限制成 10 条 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:55:52.893 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：[pic=C:\Mac\Home\Documents\DaenWxHookCache\d8a24c6a8fa86ed22a7c5148e63901f6.png,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:55:53.907 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：感觉可以 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:55:56.390 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：这东西现在是无限的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:55:57.363 信息:参_信息:群（52472822431@chatroom）wxid_5vmc9hwsdsi421：不然爆金币 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:56:03.962 信息:参_信息:群（52472822431@chatroom）wxid_5sakecjc26an21：爆大块的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:56:22.644 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：@小猪小号\u2005草@Curtain.\u2005 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:56:31.472 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="45763396254@chatroom" type="1" idbuffer="media:0_0" md5="d25d61dcb0800458225c0454533dc0de" len="208697" productid="" androidmd5="d25d61dcb0800458225c0454533dc0de" androidlen="208697" s60v3md5="d25d61dcb0800458225c0454533dc0de" s60v3len="208697" s60v5md5="d25d61dcb0800458225c0454533dc0de" s60v5len="208697" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=d25d61dcb0800458225c0454533dc0de&amp;filekey=30440201010430302e02016e04025348042064323564363164636230383030343538323235633034353435333364633064650203032f39040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000b800d0ddcca4d0000006e01004fb153482ac68b40b78288a63&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=5f6204c272334175bd111308720803e5&amp;filekey=30440201010430302e02016e04025348042035663632303463323732333334313735626431313133303837323038303365350203032f40040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000c5cad0ddcca4d0000006e02004fb253482ac68b40b78288a70&amp;ef=2&amp;bizid=1022" aeskey="bfb5b6f7ad7b412382a29b15dd481832" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=217e8a16c6048521040b091afc12ae3f&amp;filekey=3043020101042f302d02016e040253480420323137653861313663363034383532313034306230393161666331326165336602021960040d00000004627466730000000132&amp;hy=SH&amp;storeid=2630a52a6000d29190ddcca4d0000006e03004fb353482ac68b40b78288a7a&amp;ef=3&amp;bizid=1022" externmd5="326d3979073ea765d1f8f4077b8476d8" width="405" height="402" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:56:33.075 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：识别不出来 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:56:39.153 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：又没搞这个 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:03.100 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：能点歌不 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:09.279 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:13.390 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：没弄呢 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:17.342 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：我都抽空搞搞 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:21.366 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：可以联网倒是真的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:58:29.682 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 今天的新闻联播有哪些热点 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 20:59:20.000 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：还会出油管没绷住 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:00:19.840 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：<msg><emoji fromusername="wxid_mpuerkv9oxfj22" tousername="45763396254@chatroom" type="2" idbuffer="media:0_0" md5="94532e0021fe5b6107feb207118b3564" len="286848" productid="" androidmd5="94532e0021fe5b6107feb207118b3564" androidlen="286848" s60v3md5="94532e0021fe5b6107feb207118b3564" s60v3len="286848" s60v5md5="94532e0021fe5b6107feb207118b3564" s60v5len="286848" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=94532e0021fe5b6107feb207118b3564&amp;filekey=30440201010430302e02016e04025348042039343533326530303231666535623631303766656232303731313862333536340203046080040d00000004627466730000000132&amp;hy=SH&amp;storeid=2642a2fb2000b0efba52910280000006e01004fb1534827b7eb61e73064fa2&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=1e67923cf30824cb3b2fa790b20fb5bb&amp;filekey=30440201010430302e02016e04025348042031653637393233636633303832346362336232666137393062323066623562620203046090040d00000004627466730000000132&amp;hy=SH&amp;storeid=2642a2fb2000c2cc1a52910280000006e02004fb2534827b7eb61e73064fba&amp;ef=2&amp;bizid=1022" aeskey="6db523e3bbd2432faca5d8448e1f9e1c" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=100bae5c6ccf3cfe41304a8b511421ab&amp;filekey=30440201010430302e02016e040253480420313030626165356336636366336366653431333034613862353131343231616202030139f0040d00000004627466730000000132&amp;hy=SH&amp;storeid=2642a2fb2000cd534a52910280000006e03004fb3534827b7eb61e73064fcc&amp;ef=3&amp;bizid=1022" externmd5="d5a99efac026a58828564c2554356bb3" width="240" height="221" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:00:55.771 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 奥运会中国队事实金牌 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:01:05.917 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="45763396254@chatroom" type="1" idbuffer="media:0_0" md5="7d29b25676980d2cc0fce10d91441566" len="9248" productid="" androidmd5="7d29b25676980d2cc0fce10d91441566" androidlen="9248" s60v3md5="7d29b25676980d2cc0fce10d91441566" s60v3len="9248" s60v5md5="7d29b25676980d2cc0fce10d91441566" s60v5len="9248" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=7d29b25676980d2cc0fce10d91441566&amp;filekey=3043020101042f302d02016e0402535a0420376432396232353637363938306432636330666365313064393134343135363602022420040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266696652000a8e39600a3e960000006e01004fb1535a22bf20115667ef0fe&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=b32fd6c6d6c0584604a6eaf8214abf0b&amp;filekey=3043020101042f302d02016e0402535a0420623332666436633664366330353834363034613665616638323134616266306202022430040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266696652000b0e7c600a3e960000006e02004fb2535a22bf20115667ef10b&amp;ef=2&amp;bizid=1022" aeskey="66ba3edb17da42cf8f995b39273b4c4c" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=1d70d8ad6758428344383b21fa2b72a9&amp;filekey=3043020101042f302d02016e0402535a0420316437306438616436373538343238333434333833623231666132623732613902020f40040d00000004627466730000000132&amp;hy=SZ&amp;storeid=266696652000b593d600a3e960000006e03004fb3535a22bf20115667ef116&amp;ef=3&amp;bizid=1022" externmd5="a415236eee70f39c32e535029c011cad" width="233" height="246" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:01:30.684 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 奥运会中国队事实金牌 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:01:45.326 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：@小猪小号 奥运会中国队实时金牌 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:01:55.375 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：难绷 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:02:15.122 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：@小猪小号\u2005奥运会金牌榜 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:02:28.648 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：这个黑名单比较广 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:02:32.290 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：确实得开 不然太危险 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:02:37.927 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：架不住乱问啊 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:03:17.506 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\542efb0bcc08134ab693d86452e6bfbf.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:03:29.098 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：对的 就是支持联网的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:03:34.902 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：这链接点进去这么高级 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:03:38.269 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：不然他是不会知道现在是发过奥运会 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:03:47.776 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：法国 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:06:26.556 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：@小猪小号\u2005混蛋 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:06:26.564 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：权限全开，我要乱问@Curtain.\u2005 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:06:26.589 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：<msg><emoji fromusername="wxid_m6tjtodol4px22" tousername="45763396254@chatroom" type="1" idbuffer="media:0_0" md5="04a36c98ac7a6915128090fd5caf0cab" len="41241" productid="" androidmd5="04a36c98ac7a6915128090fd5caf0cab" androidlen="41241" s60v3md5="04a36c98ac7a6915128090fd5caf0cab" s60v3len="41241" s60v5md5="04a36c98ac7a6915128090fd5caf0cab" s60v5len="41241" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=04a36c98ac7a6915128090fd5caf0cab&amp;filekey=30440201010430302e02016e0402534804203034613336633938616337613639313531323830393066643563616630636162020300a119040d00000004627466730000000132&amp;hy=SH&amp;storeid=266a78f7c00066ff7e0d49e3c0000006e01004fb1534804b3a03157521bf69&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=3cdb2ce91d699eeb9c169b5bcc3f1800&amp;filekey=30440201010430302e02016e0402534804203363646232636539316436393965656239633136396235626363336631383030020300a120040d00000004627466730000000132&amp;hy=SH&amp;storeid=266a78f7c00072ae9e0d49e3c0000006e02004fb2534804b3a03157521bf8a&amp;ef=2&amp;bizid=1022" aeskey="3dc29c8db9ba417b8186152435a661c0" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=07231c0593655281b05a923d3633cbc2&amp;filekey=3043020101042f302d02016e040253480420303732333163303539333635353238316230356139323364333633336362633202020f10040d00000004627466730000000132&amp;hy=SH&amp;storeid=266a78f7c0007cefbe0d49e3c0000006e03004fb3534804b3a03157521bfb4&amp;ef=3&amp;bizid=1022" externmd5="9b64fce7e7c86589296382bdffff85ca" width="253" height="252" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:06:26.607 信息:参_信息:群（45763396254@chatroom）wxid_mpuerkv9oxfj22：[偷笑] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:06:26.638 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="45763396254@chatroom" type="2" idbuffer="media:0_0" md5="095dd5ee4a5636690c1facd14e2ed59e" len="209903" productid="" androidmd5="095dd5ee4a5636690c1facd14e2ed59e" androidlen="209903" s60v3md5="095dd5ee4a5636690c1facd14e2ed59e" s60v3len="209903" s60v5md5="095dd5ee4a5636690c1facd14e2ed59e" s60v5len="209903" cdnurl="http://vweixinf.tc.qq.com/110/20401/stodownload?m=095dd5ee4a5636690c1facd14e2ed59e&amp;filekey=30440201010430302e02016e0402535a0420303935646435656534613536333636393063316661636431346532656435396502030333ef040d00000004627466730000000132&amp;hy=SZ&amp;storeid=264722099000cdeb42c6ae9e80000006e01004fb1535a13196910b66ff88e2&amp;ef=1&amp;bizid=1022" designerid="" thumburl="" encrypturl="http://vweixinf.tc.qq.com/110/20402/stodownload?m=a1a0c50e7120fbdd137e90287213d9c2&amp;filekey=30440201010430302e02016e0402535a0420613161306335306537313230666264643133376539303238373231336439633202030333f0040d00000004627466730000000132&amp;hy=SZ&amp;storeid=264722099000da1202c6ae9e80000006e02004fb2535a13196910b66ff88f9&amp;ef=2&amp;bizid=1022" aeskey="7f893e161d5e481bb20905d1bd3482d1" externurl="http://vweixinf.tc.qq.com/110/20403/stodownload?m=368788abfb165e3a4e46a2c1b2b69af5&amp;filekey=3043020101042f302d02016e0402535a0420333638373838616266623136356533613465343661326331623262363961663502024070040d00000004627466730000000132&amp;hy=SZ&amp;storeid=264722099000e62152c6ae9e80000006e03004fb3535a13196910b66ff8916&amp;ef=3&amp;bizid=1022" externmd5="459322fbd565c530081f33cbe706cb4c" width="640" height="640" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:17:20.998 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：开开我试试 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:20:25.102 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：开不了一点 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:20:25.122 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：等会大家都封了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:20:25.144 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：你先问着 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:20:25.165 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：哈哈哈哈 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:20:25.187 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：那不问了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:21:11.193 信息:参_信息:群（45763396254@chatroom）wxid_m6tjtodol4px22：包封的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:21:11.222 信息:参_信息:群（45763396254@chatroom）wxid_5sakecjc26an21：<msg><emoji fromusername="wxid_5sakecjc26an21" tousername="45763396254@chatroom" type="1" idbuffer="media:0_0" md5="7b81d6346cdae2e8a4d0070405245f3a" len="4977" productid="" androidmd5="7b81d6346cdae2e8a4d0070405245f3a" androidlen="4977" s60v3md5="7b81d6346cdae2e8a4d0070405245f3a" s60v3len="4977" s60v5md5="7b81d6346cdae2e8a4d0070405245f3a" s60v5len="4977" cdnurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=7b81d6346cdae2e8a4d0070405245f3a&amp;filekey=30340201010420301e020201060402535a04107b81d6346cdae2e8a4d0070405245f3a02021371040d00000004627466730000000132&amp;hy=SZ&amp;storeid=263148e4b00086ec6000000000000010600004f50535a01b278809667829f8&amp;bizid=1023" designerid="" thumburl="" encrypturl="http://wxapp.tc.qq.com/262/20304/stodownload?m=bedd451a2861176c642803927e9aee9c&amp;filekey=30340201010420301e02020106040253480410bedd451a2861176c642803927e9aee9c02021380040d00000004627466730000000132&amp;hy=SH&amp;storeid=263148e4b000ac1f6000000000000010600004f50534828865b40b7255ea81&amp;bizid=1023" aeskey="c42496e2ebf2efafb4df6bab9a10993a" externurl="http://wxapp.tc.qq.com/262/20304/stodownload?m=a9ca30ad0af36f03d250b878a0518c79&amp;filekey=30340201010420301e02020106040253480410a9ca30ad0af36f03d250b878a0518c7902020e30040d00000004627466730000000132&amp;hy=SH&amp;storeid=263148e4b000c8429000000000000010600004f50534805bd2a00b7242ad20&amp;bizid=1023" externmd5="588fd18086292c3a75cf8e728184c075" width="239" height="174" tpurl="" tpauthkey="" attachedtext="" attachedtextcolor="" lensid="" emojiattr="CgnmiJHpnaDvvIE=" linkid="" desc=""></emoji><gameext type="0" content="0"></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.660 信息:参_信息:群（39134472917@chatroom）wxid_o4hciqvt0bu322：@望海 
+木质宝箱：3025个
+青铜宝箱：227个
+黄金宝箱：238个
+铂金宝箱：290个
+当前累计：41/50
+原始积分：24555分
+
+宝箱周：7.14轮(距下轮2944分)
+不开木质：6.26轮(距下轮2550分)
+不开铂金：0.74轮(距下轮894.40分)
+------------------------------
+
+发送 "帮助" 查看更多功能
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.716 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：7.14 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.741 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：@酉丨晚霞\u2005中秋搞个协力吗 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.763 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：姜维戴月光怎么样@绣虎\u2005 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.784 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：属性倒是挺好的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.804 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：但是协力诸葛也很香 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.825 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：也强 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.846 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：免控不是氪佬洗不起 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.866 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：我就是不知道拿那一条 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.925 信息:参_信息:群（39134472917@chatroom）wxid_o4hciqvt0bu322：@望海 
+木质宝箱：167个
+青铜宝箱：252个
+黄金宝箱：155个
+铂金宝箱：350个
+当前累计：107/100
+原始积分：23287分
+
+宝箱周：6.79轮(距下轮737分)
+不开木质：6.72轮(距下轮960分)
+不开铂金：0.38轮(距下轮2132.80分)
+------------------------------
+
+发送 "帮助" 查看更多功能
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:35.993 信息:参_信息:群（39134472917@chatroom）wxid_o4hciqvt0bu322：@望海 
+金鱼差缺资源（最低进场要求）
+招募令：-612个
+金砖：15.39万个
+金鱼竿：-91个
+宝箱积分：5380分
+------------------------------
+木质宝箱：0个
+青铜宝箱：252个
+黄金宝箱：155个
+铂金宝箱：350个
+原始积分：23120分
+
+宝箱周：6.74轮(距下轮904.36分)
+------------------------------
+
+发送 "帮助" 查看更多功能
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.013 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：协力机制挺好的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.034 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：拿了不算亏 啊 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.056 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：下一条应该是破抵鱼 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.075 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：母协力给月英带 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.096 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：母协力可以给姜维吧 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.115 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：我看都要转姜维了？ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.136 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：前面给姜维 后面给月英 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.158 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：嗯 母协力姜维能带 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.185 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：<?xml version="1.0"?>
+<msg>
+	<appmsg appid="" sdkver="0">
+		<title>姜维平民能玩 比吕布能好一点</title>
+		<type>57</type>
+		<appattach>
+			<cdnthumbaeskey />
+			<aeskey />
+		</appattach>
+		<refermsg>
+			<type>1</type>
+			<svrid>8882688959936240474</svrid>
+			<fromusr>39134472917@chatroom</fromusr>
+			<chatusr>wxid_rqfmjw7783se22</chatusr>
+			<displayname>一一得一</displayname>
+			<content>我看都要转姜维了？</content>
+			<msgsource>&lt;msgsource&gt;&lt;sequence_id&gt;803404971&lt;/sequence_id&gt;
+	&lt;pua&gt;1&lt;/pua&gt;
+	&lt;silence&gt;1&lt;/silence&gt;
+	&lt;membercount&gt;73&lt;/membercount&gt;
+	&lt;signature&gt;V1_7UVCdobi|v1_7UVCdobi&lt;/signature&gt;
+	&lt;tmp_node&gt;
+		&lt;publisher-id&gt;&lt;/publisher-id&gt;
+	&lt;/tmp_node&gt;
+&lt;/msgsource&gt;
+</msgsource>
+			<createtime>1722351388</createtime>
+		</refermsg>
+	</appmsg>
+	<fromusername>wxid_v5pqzcy361so22</fromusername>
+	<scene>0</scene>
+	<appinfo>
+		<version>1</version>
+		<appname></appname>
+	</appinfo>
+	<commenturl></commenturl>
+</msg>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.206 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 四攻击能扎人 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.241 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：<msg><emoji fromusername = "wxid_v5pqzcy361so22" tousername = "39134472917@chatroom" type="1" idbuffer="media:0_0" md5="b7e1abb471f03618b614778950d50700" len = "95763" productid="" androidmd5="b7e1abb471f03618b614778950d50700" androidlen="95763" s60v3md5 = "b7e1abb471f03618b614778950d50700" s60v3len="95763" s60v5md5 = "b7e1abb471f03618b614778950d50700" s60v5len="95763" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=b7e1abb471f03618b614778950d50700&amp;filekey=30440201010430302e02016e04025348042062376531616262343731663033363138623631343737383935306435303730300203017613040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668924dd0005b3a95d0412530000006e01004fb153481e035b00b7133a1d5&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=97a4f5c54194c37e15b65dd0785b6be3&amp;filekey=30440201010430302e02016e04025348042039376134663563353431393463333765313562363564643037383562366265330203017620040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668924dd0006905a5d0412530000006e02004fb253481e035b00b7133a1eb&amp;ef=2&amp;bizid=1022" aeskey= "304372f067a5458788c0a73f47d80391" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=9e12c56250f8e8a02eadf8e69b3f704b&amp;filekey=3043020101042f302d02016e040253480420396531326335363235306638653861303265616466386536396233663730346202022700040d00000004627466730000000132&amp;hy=SH&amp;storeid=2668924dd00071c185d0412530000006e03004fb353481e035b00b7133a1f6&amp;ef=3&amp;bizid=1022" externmd5 = "44bae3ba50123d3982109ea2046111d6" width= "191" height= "300" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> <gameext type="0" content="0" ></gameext></msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.263 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：免控  怒气速率姜维[微笑] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.285 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：协力 协孙策有点傻傻的[捂脸] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.304 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 过渡嘛 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.323 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：你现在拿幽影的? | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.343 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：我现在幽影表现一般 还是得拿金鱼 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.366 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：我就拿了八卦 其他都还没有拿 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.384 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：看你以后诸葛带不带协力 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.403 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：不带协力八卦有用 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.423 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：带协力八卦也没用 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.443 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：诸葛还是八卦 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.462 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：现在八卦越来越多 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.489 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：<?xml version="1.0"?>
+<msg>
+	<appmsg appid="" sdkver="0">
+		<title>不太懂</title>
+		<des />
+		<action />
+		<type>57</type>
+		<showtype>0</showtype>
+		<soundtype>0</soundtype>
+		<mediatagname />
+		<messageext />
+		<messageaction />
+		<content />
+		<contentattr>0</contentattr>
+		<url />
+		<lowurl />
+		<dataurl />
+		<lowdataurl />
+		<songalbumurl />
+		<songlyric />
+		<appattach>
+			<totallen>0</totallen>
+			<attachid />
+			<emoticonmd5></emoticonmd5>
+			<fileext />
+			<cdnthumbaeskey />
+			<aeskey></aeskey>
+		</appattach>
+		<extinfo />
+		<sourceusername />
+		<sourcedisplayname />
+		<thumburl />
+		<md5 />
+		<statextstr />
+		<directshare>0</directshare>
+		<refermsg>
+			<type>1</type>
+			<svrid>3045518460790045281</svrid>
+			<fromusr>39134472917@chatroom</fromusr>
+			<chatusr>wxid_v5pqzcy361so22</chatusr>
+			<displayname>绣虎</displayname>
+			<content>不带协力八卦有用</content>
+			<msgsource>&lt;msgsource&gt;&lt;sequence_id&gt;865390311&lt;/sequence_id&gt;
+	&lt;bizflag&gt;0&lt;/bizflag&gt;
+	&lt;pua&gt;1&lt;/pua&gt;
+	&lt;silence&gt;1&lt;/silence&gt;
+	&lt;membercount&gt;73&lt;/membercount&gt;
+	&lt;signature&gt;V1_cVWjRcVz|v1_cVWjRcVz&lt;/signature&gt;
+	&lt;tmp_node&gt;
+		&lt;publisher-id&gt;&lt;/publisher-id&gt;
+	&lt;/tmp_node&gt;
+&lt;/msgsource&gt;
+</msgsource>
+		</refermsg>
+	</appmsg>
+	<fromusername>wxid_7b3hif1dxa9h22</fromusername>
+	<scene>0</scene>
+	<appinfo>
+		<version>1</version>
+		<appname />
+	</appinfo>
+	<commenturl />
+</msg>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.507 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：现在大佬配置带诸葛都是专属鱼了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.525 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：[奸笑] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.543 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 嗯 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.562 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 姜维越来越多带八卦的诸葛了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.580 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：带贾诩越来越少 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.600 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：贾诩被\uD83D\uDC1F珠一搞不太行了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.618 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：姜维免控再一个回合一个大，谁受得了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.637 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：比司马都叼现在 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.656 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：协力甄姬 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.676 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：八卦诸葛 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.695 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 正常曹仁 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.717 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22： 主要是现在平民甄姬免控可能不够 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.735 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：平民主打爆破，盐场续航肯定是放了的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.775 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：这个好 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.794 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：哎 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.812 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：没了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.830 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：你这个不如黄金锦鲤 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.847 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：还是利刃好 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.889 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：对姜维来讲 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.918 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：<?xml version="1.0"?>
+<msg>
+	<appmsg appid="" sdkver="0">
+		<title>这个 强势一点</title>
+		<des />
+		<action />
+		<type>57</type>
+		<showtype>0</showtype>
+		<soundtype>0</soundtype>
+		<mediatagname />
+		<messageext />
+		<messageaction />
+		<content />
+		<contentattr>0</contentattr>
+		<url />
+		<lowurl />
+		<dataurl />
+		<lowdataurl />
+		<songalbumurl />
+		<songlyric />
+		<appattach>
+			<totallen>0</totallen>
+			<attachid />
+			<emoticonmd5></emoticonmd5>
+			<fileext />
+			<cdnthumbaeskey />
+			<aeskey></aeskey>
+		</appattach>
+		<extinfo />
+		<sourceusername />
+		<sourcedisplayname />
+		<thumburl />
+		<md5 />
+		<statextstr />
+		<directshare>0</directshare>
+		<refermsg>
+			<type>3</type>
+			<svrid>6522149545449953693</svrid>
+			<fromusr>wxid_7b3hif1dxa9h22</fromusr>
+			<chatusr>wxid_7b3hif1dxa9h22</chatusr>
+			<displayname>酉丨晚霞</displayname>
+			<content>&lt;msg&gt;&lt;img hdlength="0" length="80629" hevc_mid_size="80629" cdnbigimgurl="" cdnmidimgurl="3057020100044b30490201000204dedeaeee02032f5406020446ee903a020466a90144042439383561346137302d323765632d343432632d383663332d643633316230636130663533020405250a020201000405004c53da00" aeskey="70e440b8da935df031ae0536e448995a" cdnthumburl="3057020100044b30490201000204dedeaeee02032f5406020446ee903a020466a90144042439383561346137302d323765632d343432632d383663332d643633316230636130663533020405250a020201000405004c53da00" cdnthumblength="3611" cdnthumbwidth="67" cdnthumbheight="120" cdnthumbaeskey="70e440b8da935df031ae0536e448995a" encryver="1" md5="4752fcec5fad753d007f86a7a1ec05da" filekey="39134472917@chatroom21236_1722351940" uploadcontinuecount="0"/&gt;&lt;appinfo&gt;&lt;appid&gt;&lt;/appid&gt;&lt;appname&gt;&lt;/appname&gt;&lt;version&gt;0&lt;/version&gt;&lt;isforceupdate&gt;1&lt;/isforceupdate&gt;&lt;mediatagname&gt;&lt;/mediatagname&gt;&lt;messageext&gt;&lt;/messageext&gt;&lt;messageaction&gt;&lt;/messageaction&gt;&lt;/appinfo&gt;&lt;MMAsset&gt;&lt;m_assetUrlForSystem&gt;&lt;![CDATA[CAF3394D-500A-4BE0-BDA8-B4E383486FA9/L0/001]]&gt;&lt;/m_assetUrlForSystem&gt;&lt;m_isNeedOriginImage&gt;0&lt;/m_isNeedOriginImage&gt;&lt;m_isFailedFromIcloud&gt;0&lt;/m_isFailedFromIcloud&gt;&lt;m_isLoadingFromIcloud&gt;0&lt;/m_isLoadingFromIcloud&gt;&lt;/MMAsset&gt;&lt;/msg&gt;</content>
+			<msgsource>&lt;msgsource&gt;&lt;bizflag&gt;0&lt;/bizflag&gt;&lt;sec_msg_node&gt;&lt;uuid&gt;&lt;![CDATA[cd6479ec185bb334438b11443b246559_]]&gt;&lt;/uuid&gt;&lt;/sec_msg_node&gt;&lt;/msgsource&gt;</msgsource>
+		</refermsg>
+	</appmsg>
+	<fromusername>wxid_7b3hif1dxa9h22</fromusername>
+	<scene>0</scene>
+	<appinfo>
+		<version>1</version>
+		<appname />
+	</appinfo>
+	<commenturl />
+</msg>
+ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.940 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：别幻想拿珍珠憋了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.959 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：小氪佬都不敢这么想[旺柴] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:36.986 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：<msg><emoji fromusername = "wxid_rqfmjw7783se22" tousername = "39134472917@chatroom" type="2" idbuffer="media:0_0" md5="b04f53e3885ce4bfc0f6c2ba8665843c" len = "119398" productid="" androidmd5="b04f53e3885ce4bfc0f6c2ba8665843c" androidlen="119398" s60v3md5 = "b04f53e3885ce4bfc0f6c2ba8665843c" s60v3len="119398" s60v5md5 = "b04f53e3885ce4bfc0f6c2ba8665843c" s60v5len="119398" cdnurl = "http://vweixinf.tc.qq.com/110/20401/stodownload?m=b04f53e3885ce4bfc0f6c2ba8665843c&amp;filekey=30440201010430302e02016e0402534804206230346635336533383835636534626663306636633262613836363538343363020301d266040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313035323830383136353530303063646264393765353062616232663231663964303930303030303036653031303034666231&amp;ef=1&amp;bizid=1022" designerid = "" thumburl = "" encrypturl = "http://vweixinf.tc.qq.com/110/20402/stodownload?m=e5e8ca13e83fc66acaa6e2801cda8722&amp;filekey=30440201010430302e02016e0402534804206535653863613133653833666336366163616136653238303163646138373232020301d270040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313035323830383136353530303064383866343765353062616232663231663964303930303030303036653032303034666232&amp;ef=2&amp;bizid=1022" aeskey= "ae0b402940664fb69905bca745c8a6b0" externurl = "http://vweixinf.tc.qq.com/110/20403/stodownload?m=b5e5dfded31d3ec9ec84dcacbdbbf95c&amp;filekey=3043020101042f302d02016e040253480420623565356466646564333164336563396563383464636163626462626639356302022460040d00000004627466730000000131&amp;hy=SH&amp;storeid=323032313035323830383136353630303030346636343765353062616232663231663964303930303030303036653033303034666233&amp;ef=3&amp;bizid=1022" externmd5 = "a1f5f97e293f9962938142c78de7dfd8" width= "490" height= "494" tpurl= "" tpauthkey= "" attachedtext= "" attachedtextcolor= "" lensid= "" emojiattr= "" linkid= "" desc= "" ></emoji> </msg> | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.004 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：看后面出啥鱼吧  | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.021 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：@酉丨晚霞\u2005你爬塔多少了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.041 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：下一条应该破抵金鱼 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.059 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：惊涛的平替 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.075 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：之前不是有惊涛姜维嘛 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.094 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：有的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.112 信息:参_信息:群（39134472917@chatroom）wxid_rqfmjw7783se22：惊涛姜维[疑问] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.132 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：玩低速的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.151 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：现在姜维低速度表现更好一点 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.171 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：低速要求也高 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.189 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：我老区就有个推荐玩具被动4点35左右还是49的 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.208 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：@绣虎\u2005203-8 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:37.230 信息:参_信息:群（39134472917@chatroom）wxid_o4hciqvt0bu322：有些思念，怎么也放不下；有些爱，怎么也断不了；有些再遇，怎么也潇洒不来。人生的各种羁绊，不都是这样吗？斩断旧的，又有新的。晚安！ | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:38.795 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\85a74c9c4484552994fa965b8b9e2967.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:39.242 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\e947d217d295971788a860e6bc46d5b5.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:39.818 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\22cfcf84d19238612538fa568c1e64dc.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:40.373 信息:参_信息:群（39134472917@chatroom）wxid_m6tjtodol4px22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\88aecb122084fae1a1e5eac4b9dbde24.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:40.649 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：[pic=C:\Mac\Home\Documents\WeChat Files\wxid_cl0qb7aplcut12\FileStorage\MsgAttach\57ecbf99451ad5b62e18d2056e031a9d\Image\2024-07\730feb8908058b9b94813474690d8525.dat,isDecrypt=0] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:40.849 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\01db2fda071622345bcd4a76b91c8684.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 21:29:41.358 信息:参_信息:群（39134472917@chatroom）wxid_7b3hif1dxa9h22：[pic=C:\Mac\Home\Documents\DaenWxHookCache\f88c321e115ba142b622cd4220502782.jpg,isDecrypt=1] | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1
+2024-07-30 23:51:07.528 信息:参_信息:群（39134472917@chatroom）wxid_v5pqzcy361so22：@酉丨晚霞\u2005我爬到216了 | 参_响应:wxid_cl0qb7aplcut12 | 参_类型:1

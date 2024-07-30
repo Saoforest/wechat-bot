@@ -1,5 +1,6 @@
 package top.xiaolinz.wechat.bot.plugin.chat;
 
+import cn.hutool.core.text.UnicodeUtil;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import java.util.List;
@@ -16,7 +17,6 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
-import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.api.OpenAiApi;
@@ -32,7 +32,7 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties;
 import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupChatConfig;
 
 /**
- * 聊天微信消息监听
+ * 大模型对话微信消息监听
  *
  * @author huangmuhong
  * @version 1.0.0
@@ -43,7 +43,7 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.
 public class ChatWechatMessageListener
     extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageCallback> {
 
-    private static final String                    AT_REGEX     = "@[^\\s]+\\s*";
+    private static final String                    AT_REGEX     = "@.+\\p{Zs}+";
     private final        Cache<String, ChatMemory> cacheMemorys = Caffeine.newBuilder()
                                                                           .expireAfterAccess(300, TimeUnit.SECONDS)
                                                                           .build();
@@ -66,21 +66,22 @@ public class ChatWechatMessageListener
     }
 
     /**
-     * 移除@信息
+     * 处理原始消息
      *
      * @param msg 信息
      * @return {@link String }
      * @author huangmuhong
      * @date 2024/07/15
      */
-    private String removeAt(String msg) {
+    private String handleOriginalMsg(String msg) {
         // @格式为：@昵称+空格,使用正则匹配
         // 例如：@小明 你好
         // 使用 Pattern.compile() 方法编译正则表达式
+        String  deUnicodeMsg    = UnicodeUtil.toString(msg);
         Pattern compiledPattern = Pattern.compile(AT_REGEX);
 
         // 使用 Matcher 对象进行匹配和替换
-        Matcher matcher = compiledPattern.matcher(msg);
+        Matcher matcher = compiledPattern.matcher(deUnicodeMsg);
         return matcher.replaceAll("");
     }
 
@@ -91,7 +92,7 @@ public class ChatWechatMessageListener
         final ChatClient  chatClient  = createChatClient(getConfig(), roomId);
 
         // 去除文本中的@信息
-        final String msg = removeAt(messageData.getMsg());
+        final String msg = handleOriginalMsg(messageData.getMsg());
 
         // 判断是否群聊没有客户端或者没有消息
         if (chatClient == null || StrUtil.isBlank(msg) || !isAtMe(messageData)) {
@@ -101,7 +102,8 @@ public class ChatWechatMessageListener
         // 构建缓存 key
         final String cacheKey = roomId + CharPool.AT + messageData.getFinalFromWxid();
 
-        final ChatMemory chatMemory = cacheMemorys.get(cacheKey, key -> new InMemoryChatMemory());
+        final ChatMemory chatMemory =
+            cacheMemorys.get(cacheKey, key -> new CustomInMemoryChatMemory(getConfig().getMaxContextSize()));
 
         // 发送请求
         final Flux<String> flux = chatClient.prompt()

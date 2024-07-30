@@ -37,6 +37,11 @@ public class ChatMessageListenerProperties extends BaseMessageListenerProperties
     // private Long contextExpire = 300L;
 
     /**
+     * 最大上下文长度
+     */
+    private int maxContextSize = 10;
+
+    /**
      * 群组个性化配置
      */
     private List<GroupChatConfig> groupChatConfig = new ArrayList<>();

@@ -45,7 +45,11 @@ tiegangan:
             base-url: http://new-api.new-api.orb.local/
             options:
               model: "微信测试群聊机器人"
-          #              temperature: 0.7
+          - roomId: 45763396254@chatroom
+            apiKey: sk-v3tuADE9Fuzb3tJS014819A800Bb439bB6D9BcDb85696b15
+            base-url: http://new-api.new-api.orb.local/
+            options:
+              model: "微信测试群聊机器人"
 
 
 logging:
