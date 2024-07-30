@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.plugin.chat;
 
-import cn.hutool.core.text.UnicodeUtil;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import java.util.List;
@@ -13,6 +12,7 @@ import org.commonmark.parser.Parser;
 import org.commonmark.renderer.text.TextContentRenderer;
 import org.dromara.hutool.core.text.CharPool;
 import org.dromara.hutool.core.text.StrUtil;
+import org.dromara.hutool.core.text.UnicodeUtil;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;

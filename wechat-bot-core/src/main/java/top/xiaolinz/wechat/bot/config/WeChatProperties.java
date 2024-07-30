@@ -1,5 +1,7 @@
 package top.xiaolinz.wechat.bot.config;
 
+import static top.xiaolinz.wechat.bot.core.constants.Wechat.WECHAT_PROPERTIES_PREFIX;
+
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
@@ -11,10 +13,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2024/7/2
  */
 @Data
-@ConfigurationProperties(prefix = WeChatProperties.PREFIX)
+@ConfigurationProperties(prefix = WECHAT_PROPERTIES_PREFIX)
 public class WeChatProperties {
-
-    public static final String PREFIX = "tiegangan.wechat";
 
     /**
      * 微信框架 HTTP API 地址
