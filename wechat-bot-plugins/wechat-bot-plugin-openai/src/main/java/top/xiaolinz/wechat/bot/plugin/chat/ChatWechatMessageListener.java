@@ -13,7 +13,7 @@ import org.commonmark.renderer.text.TextContentRenderer;
 import org.dromara.hutool.core.text.CharPool;
 import org.dromara.hutool.core.text.StrUtil;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.PromptChatMemoryAdvisor;
+import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.memory.InMemoryChatMemory;
@@ -106,7 +106,7 @@ public class ChatWechatMessageListener
         // 发送请求
         final Flux<String> flux = chatClient.prompt()
                                             .advisors(new SimpleLoggerAdvisor(),
-                                                      new PromptChatMemoryAdvisor(chatMemory))
+                                                      new MessageChatMemoryAdvisor(chatMemory))
                                             .user(msg)
                                             .stream()
                                             .content();
