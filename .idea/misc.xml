@@ -175,6 +175,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/wechat-bot-callback/pom.xml" />
+        <option value="$PROJECT_DIR$/wechat-bot-extensions/wechat-bot-extension-group-management/pom.xml" />
         <option value="$PROJECT_DIR$/wechat-modules/pom.xml" />
       </set>
     </option>

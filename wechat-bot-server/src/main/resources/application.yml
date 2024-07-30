@@ -22,10 +22,37 @@ server:
 
 # liteflow
 liteflow:
-  rule-source: rules/flow.el.xml
+  #  rule-source: rules/flow.el.xml
   when-max-workers: 64
   main-executor-works: 128
   parallel-max-workers: 64
 tiegangan:
   wechat:
     host: http://10.105.55.3:7777
+    wxid: wxid_cl0qb7aplcut12
+  wechat-bot:
+    plugin:
+      chat:
+        group-chat-config:
+          - roomId: 44765526058@chatroom
+            apiKey: sk-v3tuADE9Fuzb3tJS014819A800Bb439bB6D9BcDb85696b15
+            base-url: http://new-api.new-api.orb.local/
+            options:
+              model: "微信测试群聊机器人"
+          #              temperature: 0.7
+          - roomId: 52472822431@chatroom
+            apiKey: sk-v3tuADE9Fuzb3tJS014819A800Bb439bB6D9BcDb85696b15
+            base-url: http://new-api.new-api.orb.local/
+            options:
+              model: "微信测试群聊机器人"
+          #              temperature: 0.7
+
+
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG

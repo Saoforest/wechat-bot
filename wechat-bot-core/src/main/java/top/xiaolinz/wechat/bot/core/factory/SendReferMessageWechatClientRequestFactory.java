@@ -1,6 +1,7 @@
 package top.xiaolinz.wechat.bot.core.factory;
 
 import org.springframework.stereotype.Service;
+import top.xiaolinz.wechat.bot.core.constants.WechatRequestTypePool;
 import top.xiaolinz.wechat.bot.core.model.client.SendReferMessageData;
 import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
 
@@ -20,12 +21,12 @@ public class SendReferMessageWechatClientRequestFactory implements WechatClientR
         messageData.setWxid((String)params[0]);
         messageData.setMsg((String)params[1]);
         messageData.setMsgId((String)params[2]);
-        return new WechatClientRequest<SendReferMessageData>().setType(TypePool.SEND_REFER_TEXT)
+        return new WechatClientRequest<SendReferMessageData>().setType(WechatRequestTypePool.SEND_REFER_TEXT)
                                                               .setData(messageData);
     }
 
     @Override
     public boolean support(String type) {
-        return TypePool.SEND_REFER_TEXT.equals(type);
+        return WechatRequestTypePool.SEND_REFER_TEXT.equals(type);
     }
 }

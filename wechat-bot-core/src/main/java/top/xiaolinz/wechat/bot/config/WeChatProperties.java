@@ -17,16 +17,15 @@ public class WeChatProperties {
     public static final String PREFIX = "tiegangan.wechat";
 
     /**
-     * 千寻框架 HTTP API 地址
+     * 微信框架 HTTP API 地址
      */
-    private String host = "http://localhost:7777";
-
+    private String host   = "http://localhost:7777";
+    /**
+     * wxid
+     */
+    private String wxid   = "";
     /**
      * 安全密钥 默认为空
      */
-    private String secret  = "";
-    /**
-     * 超时时间
-     */
-    private int    timeout = 9000;
+    private String secret = "";
 }

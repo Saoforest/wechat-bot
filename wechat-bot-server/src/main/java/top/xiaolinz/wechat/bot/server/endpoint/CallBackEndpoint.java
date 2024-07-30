@@ -1,14 +1,12 @@
 package top.xiaolinz.wechat.bot.server.endpoint;
 
-import com.yomahub.liteflow.core.FlowExecutor;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.core.callback.WechatCallbackContext;
-import top.xiaolinz.wechat.bot.core.model.WechatCallBack;
+import top.xiaolinz.wechat.bot.core.WechatMessageHandler;
+import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
 
 /**
  * 回调端点
@@ -17,24 +15,27 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBack;
  * @version 1.0.0
  * @date 2024/6/30
  */
-@Slf4j
 @RequestMapping("callback")
 @RestController
-@RequiredArgsConstructor
 public class CallBackEndpoint {
 
-    private final FlowExecutor flowExecutor;
+    private final WechatMessageHandler<WechatCallBackMessage> handler;
+
+    public CallBackEndpoint(
+        @Qualifier("callbackWechatMessageHandler") WechatMessageHandler<WechatCallBackMessage> handler) {
+        this.handler = handler;
+    }
 
     /**
-     * 回调
+     * 回调消息
      *
-     * @param callback 事件
+     * @param message 消息
      * @author huangmuhong
      * @date 2024/07/10
      */
     @PostMapping
-    public void callback(@RequestBody WechatCallBack callback) {
-        flowExecutor.execute2Future("callback", callback, WechatCallbackContext.class);
+    public void callback(@RequestBody WechatCallBackMessage message) {
+        handler.handle(message);
     }
 
 }

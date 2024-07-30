@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnyDoorSettingsState">
-    <option name="pid" value="62378" />
+    <option name="pid" value="20220" />
     <option name="cache">
       <map>
+        <entry key="top.xiaolinz.wechat.bot.core.QianXunWechatClient#buildRequestUrl#java.lang.String" value="{&quot;runNum&quot;:1,&quot;content&quot;:&quot;{\&quot;path\&quot;:\&quot;/path/abc\&quot;}&quot;,&quot;concurrent&quot;:true}" />
         <entry key="top.xiaolinz.wechat.bot.server.endpoint.CallBackEndpoint#callback#top.xiaolinz.wechat.bot.core.model.vo.WechatCallBack" value="{&quot;runNum&quot;:1,&quot;content&quot;:&quot;{\&quot;event\&quot;:10008,\&quot;wxid\&quot;:\&quot;wxid_cl0qb7aplcut12\&quot;,\&quot;data\&quot;:{\&quot;type\&quot;:\&quot;recvMsg\&quot;,\&quot;des\&quot;:\&quot;收到消息\&quot;,\&quot;data\&quot;:{\&quot;timeStamp\&quot;:\&quot;1720684802770\&quot;,\&quot;fromType\&quot;:2,\&quot;msgType\&quot;:1,\&quot;msgSource\&quot;:0,\&quot;fromWxid\&quot;:\&quot;45763396254@chatroom\&quot;,\&quot;finalFromWxid\&quot;:\&quot;wxid_mpuerkv9oxfj22\&quot;,\&quot;atWxidList\&quot;:[],\&quot;silence\&quot;:0,\&quot;membercount\&quot;:5,\&quot;signature\&quot;:\&quot;V1_bmuZj05q|v1_bmuZj05q\&quot;,\&quot;msg\&quot;:\&quot;等你哟\&quot;,\&quot;msgId\&quot;:\&quot;651575219688132627\&quot;},\&quot;timestamp\&quot;:\&quot;1720684802771\&quot;,\&quot;wxid\&quot;:\&quot;wxid_cl0qb7aplcut12\&quot;,\&quot;port\&quot;:7070,\&quot;pid\&quot;:6928,\&quot;flag\&quot;:\&quot;7888\&quot;}}&quot;,&quot;concurrent&quot;:true}" />
       </map>
     </option>

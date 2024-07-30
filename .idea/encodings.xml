@@ -11,10 +11,12 @@
     <file url="file://$PROJECT_DIR$/wechat-bot-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-core/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-extends/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-extends/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-extends/wechat-bot-extend-gpt/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-extends/wechat-bot-extend-gpt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-group-management/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-group-management/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-openai/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-openai/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-modules/src/main/java" charset="UTF-8" />

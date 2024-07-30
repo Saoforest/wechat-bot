@@ -43,7 +43,7 @@
 
     <dependency>
       <groupId>top.xiaolinz</groupId>
-      <artifactId>wechat-bot-extend-gpt</artifactId>
+      <artifactId>wechat-bot-plugin-openai</artifactId>
       <version>${revision}</version>
     </dependency>
 

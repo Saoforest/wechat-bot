@@ -11,7 +11,7 @@
   <modules>
     <module>wechat-bot-core</module>
     <module>wechat-bot-server</module>
-    <module>wechat-bot-extends</module>
+    <module>wechat-bot-plugins</module>
   </modules>
 
   <properties>
@@ -37,11 +37,11 @@
       <properties>
         <!-- 环境标识，需要与配置文件的名称相对应 -->
         <profiles.active>dev</profiles.active>
-        <nacos.server>10.72.43.106:54002</nacos.server>
+        <nacos.server>10.173.92.5:54002</nacos.server>
         <nacos.discovery.group>DEFAULT_GROUP</nacos.discovery.group>
         <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
         <nacos.username>nacos</nacos.username>
-        <nacos.password>nacos</nacos.password>
+        <nacos.password>4nycy7t_gU2atagh8D839K</nacos.password>
         <!-- <logstash.address>127.0.0.1:4560</logstash.address> -->
       </properties>
       <activation>
@@ -53,11 +53,11 @@
       <id>prod</id>
       <properties>
         <profiles.active>prod</profiles.active>
-        <nacos.server>10.72.43.106:54002</nacos.server>
+        <nacos.server>10.173.92.5:54002</nacos.server>
         <nacos.discovery.group>DEFAULT_GROUP</nacos.discovery.group>
         <nacos.config.group>DEFAULT_GROUP</nacos.config.group>
         <nacos.username>nacos</nacos.username>
-        <nacos.password>nacos</nacos.password>
+        <nacos.password>4nycy7t_gU2atagh8D839K</nacos.password>
         <!-- <logstash.address>127.0.0.1:4560</logstash.address> -->
       </properties>
     </profile>

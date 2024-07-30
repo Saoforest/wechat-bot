@@ -1,6 +1,7 @@
 package top.xiaolinz.wechat.bot.core.factory;
 
 import org.springframework.stereotype.Component;
+import top.xiaolinz.wechat.bot.core.constants.WechatRequestTypePool;
 import top.xiaolinz.wechat.bot.core.model.client.SendMessageData;
 import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
 
@@ -17,7 +18,7 @@ public class SendMessageWechatClientRequestFactory implements WechatClientReques
     @Override
     public WechatClientRequest<SendMessageData> createRequest(Object... params) {
         WechatClientRequest<SendMessageData> request = new WechatClientRequest<>();
-        request.setType(TypePool.SEND_TEXT);
+        request.setType(WechatRequestTypePool.SEND_TEXT);
         final SendMessageData messageData = new SendMessageData();
         // 从参数中获取微信id
         messageData.setWxid((String)params[0]);
@@ -31,6 +32,7 @@ public class SendMessageWechatClientRequestFactory implements WechatClientReques
 
     @Override
     public boolean support(String type) {
-        return type.equals(TypePool.SEND_TEXT) || type.equals(TypePool.SEND_IMAGE) || type.equals(TypePool.SEND_CARD);
+        return type.equals(WechatRequestTypePool.SEND_TEXT) || type.equals(WechatRequestTypePool.SEND_IMAGE)
+            || type.equals(WechatRequestTypePool.SEND_CARD);
     }
 }

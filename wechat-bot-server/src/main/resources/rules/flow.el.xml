@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <flow>
-  <chain name="callback">
-    THEN(contextHandlerNode,extensionExecuteNode)
-  </chain>
+  
 </flow>
