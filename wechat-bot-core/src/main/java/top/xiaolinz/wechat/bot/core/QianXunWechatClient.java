@@ -5,6 +5,7 @@ import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestResponse;
 import java.io.InputStream;
 import java.nio.charset.Charset;
+import java.util.List;
 import org.dromara.hutool.core.net.url.UrlBuilder;
 import org.dromara.hutool.core.net.url.UrlPath;
 import org.dromara.hutool.http.client.Request;
@@ -82,6 +83,22 @@ public class QianXunWechatClient implements WechatClient {
                                                      .addQuery("path", remoteFilePath)
                                                      .executeAsResponse();
         return result.getInputStream();
+    }
+
+    /**
+     * 发送文本切片
+     *
+     * @param message 信息
+     * @return {@link List }<{@link String }>
+     * @author huangmuhong
+     * @date 2024/07/31
+     */
+    private List<String> sendTextSlice(String message) {
+        // 由于微信文本最大只支持 2048字符，如果长度超出就分段发送
+        if (message.length() > 2048) {
+            return List.of(message.split("(?<=\\G.{" + 2048 + "})"));
+        }
+        return List.of(message);
     }
 
     /**

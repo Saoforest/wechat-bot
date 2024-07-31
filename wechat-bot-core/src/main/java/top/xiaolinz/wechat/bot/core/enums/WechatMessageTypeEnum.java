@@ -21,7 +21,7 @@ public enum WechatMessageTypeEnum {
     /**
      * 账号变动事件
      */
-    // ACCOUNT_CHANGE(10014, "账号变动事件", AccountChangeWechatMessage.class),
+    ACCOUNT_CHANGE(10014, "账号变动事件", Object.class),
     /**
      * 收到群聊消息事件
      */
@@ -33,11 +33,11 @@ public enum WechatMessageTypeEnum {
     /**
      * 自己发出消息事件
      */
-    // SELF_MESSAGE(10010, "自己发出消息事件", "selfMessageHandler"),
+    SELF_MESSAGE(10010, "自己发出消息事件", Object.class),
     /**
      * 转账事件
      */
-    // TRANSFER(10006, "转账事件", "transferHandler"),
+    TRANSFER(10006, "转账事件", Object.class),
     /**
      * 撤回事件
      */
@@ -45,15 +45,15 @@ public enum WechatMessageTypeEnum {
     /**
      * 好友请求事件
      */
-    // FRIEND_REQUEST(10011, "好友请求事件", "friendRequestHandler"),
+    FRIEND_REQUEST(10011, "好友请求事件", Object.class),
     /**
      * 支付事件
      */
-    // PAY(10007, "支付事件", "payHandler"),
+    PAY(10007, "支付事件", Object.class),
     /**
      * 授权到期事件
      */
-    // AUTH_EXPIRE(99999, "授权到期事件", "authExpireHandler"),
+    AUTH_EXPIRE(99999, "授权到期事件", Object.class),
     ;
 
     /**
