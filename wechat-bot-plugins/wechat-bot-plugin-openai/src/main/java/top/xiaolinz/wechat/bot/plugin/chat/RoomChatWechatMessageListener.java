@@ -3,7 +3,10 @@ package top.xiaolinz.wechat.bot.plugin.chat;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,7 +21,6 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
-import org.springframework.ai.chat.prompt.SystemPromptTemplate;
 import org.springframework.ai.openai.OpenAiChatModel;
 import org.springframework.ai.openai.api.OpenAiApi;
 import org.springframework.stereotype.Service;
@@ -30,7 +32,8 @@ import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
 import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage.MessageData;
 import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupChatConfig;
+import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.ChatClientConfig;
+import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupMappingConfig;
 
 /**
  * 房间聊天微信消息监听
@@ -44,10 +47,13 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.
 public class RoomChatWechatMessageListener
     extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageWechatMessage> {
 
-    private static final String                    AT_REGEX     = "@.+\\p{Zs}";
-    private final        Cache<String, ChatMemory> cacheMemorys = Caffeine.newBuilder()
-                                                                          .expireAfterAccess(300, TimeUnit.SECONDS)
-                                                                          .build();
+    private static final String                    AT_REGEX           = "@.+\\p{Zs}";
+    private static final String                    BLACK_LIST_MESSAGE = "检测到敏感词，已自动过滤！非法词：";
+    private final        Map<String, ChatClient>   chatClients        = new HashMap<>(10);
+    private final        Cache<String, ChatMemory> cacheMemorys       = Caffeine.newBuilder()
+                                                                                .expireAfterAccess(300,
+                                                                                                   TimeUnit.SECONDS)
+                                                                                .build();
 
     /**
      * 是否@我
@@ -67,39 +73,72 @@ public class RoomChatWechatMessageListener
     }
 
     /**
-     * 处理原始消息
+     * 移除我
      *
      * @param msg 信息
      * @return {@link String }
      * @author huangmuhong
      * @date 2024/07/15
      */
-    private String handleOriginalMsg(String msg) {
+    private String removeAtMe(String msg) {
         // @格式为：@昵称+空格,使用正则匹配
         // 例如：@小明 你好
         // 使用 Pattern.compile() 方法编译正则表达式
-        String  deUnicodeMsg    = UnicodeUtil.toString(msg);
         Pattern compiledPattern = Pattern.compile(AT_REGEX);
 
         // 使用 Matcher 对象进行匹配和替换
-        Matcher matcher = compiledPattern.matcher(deUnicodeMsg);
-        return matcher.replaceAll("");
+        Matcher matcher = compiledPattern.matcher(msg);
+        if (matcher.find()) {
+            return matcher.replaceFirst("");
+        }
+        return msg;
     }
 
     @Override
     public void listener(ReceiveMessageWechatMessage data, WechatClient wechatClient) {
         final MessageData messageData = data.getData();
-        final String      roomId      = messageData.getFromWxid();
-        final ChatClient  chatClient  = createChatClient(getConfig(), roomId);
+
+        if (!isAtMe(messageData)) {
+            return;
+        }
+
+        final String roomId = messageData.getFromWxid();
+        final GroupMappingConfig mappingConfig = getConfig().getGroupMappingConfig()
+                                                            .stream()
+                                                            .filter(config -> config.getRoomId()
+                                                                                    .equals(roomId))
+                                                            .findFirst()
+                                                            .orElse(null);
+        if (mappingConfig == null) {
+            return;
+        }
+
+        final ChatClient chatClient = chatClients.get(mappingConfig.getChatClientName())
+                                                 .mutate()
+                                                 .defaultSystem(mappingConfig.getPrompt())
+                                                 .build();
+
+        // 群聊没有配置 chatClient 退出
+        if (chatClient == null) {
+            return;
+        }
+
+        // 转换为字符串
+        final String originMsg = UnicodeUtil.toString(messageData.getMsg());
 
         // 去除文本中的@信息
-        final String msg = handleOriginalMsg(messageData.getMsg());
+        final String msg = removeAtMe(originMsg);
+
+        // 消息为空退出
+        if (StrUtil.isBlank(msg)) {
+            return;
+        }
 
         // 敏感词处理
-        final String desensitizationMsg = SensitiveWordHelper.replace(msg);
-
-        // 判断是否群聊没有客户端或者没有消息
-        if (chatClient == null || StrUtil.isBlank(desensitizationMsg) || !isAtMe(messageData)) {
+        final String msgId = messageData.getMsgId();
+        if (SensitiveWordHelper.contains(msg)) {
+            final List<String> sensitiveWords = SensitiveWordHelper.findAll(msg);
+            wechatClient.sendReferText(roomId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
             return;
         }
 
@@ -110,59 +149,46 @@ public class RoomChatWechatMessageListener
             cacheMemorys.get(cacheKey, key -> new CustomInMemoryChatMemory(getConfig().getMaxContextSize()));
 
         // 发送请求
-        final Flux<String> flux = chatClient.prompt()
-                                            .advisors(new SimpleLoggerAdvisor(),
-                                                      new MessageChatMemoryAdvisor(chatMemory))
-                                            .user(desensitizationMsg)
-                                            .stream()
-                                            .content();
+        final Flux<String> contentFlux = chatClient.prompt()
+                                                   .advisors(new SimpleLoggerAdvisor(),
+                                                             new MessageChatMemoryAdvisor(chatMemory))
+                                                   .user(msg)
+                                                   .stream()
+                                                   .content();
         // 阻塞获取完整结果
-        String content = flux.collectList()
-                             .block()
-                             .stream()
-                             .collect(Collectors.joining());
+        String content = contentFlux.collectList()
+                                    .block()
+                                    .stream()
+                                    .collect(Collectors.joining());
 
         // 解析 markdown
         Parser parser = Parser.builder()
                               .build();
-        // 去除 markdown 元数据等特殊字符块
         Node document = parser.parse(content);
         TextContentRenderer renderer = TextContentRenderer.builder()
                                                           .build();
         final String text = renderer.render(document);
 
         // 发送消息
-        wechatClient.sendReferText(roomId, text, messageData.getMsgId());
-    }
-
-    /**
-     * 创建聊天客户端
-     *
-     * @param config 配置
-     * @param roomId 房间id
-     * @return {@link ChatClient }
-     * @author huangmuhong
-     * @date 2024/07/30
-     */
-    private ChatClient createChatClient(ChatMessageListenerProperties config, String roomId) {
-        final GroupChatConfig groupChatConfig = config.getGroupChatConfig()
-                                                      .stream()
-                                                      .filter(group -> group.getRoomId()
-                                                                            .equals(roomId))
-                                                      .findFirst()
-                                                      .orElse(null);
-        if (groupChatConfig == null) {
-            return null;
-        }
-        final OpenAiApi       openAiApi = new OpenAiApi(groupChatConfig.getBaseUrl(), groupChatConfig.getApiKey());
-        final OpenAiChatModel chatModel = new OpenAiChatModel(openAiApi, groupChatConfig.getOptions());
-        return ChatClient.builder(chatModel)
-                         .defaultSystem(new SystemPromptTemplate(groupChatConfig.getSystemPrompt()).getTemplate())
-                         .build();
+        wechatClient.sendReferText(roomId, text, msgId);
     }
 
     @Override
     public boolean support(WechatMessageTypeEnum type) {
         return type.equals(WechatMessageTypeEnum.GROUP_MESSAGE);
+    }
+
+    @Override
+    protected void initialization() {
+        final Map<String, ChatClientConfig> configMap = getConfig().getChatClientConfig();
+        for (final Entry<String, ChatClientConfig> entry : configMap.entrySet()) {
+            final String           clientName   = entry.getKey();
+            final ChatClientConfig clientConfig = entry.getValue();
+            final OpenAiApi        openAiApi    = new OpenAiApi(clientConfig.getBaseUrl(), clientConfig.getApiKey());
+            final OpenAiChatModel  chatModel    = new OpenAiChatModel(openAiApi, clientConfig.getOptions());
+            final ChatClient chatClient = ChatClient.builder(chatModel)
+                                                    .build();
+            chatClients.put(clientName, chatClient);
+        }
     }
 }

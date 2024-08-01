@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.core.message;
 
-import org.dromara.hutool.core.lang.Assert;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContextAware;
@@ -20,7 +19,7 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
 public abstract class AbstractWechatMessageListener<T extends BaseMessageListenerProperties, R extends WechatMessage<?>>
     implements WechatMessageListener<T, R>, InitializingBean {
 
-    @Autowired(required = false)
+    @Autowired
     private T config;
 
     @Override
@@ -28,8 +27,17 @@ public abstract class AbstractWechatMessageListener<T extends BaseMessageListene
         return config;
     }
 
+    /**
+     * 初始化
+     *
+     * @author huangmuhong
+     * @date 2024/08/01
+     */
+    protected void initialization() {
+    }
+
     @Override
     public void afterPropertiesSet() throws Exception {
-        Assert.notNull(config, "config must not be null");
+        initialization();
     }
 }

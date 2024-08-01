@@ -7,6 +7,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import lombok.Data;
 import org.dromara.hutool.core.text.CharPool;
 import org.springframework.ai.openai.OpenAiChatOptions;
@@ -39,28 +40,25 @@ public class ChatMessageListenerProperties extends BaseMessageListenerProperties
     /**
      * 最大上下文长度
      */
-    private int maxContextSize = 10;
-
+    private int                           maxContextSize     = 10;
     /**
-     * 群组个性化配置
+     * 群组映射配置
      */
-    private List<GroupChatConfig> groupChatConfig = new ArrayList<>();
+    private List<GroupMappingConfig>      groupMappingConfig = new ArrayList<>();
+    /**
+     * 聊天客户端配置
+     */
+    private Map<String, ChatClientConfig> chatClientConfig;
 
     /**
-     * 群组个性化配置
+     * 聊天客户端配置
      *
      * @author huangmuhong
      * @version 1.0.0
-     * @date 2024/07/25
+     * @date 2024/08/01
      */
-
     @Data
-    public static class GroupChatConfig {
-        /**
-         * 群组 wxid
-         */
-        @NotBlank(message = "roomId 不能为空")
-        private String            roomId;
+    public static class ChatClientConfig {
         /**
          * api 密钥
          */
@@ -75,10 +73,32 @@ public class ChatMessageListenerProperties extends BaseMessageListenerProperties
          * 基本配置
          */
         @NotNull
-        private OpenAiChatOptions options      = new OpenAiChatOptions();
+        private OpenAiChatOptions options = new OpenAiChatOptions();
+    }
+
+    /**
+     * 群组个性化配置
+     *
+     * @author huangmuhong
+     * @version 1.0.0
+     * @date 2024/07/25
+     */
+
+    @Data
+    public static class GroupMappingConfig {
+        /**
+         * 群组 wxid
+         */
+        @NotBlank(message = "roomId 不能为空")
+        private String roomId;
+        /**
+         * 映射到的 chatClient
+         */
+        @NotBlank(message = "chatClientName 不能为空")
+        private String chatClientName;
         /**
          * 系统提示词
          */
-        private String            systemPrompt = "";
+        private String prompt = "";
     }
 }
