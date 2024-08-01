@@ -1,7 +1,6 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="AliAccessStaticViaInstance" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaAbstractClassShouldStartWithAbstractNaming" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaAvoidApacheBeanUtilsCopy" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -43,7 +42,9 @@
     <inspection_tool class="AlibabaPojoNoDefaultValue" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaRemoveCommentedCode" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaServiceOrDaoClassShouldEndWithImpl" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaSneakyThrowsWithoutExceptionType" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaStringConcat" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="AlibabaSwitchExpression" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaSwitchStatement" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaTestClassShouldEndWithTestNaming" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="AlibabaThreadLocalShouldRemove" enabled="true" level="WARNING" enabled_by_default="true" />
