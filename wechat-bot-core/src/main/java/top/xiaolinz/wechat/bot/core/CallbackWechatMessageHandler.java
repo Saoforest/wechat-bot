@@ -3,6 +3,7 @@ package top.xiaolinz.wechat.bot.core;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import org.dromara.hutool.core.text.StrUtil;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Service;
 import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
@@ -31,7 +32,12 @@ public class CallbackWechatMessageHandler implements WechatMessageHandler<Wechat
 
     @Override
     public void handle(WechatCallBackMessage message) {
-        listeners.parallelStream()
+        // 如果消息的发送者不是当前绑定的微信账号，则不处理
+        if (!StrUtil.equals(message.getWxid(), WechatConfigHolder.getBindWxid())) {
+            return;
+        }
+        // 异步处理消息
+        listeners.stream()
                  .filter(listener -> listener.getConfig()
                                              .isEnable())
                  .filter(listener -> listener.support(message.getEvent()))
