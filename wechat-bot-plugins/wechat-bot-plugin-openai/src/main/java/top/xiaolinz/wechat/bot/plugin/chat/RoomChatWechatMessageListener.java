@@ -2,6 +2,7 @@ package top.xiaolinz.wechat.bot.plugin.chat;
 
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
+import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
@@ -32,7 +33,7 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties;
 import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupChatConfig;
 
 /**
- * 大模型对话微信消息监听
+ * 房间聊天微信消息监听
  *
  * @author huangmuhong
  * @version 1.0.0
@@ -40,10 +41,10 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.
  * @see AbstractWechatMessageListener
  */
 @Service
-public class ChatWechatMessageListener
+public class RoomChatWechatMessageListener
     extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageWechatMessage> {
 
-    private static final String                    AT_REGEX     = "@.+\\p{Zs}+";
+    private static final String                    AT_REGEX     = "@.+\\p{Zs}";
     private final        Cache<String, ChatMemory> cacheMemorys = Caffeine.newBuilder()
                                                                           .expireAfterAccess(300, TimeUnit.SECONDS)
                                                                           .build();
@@ -94,8 +95,11 @@ public class ChatWechatMessageListener
         // 去除文本中的@信息
         final String msg = handleOriginalMsg(messageData.getMsg());
 
+        // 敏感词处理
+        final String desensitizationMsg = SensitiveWordHelper.replace(msg);
+
         // 判断是否群聊没有客户端或者没有消息
-        if (chatClient == null || StrUtil.isBlank(msg) || !isAtMe(messageData)) {
+        if (chatClient == null || StrUtil.isBlank(desensitizationMsg) || !isAtMe(messageData)) {
             return;
         }
 
@@ -109,7 +113,7 @@ public class ChatWechatMessageListener
         final Flux<String> flux = chatClient.prompt()
                                             .advisors(new SimpleLoggerAdvisor(),
                                                       new MessageChatMemoryAdvisor(chatMemory))
-                                            .user(msg)
+                                            .user(desensitizationMsg)
                                             .stream()
                                             .content();
         // 阻塞获取完整结果

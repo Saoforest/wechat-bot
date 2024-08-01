@@ -17,6 +17,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <commonmark.version>0.22.0</commonmark.version>
+    <sensitive-word.version>0.18.0</sensitive-word.version>
   </properties>
 
   <dependencies>
@@ -40,6 +41,12 @@
       <groupId>org.commonmark</groupId>
       <artifactId>commonmark</artifactId>
       <version>${commonmark.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.houbb</groupId>
+      <artifactId>sensitive-word</artifactId>
+      <version>${sensitive-word.version}</version>
     </dependency>
 
 

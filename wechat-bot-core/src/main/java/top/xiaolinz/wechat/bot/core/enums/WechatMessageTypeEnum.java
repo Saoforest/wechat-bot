@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
 import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
+import xyz.tiegangan.tools.common.response.core.exception.BusinessException;
 
 /**
  * 回调类型
@@ -85,7 +86,7 @@ public enum WechatMessageTypeEnum {
                 return value;
             }
         }
-        return null;
+        throw new BusinessException("不支持的消息监听类型");
     }
 
 }

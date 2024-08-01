@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.message;
+package top.xiaolinz.wechat.bot.core;
 
 /**
  * 微信消息处理器

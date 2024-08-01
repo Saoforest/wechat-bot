@@ -1,11 +1,11 @@
-package top.xiaolinz.wechat.bot.core.message;
+package top.xiaolinz.wechat.bot.core;
 
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.stereotype.Service;
-import top.xiaolinz.wechat.bot.core.WechatClient;
+import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
 
 /**
@@ -20,6 +20,7 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
 public class CallbackWechatMessageHandler implements WechatMessageHandler<WechatCallBackMessage> {
     private final List<AbstractWechatMessageListener> listeners;
     private final WechatClient                        wechatClient;
+    private final ExecutorService                     executor = Executors.newVirtualThreadPerTaskExecutor();
 
     public CallbackWechatMessageHandler(ObjectProvider<AbstractWechatMessageListener> listeners,
                                         WechatClient wechatClient) {
@@ -30,7 +31,6 @@ public class CallbackWechatMessageHandler implements WechatMessageHandler<Wechat
 
     @Override
     public void handle(WechatCallBackMessage message) {
-        final ExecutorService executor = Executors.newVirtualThreadPerTaskExecutor();
         listeners.parallelStream()
                  .filter(listener -> listener.getConfig()
                                              .isEnable())
