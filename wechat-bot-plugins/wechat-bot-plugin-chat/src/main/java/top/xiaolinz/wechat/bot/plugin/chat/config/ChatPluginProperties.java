@@ -60,14 +60,10 @@ public class ChatPluginProperties extends BaseMessageListenerProperties {
         @NotBlank(message = "baseUrl 不能为空")
         private String            baseUrl;
         /**
-         * 基本配置
+         * OpenAI 拓展配置
          */
         @NotNull
         private OpenAiChatOptions options = new OpenAiChatOptions();
-        /**
-         * 最大上下文
-         */
-        private Long maxContext = 10L;
     }
 
     /**
@@ -94,5 +90,9 @@ public class ChatPluginProperties extends BaseMessageListenerProperties {
          * 系统提示词
          */
         private String prompt = "";
+        /**
+         * 最大上下文长度
+         */
+        private Long maxContextLength = 10L;
     }
 }

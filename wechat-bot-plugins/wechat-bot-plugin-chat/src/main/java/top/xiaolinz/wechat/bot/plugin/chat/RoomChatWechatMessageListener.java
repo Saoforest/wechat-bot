@@ -1,5 +1,7 @@
 package top.xiaolinz.wechat.bot.plugin.chat;
 
+import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY;
+
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
@@ -12,7 +14,6 @@ import java.util.stream.Collectors;
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
 import org.commonmark.renderer.text.TextContentRenderer;
-import org.dromara.hutool.core.text.CharPool;
 import org.dromara.hutool.core.text.StrUtil;
 import org.dromara.hutool.core.text.UnicodeUtil;
 import org.springframework.ai.chat.client.ChatClient;
@@ -111,7 +112,13 @@ public class RoomChatWechatMessageListener
             return;
         }
 
-        final ChatClient chatClient = chatClientMap.get(mappingConfig.getChatClientName());
+        final ChatClient chatClient = chatClientMap.get(mappingConfig.getChatClientName())
+                                                   .mutate()
+                                                   .defaultSystem(mappingConfig.getPrompt())
+                                                   .defaultAdvisors(
+                                                       advisorSpec -> advisorSpec.param(CHAT_MEMORY_RETRIEVE_SIZE_KEY,
+                                                                                        mappingConfig.getMaxContextLength()))
+                                                   .build();
 
         // 群聊没有配置 chatClient 退出
         if (chatClient == null) {
@@ -136,10 +143,7 @@ public class RoomChatWechatMessageListener
             return;
         }
 
-        // 构建缓存 key
-        final String cacheKey = roomId + CharPool.AT + messageData.getFinalFromWxid();
-
-        final ChatMemory chatMemory = cacheMemorys.get(cacheKey, key -> new InMemoryChatMemory());
+        final ChatMemory chatMemory = cacheMemorys.get(roomId, key -> new InMemoryChatMemory());
 
         // 发送请求
         final Flux<String> contentFlux = chatClient.prompt()
