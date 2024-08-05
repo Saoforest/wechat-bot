@@ -64,6 +64,10 @@ public class ChatPluginProperties extends BaseMessageListenerProperties {
          */
         @NotNull
         private OpenAiChatOptions options = new OpenAiChatOptions();
+        /**
+         * 最大上下文
+         */
+        private Long maxContext = 10L;
     }
 
     /**

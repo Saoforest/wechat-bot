@@ -1,6 +1,7 @@
 package top.xiaolinz.wechat.bot.core.enums;
 
-import com.alibaba.fastjson2.annotation.JSONField;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
@@ -60,7 +61,7 @@ public enum WechatMessageTypeEnum {
     /**
      * 事件
      */
-    @JSONField
+    @JsonValue
     private final long     event;
     /**
      * 描述
@@ -79,7 +80,7 @@ public enum WechatMessageTypeEnum {
      * @author huangmuhong
      * @date 2024/07/05
      */
-    @JSONField(serialize = false)
+    @JsonCreator
     public static WechatMessageTypeEnum getEventType(long event) {
         for (WechatMessageTypeEnum value : WechatMessageTypeEnum.values()) {
             if (value.getEvent() == event) {

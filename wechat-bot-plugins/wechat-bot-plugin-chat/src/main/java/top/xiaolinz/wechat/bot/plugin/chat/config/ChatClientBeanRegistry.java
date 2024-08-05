@@ -1,5 +1,7 @@
 package top.xiaolinz.wechat.bot.plugin.chat.config;
 
+import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_RETRIEVE_SIZE_KEY;
+
 import java.util.Map;
 import java.util.Map.Entry;
 import lombok.RequiredArgsConstructor;
@@ -33,10 +35,13 @@ public class ChatClientBeanRegistry implements ResourceLoaderAware {
             final ChatClientConfig config    = entry.getValue();
             final OpenAiApi        openAiApi = new OpenAiApi(config.getBaseUrl(), config.getApiKey());
             final OpenAiChatModel  chatModel = new OpenAiChatModel(openAiApi, config.getOptions());
+            final ChatClient chatClient = ChatClient.builder(chatModel)
+                                                    .defaultAdvisors(
+                                                        advisorSpec -> advisorSpec.param(CHAT_MEMORY_RETRIEVE_SIZE_KEY,
+                                                                                         config.getMaxContext()))
+                                                    .build();
             final AbstractBeanDefinition definition = BeanDefinitionBuilder.genericBeanDefinition(ChatClient.class,
-                                                                                                  () -> ChatClient.builder(
-                                                                                                                      chatModel)
-                                                                                                                  .build())
+                                                                                                  () -> chatClient)
                                                                            .getBeanDefinition();
             BeanDefinitionRegistry registry = (BeanDefinitionRegistry)applicationContext.getBeanFactory();
             registry.registerBeanDefinition(name, definition);

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnyDoorSettingsState">
-    <option name="pid" value="31115" />
+    <option name="pid" value="81870" />
     <option name="cache">
       <map>
         <entry key="top.xiaolinz.wechat.bot.core.QianXunWechatClient#buildRequestUrl#java.lang.String" value="{&quot;runNum&quot;:1,&quot;content&quot;:&quot;{\&quot;path\&quot;:\&quot;/path/abc\&quot;}&quot;,&quot;concurrent&quot;:true}" />

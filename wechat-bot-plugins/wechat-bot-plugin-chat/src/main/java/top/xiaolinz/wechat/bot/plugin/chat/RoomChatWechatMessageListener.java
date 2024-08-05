@@ -111,10 +111,7 @@ public class RoomChatWechatMessageListener
             return;
         }
 
-        final ChatClient chatClient = chatClientMap.get(mappingConfig.getChatClientName())
-                                                   .mutate()
-                                                   .defaultSystem(mappingConfig.getPrompt())
-                                                   .build();
+        final ChatClient chatClient = chatClientMap.get(mappingConfig.getChatClientName());
 
         // 群聊没有配置 chatClient 退出
         if (chatClient == null) {
