@@ -2,22 +2,10 @@ spring:
   threads:
     virtual:
       enabled: true
-  ai:
-    openai:
-      base-url: http://new-api.new-api.orb.local
-      api-key: sk-v3tuADE9Fuzb3tJS014819A800Bb439bB6D9BcDb85696b15
-      chat:
-        options:
-          model: gpt-4o
-          temperature: 0.3
-    retry:
-      max-attempts: 3
-      onClientErrors: true
-      backoff:
-        max-interval: 10000
 
 server:
   port: 57001
+
 
 
 logging:

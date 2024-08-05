@@ -3,10 +3,8 @@ package top.xiaolinz.wechat.bot.plugin.chat;
 import com.github.benmanes.caffeine.cache.Cache;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.houbb.sensitive.word.core.SensitiveWordHelper;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,12 +16,10 @@ import org.dromara.hutool.core.text.CharPool;
 import org.dromara.hutool.core.text.StrUtil;
 import org.dromara.hutool.core.text.UnicodeUtil;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.MessageChatMemoryAdvisor;
+import org.springframework.ai.chat.client.advisor.PromptChatMemoryAdvisor;
 import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
-import org.springframework.ai.openai.OpenAiChatModel;
-import org.springframework.ai.openai.api.OpenAiApi;
-import org.springframework.stereotype.Service;
+import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import reactor.core.publisher.Flux;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.WechatConfigHolder;
@@ -31,9 +27,8 @@ import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
 import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
 import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage.MessageData;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.ChatClientConfig;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.GroupMappingConfig;
+import top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties;
+import top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties.GroupMappingConfig;
 
 /**
  * 房间聊天微信消息监听
@@ -43,17 +38,20 @@ import top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.
  * @date 2024/7/14
  * @see AbstractWechatMessageListener
  */
-@Service
 public class RoomChatWechatMessageListener
-    extends AbstractWechatMessageListener<ChatMessageListenerProperties, ReceiveMessageWechatMessage> {
+    extends AbstractWechatMessageListener<ChatPluginProperties, ReceiveMessageWechatMessage> {
 
-    private static final String                    AT_REGEX           = "@.+\\p{Zs}";
+    private static final String                  AT_REGEX = "@.+\\p{Zs}[1]";
     private static final String                    BLACK_LIST_MESSAGE = "检测到敏感词，已自动过滤！非法词：";
-    private final        Map<String, ChatClient>   chatClients        = new HashMap<>(10);
+    private final        Map<String, ChatClient> chatClientMap;
     private final        Cache<String, ChatMemory> cacheMemorys       = Caffeine.newBuilder()
                                                                                 .expireAfterAccess(300,
                                                                                                    TimeUnit.SECONDS)
                                                                                 .build();
+
+    public RoomChatWechatMessageListener(Map<String, ChatClient> chatClientMap) {
+        this.chatClientMap = chatClientMap;
+    }
 
     /**
      * 是否@我
@@ -73,7 +71,7 @@ public class RoomChatWechatMessageListener
     }
 
     /**
-     * 移除我
+     * 移除@我
      *
      * @param msg 信息
      * @return {@link String }
@@ -113,10 +111,10 @@ public class RoomChatWechatMessageListener
             return;
         }
 
-        final ChatClient chatClient = chatClients.get(mappingConfig.getChatClientName())
-                                                 .mutate()
-                                                 .defaultSystem(mappingConfig.getPrompt())
-                                                 .build();
+        final ChatClient chatClient = chatClientMap.get(mappingConfig.getChatClientName())
+                                                   .mutate()
+                                                   .defaultSystem(mappingConfig.getPrompt())
+                                                   .build();
 
         // 群聊没有配置 chatClient 退出
         if (chatClient == null) {
@@ -124,10 +122,9 @@ public class RoomChatWechatMessageListener
         }
 
         // 转换为字符串
-        final String originMsg = UnicodeUtil.toString(messageData.getMsg());
+        final String msg = UnicodeUtil.toString(messageData.getMsg());
 
         // 去除文本中的@信息
-        final String msg = removeAtMe(originMsg);
 
         // 消息为空退出
         if (StrUtil.isBlank(msg)) {
@@ -145,13 +142,12 @@ public class RoomChatWechatMessageListener
         // 构建缓存 key
         final String cacheKey = roomId + CharPool.AT + messageData.getFinalFromWxid();
 
-        final ChatMemory chatMemory =
-            cacheMemorys.get(cacheKey, key -> new CustomInMemoryChatMemory(getConfig().getMaxContextSize()));
+        final ChatMemory chatMemory = cacheMemorys.get(cacheKey, key -> new InMemoryChatMemory());
 
         // 发送请求
         final Flux<String> contentFlux = chatClient.prompt()
                                                    .advisors(new SimpleLoggerAdvisor(),
-                                                             new MessageChatMemoryAdvisor(chatMemory))
+                                                             new PromptChatMemoryAdvisor(chatMemory))
                                                    .user(msg)
                                                    .stream()
                                                    .content();
@@ -176,19 +172,5 @@ public class RoomChatWechatMessageListener
     @Override
     public boolean support(WechatMessageTypeEnum type) {
         return type.equals(WechatMessageTypeEnum.GROUP_MESSAGE);
-    }
-
-    @Override
-    protected void initialization() {
-        final Map<String, ChatClientConfig> configMap = getConfig().getChatClientConfig();
-        for (final Entry<String, ChatClientConfig> entry : configMap.entrySet()) {
-            final String           clientName   = entry.getKey();
-            final ChatClientConfig clientConfig = entry.getValue();
-            final OpenAiApi        openAiApi    = new OpenAiApi(clientConfig.getBaseUrl(), clientConfig.getApiKey());
-            final OpenAiChatModel  chatModel    = new OpenAiChatModel(openAiApi, clientConfig.getOptions());
-            final ChatClient chatClient = ChatClient.builder(chatModel)
-                                                    .build();
-            chatClients.put(clientName, chatClient);
-        }
     }
 }

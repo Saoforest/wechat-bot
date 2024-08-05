@@ -1,7 +1,6 @@
 package top.xiaolinz.wechat.bot.plugin.chat.config;
 
 import static top.xiaolinz.wechat.bot.core.constants.Wechat.GLOBAL_PROPERTIES_PREFIX;
-import static top.xiaolinz.wechat.bot.plugin.chat.config.ChatMessageListenerProperties.PREFIX;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -11,8 +10,6 @@ import java.util.Map;
 import lombok.Data;
 import org.dromara.hutool.core.text.CharPool;
 import org.springframework.ai.openai.OpenAiChatOptions;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
 
@@ -24,11 +21,9 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
  * @date 2024/7/25
  * @see BaseMessageListenerProperties
  */
-@Component
-@ConfigurationProperties(prefix = PREFIX)
 @Validated
 @Data
-public class ChatMessageListenerProperties extends BaseMessageListenerProperties {
+public class ChatPluginProperties extends BaseMessageListenerProperties {
 
     public static final String PREFIX = GLOBAL_PROPERTIES_PREFIX + CharPool.DOT + "chat";
 
@@ -36,11 +31,6 @@ public class ChatMessageListenerProperties extends BaseMessageListenerProperties
      * 上下文过期时间
      */
     // private Long contextExpire = 300L;
-
-    /**
-     * 最大上下文长度
-     */
-    private int                           maxContextSize     = 10;
     /**
      * 群组映射配置
      */

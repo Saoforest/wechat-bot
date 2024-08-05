@@ -2,7 +2,6 @@ package top.xiaolinz.wechat.bot.core.factory;
 
 import java.util.List;
 import org.springframework.beans.factory.ObjectProvider;
-import org.springframework.stereotype.Service;
 
 /**
  * 默认微信客户端请求工厂提供商
@@ -12,7 +11,6 @@ import org.springframework.stereotype.Service;
  * @date 2024/7/12
  * @see WechatClientRequestFactoryProvider
  */
-@Service
 public class DefaultWechatClientRequestFactoryProvider implements WechatClientRequestFactoryProvider {
 
     private final List<WechatClientRequestFactory<?>> wechatClientRequestFactories;

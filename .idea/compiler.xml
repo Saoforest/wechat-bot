@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wechat-bot-core" />
-        <module name="wechat-bot-plugin-openai" />
         <module name="wechat-bot-server" />
         <module name="wechat-bot-plugin-group-management" />
+        <module name="wechat-bot-plugin-chat" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,8 +18,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="wechat-bot" options="-parameters" />
       <module name="wechat-bot-core" options="-parameters" />
+      <module name="wechat-bot-plugin-chat" options="-parameters" />
       <module name="wechat-bot-plugin-group-management" options="-parameters" />
-      <module name="wechat-bot-plugin-openai" options="-parameters" />
       <module name="wechat-bot-plugins" options="-parameters" />
       <module name="wechat-bot-server" options="-parameters" />
     </option>

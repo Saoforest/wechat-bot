@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.core.factory;
 
-import org.springframework.stereotype.Component;
 import top.xiaolinz.wechat.bot.core.constants.WechatRequestTypePool;
 import top.xiaolinz.wechat.bot.core.model.client.SendMessageData;
 import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
@@ -13,7 +12,6 @@ import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
  * @date 2024/7/12
  * @see WechatClientRequestFactory
  */
-@Component
 public class SendMessageWechatClientRequestFactory implements WechatClientRequestFactory<SendMessageData> {
     @Override
     public WechatClientRequest<SendMessageData> createRequest(Object... params) {

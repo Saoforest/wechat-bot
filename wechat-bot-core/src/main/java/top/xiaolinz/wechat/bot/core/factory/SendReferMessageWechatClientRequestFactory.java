@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.core.factory;
 
-import org.springframework.stereotype.Service;
 import top.xiaolinz.wechat.bot.core.constants.WechatRequestTypePool;
 import top.xiaolinz.wechat.bot.core.model.client.SendReferMessageData;
 import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
@@ -13,7 +12,6 @@ import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
  * @date 2024/7/15
  * @see WechatClientRequestFactory
  */
-@Service
 public class SendReferMessageWechatClientRequestFactory implements WechatClientRequestFactory<SendReferMessageData> {
     @Override
     public WechatClientRequest<SendReferMessageData> createRequest(Object... params) {

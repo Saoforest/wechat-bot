@@ -1,6 +1,5 @@
 package top.xiaolinz.wechat.bot.core.message;
 
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContextAware;
 import top.xiaolinz.wechat.bot.core.model.message.WechatMessage;
@@ -17,7 +16,7 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
  */
 @SuppressWarnings("all")
 public abstract class AbstractWechatMessageListener<T extends BaseMessageListenerProperties, R extends WechatMessage<?>>
-    implements WechatMessageListener<T, R>, InitializingBean {
+    implements WechatMessageListener<T, R> {
 
     @Autowired
     private T config;
@@ -27,17 +26,4 @@ public abstract class AbstractWechatMessageListener<T extends BaseMessageListene
         return config;
     }
 
-    /**
-     * 初始化
-     *
-     * @author huangmuhong
-     * @date 2024/08/01
-     */
-    protected void initialization() {
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        initialization();
-    }
 }

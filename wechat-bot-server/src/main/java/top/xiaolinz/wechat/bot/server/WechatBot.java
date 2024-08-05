@@ -12,7 +12,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @date 2024/7/1
  */
 @EnableScheduling
-@SpringBootApplication(scanBasePackages = "top.xiaolinz.wechat.bot")
+@SpringBootApplication
 public class WechatBot {
     public static void main(String[] args) {
         SpringApplication.run(WechatBot.class, args);

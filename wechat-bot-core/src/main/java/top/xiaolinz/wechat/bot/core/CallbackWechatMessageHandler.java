@@ -5,7 +5,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import org.dromara.hutool.core.text.StrUtil;
 import org.springframework.beans.factory.ObjectProvider;
-import org.springframework.stereotype.Service;
 import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
 
@@ -17,7 +16,6 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
  * @date 2024/7/28
  * @see WechatMessageHandler
  */
-@Service("callbackWechatMessageHandler")
 public class CallbackWechatMessageHandler implements WechatMessageHandler<WechatCallBackMessage> {
     private final List<AbstractWechatMessageListener> listeners;
     private final WechatClient                        wechatClient;
