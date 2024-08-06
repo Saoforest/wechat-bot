@@ -166,8 +166,8 @@ public class RoomChatWechatMessageListener
                                                           .build();
         final String text = renderer.render(document);
 
-        // 发送消息
-        wechatClient.sendReferText(roomId, text, msgId);
+        // 发送消息，并替换敏感词
+        wechatClient.sendReferText(roomId, SensitiveWordHelper.replace(text), msgId);
     }
 
     @Override
