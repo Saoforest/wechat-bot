@@ -16,15 +16,23 @@ import top.xiaolinz.wechat.bot.core.enums.WechatRequestMethodEnum;
  */
 public class WechatRequestParams {
 
-    private List<String>        keys;
-    private int                 index  = 0;
     @Getter
-    private Map<String, Object> params = new HashMap<>(2);
+    private final Map<String, Object> params = new HashMap<>(2);
+    private final List<String>        keys;
+    private       int                 index  = 0;
 
     public WechatRequestParams(WechatRequestMethodEnum requestMethodEnum) {
         keys = Arrays.asList(requestMethodEnum.getParamKeys());
     }
 
+    /**
+     * 添加参数
+     *
+     * @param params 参数
+     * @return {@link WechatRequestParams }
+     * @author huangmuhong
+     * @date 2024/08/10
+     */
     public WechatRequestParams param(Object... params) {
         for (Object param : params) {
             if (index < keys.size()) {
