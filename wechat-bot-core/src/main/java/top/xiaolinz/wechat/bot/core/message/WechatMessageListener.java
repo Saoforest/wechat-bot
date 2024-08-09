@@ -1,9 +1,8 @@
 package top.xiaolinz.wechat.bot.core.message;
 
-import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.message.WechatMessage;
-import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
+import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 
 /**
  * 微信消息监听
@@ -22,7 +21,7 @@ interface WechatMessageListener<T extends BaseMessageListenerProperties, R exten
      * @author huangmuhong
      * @date 2024/07/26
      */
-    void listener(R data, WechatClient wechatClient);
+    void listener(R data);
 
     /**
      * 是否是支持的消息类型

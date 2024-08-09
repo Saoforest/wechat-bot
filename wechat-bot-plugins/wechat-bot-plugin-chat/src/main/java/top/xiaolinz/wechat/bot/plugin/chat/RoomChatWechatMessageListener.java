@@ -49,9 +49,11 @@ public class RoomChatWechatMessageListener
                                                                                 .expireAfterAccess(300,
                                                                                                    TimeUnit.SECONDS)
                                                                                 .build();
+    private final WechatClient wechatClient;
 
-    public RoomChatWechatMessageListener(Map<String, ChatClient> chatClientMap) {
+    public RoomChatWechatMessageListener(Map<String, ChatClient> chatClientMap, WechatClient wechatClient) {
         this.chatClientMap = chatClientMap;
+        this.wechatClient = wechatClient;
     }
 
     /**
@@ -94,7 +96,7 @@ public class RoomChatWechatMessageListener
     }
 
     @Override
-    public void listener(ReceiveMessageWechatMessage data, WechatClient wechatClient) {
+    public void listener(ReceiveMessageWechatMessage data) {
         final MessageData messageData = data.getData();
 
         if (!isAtMe(messageData)) {

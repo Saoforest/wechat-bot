@@ -6,7 +6,7 @@ import java.util.concurrent.Executors;
 import org.dromara.hutool.core.text.StrUtil;
 import org.springframework.beans.factory.ObjectProvider;
 import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
-import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
+import top.xiaolinz.wechat.bot.core.model.message.WechatCallBackMessage;
 
 /**
  * 回调微信信息处理程序
@@ -18,14 +18,11 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBackMessage;
  */
 public class CallbackWechatMessageHandler implements WechatMessageHandler<WechatCallBackMessage> {
     private final List<AbstractWechatMessageListener> listeners;
-    private final WechatClient                        wechatClient;
     private final ExecutorService                     executor = Executors.newVirtualThreadPerTaskExecutor();
 
-    public CallbackWechatMessageHandler(ObjectProvider<AbstractWechatMessageListener> listeners,
-                                        WechatClient wechatClient) {
+    public CallbackWechatMessageHandler(ObjectProvider<AbstractWechatMessageListener> listeners) {
         this.listeners    = listeners.orderedStream()
                                      .toList();
-        this.wechatClient = wechatClient;
     }
 
     @Override
@@ -39,6 +36,6 @@ public class CallbackWechatMessageHandler implements WechatMessageHandler<Wechat
                  .filter(listener -> listener.getConfig()
                                              .isEnable())
                  .filter(listener -> listener.support(message.getEvent()))
-                 .forEach(listener -> executor.execute(() -> listener.listener(message.getData(), wechatClient)));
+                 .forEach(listener -> executor.execute(() -> listener.listener(message.getData())));
     }
 }

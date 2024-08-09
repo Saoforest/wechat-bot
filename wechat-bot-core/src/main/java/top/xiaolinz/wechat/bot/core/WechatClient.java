@@ -1,6 +1,7 @@
 package top.xiaolinz.wechat.bot.core;
 
 import java.io.InputStream;
+import top.xiaolinz.wechat.bot.core.enums.QueryObjTypeEnum;
 
 /**
  * 微信客户端
@@ -65,7 +66,18 @@ public interface WechatClient {
      * @author huangmuhong
      * @date 2024/07/14
      */
-    Object getGroupMessages(String wxid, String type);
+    Object getGroupMessages(String wxid, QueryObjTypeEnum type);
+
+    /**
+     * 查询对象
+     *
+     * @param wxid 編號
+     * @param type 类型
+     * @return {@link Object }
+     * @author huangmuhong
+     * @date 2024/08/08
+     */
+    Object queryObj(String wxid, QueryObjTypeEnum type);
 
     /**
      * 获取文件

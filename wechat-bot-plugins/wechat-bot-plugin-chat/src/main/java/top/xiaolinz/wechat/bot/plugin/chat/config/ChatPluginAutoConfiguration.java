@@ -9,6 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
+import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.plugin.chat.RoomChatWechatMessageListener;
 
 /**
@@ -53,7 +54,8 @@ public class ChatPluginAutoConfiguration {
      */
     @DependsOn("chatClientBeanRegistry")
     @Bean
-    public RoomChatWechatMessageListener roomChatWechatMessageListener(Map<String, ChatClient> chatClientMap) {
-        return new RoomChatWechatMessageListener(chatClientMap);
+    public RoomChatWechatMessageListener roomChatWechatMessageListener(Map<String, ChatClient> chatClientMap,
+                                                                       WechatClient wechatClient) {
+        return new RoomChatWechatMessageListener(chatClientMap, wechatClient);
     }
 }

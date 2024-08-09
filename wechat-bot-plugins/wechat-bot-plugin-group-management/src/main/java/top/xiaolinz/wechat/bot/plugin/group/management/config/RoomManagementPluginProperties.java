@@ -1,7 +1,10 @@
 package top.xiaolinz.wechat.bot.plugin.group.management.config;
 
+import static top.xiaolinz.wechat.bot.core.constants.Wechat.GLOBAL_PROPERTIES_PREFIX;
+
 import lombok.Data;
-import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
+import org.dromara.hutool.core.text.CharPool;
+import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 
 /**
  * 房间管理插件属性
@@ -13,4 +16,11 @@ import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperti
  */
 @Data
 public class RoomManagementPluginProperties extends BaseMessageListenerProperties {
+
+    public static final String PREFIX = GLOBAL_PROPERTIES_PREFIX + CharPool.DOT + "group-management";
+
+    /**
+     * 撤回配置
+     */
+    private WithdrawalProperties withdrawalConfig = new WithdrawalProperties();
 }

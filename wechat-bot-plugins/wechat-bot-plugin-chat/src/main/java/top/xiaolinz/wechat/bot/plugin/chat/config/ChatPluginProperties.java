@@ -11,7 +11,7 @@ import lombok.Data;
 import org.dromara.hutool.core.text.CharPool;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.validation.annotation.Validated;
-import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
+import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 
 /**
  * 聊天微信扩展配置

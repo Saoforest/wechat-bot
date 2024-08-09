@@ -10,10 +10,12 @@ import org.dromara.hutool.core.net.url.UrlBuilder;
 import org.dromara.hutool.core.net.url.UrlPath;
 import org.dromara.hutool.http.client.Request;
 import org.springframework.stereotype.Service;
-import top.xiaolinz.wechat.bot.core.constants.WechatRequestTypePool;
+import top.xiaolinz.wechat.bot.core.enums.QueryObjTypeEnum;
+import top.xiaolinz.wechat.bot.core.enums.WechatRequestMethodEnum;
+import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestContext;
 import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestFactory;
-import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestFactoryProvider;
-import top.xiaolinz.wechat.bot.core.model.client.WechatClientRequest;
+import top.xiaolinz.wechat.bot.core.factory.WechatRequestParams;
+import top.xiaolinz.wechat.bot.core.model.trans.WechatClientRequestTrans;
 
 /**
  * 千寻微信
@@ -41,39 +43,42 @@ public class QianXunWechatClient implements WechatClient {
      * 千寻得到文件http路径
      */
     private static final String                             QIANXUN_GET_FILE_HTTP_PATH = "/file";
-    private final        WechatClientRequestFactoryProvider provider;
     private final        ForestConfiguration                forestClient;
 
-    public QianXunWechatClient(WechatClientRequestFactoryProvider wechatClientRequestFactoryProvider,
+    public QianXunWechatClient(
                                ForestConfiguration forestClient) {
-        provider          = wechatClientRequestFactoryProvider;
         this.forestClient = forestClient;
     }
 
     @Override
     public void sendText(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestTypePool.SEND_TEXT, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_TEXT, wxid, content);
     }
 
     @Override
     public void sendImage(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestTypePool.SEND_IMAGE, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_IMAGE, wxid, content);
     }
 
     @Override
     public void sendCard(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestTypePool.SEND_CARD, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_CARD, wxid, content);
     }
 
     @Override
     public void sendReferText(String wxid, String content, String referWxid) {
-        doExecuteQianXunPost(WechatRequestTypePool.SEND_REFER_TEXT, wxid, content, referWxid);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_REFER_TEXT, referWxid, wxid, content);
     }
 
     @Override
-    public Object getGroupMessages(String wxid, String type) {
-        final ForestResponse<?> result = doExecuteQianXunPost(WechatRequestTypePool.QUERY_GROUP, wxid, type);
+    public Object getGroupMessages(String wxid, QueryObjTypeEnum type) {
+        final ForestResponse<?> result = doExecuteQianXunPost(WechatRequestMethodEnum.QUERY_GROUP_MESSAGES, wxid, type);
         return result.get(JSONObject.class);
+    }
+
+    @Override
+    public Object queryObj(String wxid, QueryObjTypeEnum type) {
+        return null;
     }
 
     @Override
@@ -110,9 +115,13 @@ public class QianXunWechatClient implements WechatClient {
      * @author huangmuhong
      * @date 2024/07/14
      */
-    private ForestResponse<?> doExecuteQianXunPost(String type, Object... params) {
-        final WechatClientRequestFactory<?> factory       = provider.getWechatClientRequestFactory(type);
-        final WechatClientRequest<?>        clientRequest = factory.createRequest(params);
+    private ForestResponse<?> doExecuteQianXunPost(WechatRequestMethodEnum type, Object... params) {
+        final WechatRequestParams requestParams = new WechatRequestParams(type).param(params);
+        final WechatClientRequestContext context = WechatClientRequestContext.builder()
+                                                                             .requestMethod(type)
+                                                                             .params(requestParams)
+                                                                             .build();
+        final WechatClientRequestTrans clientRequest = WechatClientRequestFactory.createRequest(context);
         return forestClient.post(buildRequestUrl(QIANXUN_POST_HTTP_PATH))
                            .addHeader(WXID_HEADER, WechatConfigHolder.getBindWxid())
                            .addHeader(SECRET_HEADER, WechatConfigHolder.getSecret())

@@ -13,11 +13,6 @@ import top.xiaolinz.wechat.bot.core.CallbackWechatMessageHandler;
 import top.xiaolinz.wechat.bot.core.QianXunWechatClient;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.WechatConfigHolder;
-import top.xiaolinz.wechat.bot.core.factory.DefaultWechatClientRequestFactoryProvider;
-import top.xiaolinz.wechat.bot.core.factory.SendMessageWechatClientRequestFactory;
-import top.xiaolinz.wechat.bot.core.factory.SendReferMessageWechatClientRequestFactory;
-import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestFactory;
-import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestFactoryProvider;
 import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 
 /**
@@ -37,24 +32,22 @@ public class WeChatConfiguration implements SmartInitializingSingleton {
     /**
      * 微信客户端
      *
-     * @param wechatClientRequestFactoryProvider 微信客户端请求工厂提供商
-     * @param forestClient                       森林客户
+     * @param forestClient 森林客户
      * @return {@link WechatClient }
      * @author huangmuhong
      * @date 2024/08/04
      */
     @Bean
     @ConditionalOnMissingBean
-    public WechatClient wechatClient(WechatClientRequestFactoryProvider wechatClientRequestFactoryProvider,
+    public WechatClient wechatClient(
                                      ForestConfiguration forestClient) {
-        return new QianXunWechatClient(wechatClientRequestFactoryProvider, forestClient);
+        return new QianXunWechatClient(forestClient);
     }
 
     /**
      * 回调微信信息处理程序
      *
      * @param messageListeners 消息监听器
-     * @param wechatClient     微信客户端
      * @return {@link CallbackWechatMessageHandler }
      * @author huangmuhong
      * @date 2024/08/04
@@ -62,43 +55,8 @@ public class WeChatConfiguration implements SmartInitializingSingleton {
     @Bean("callbackWechatMessageHandler")
     @ConditionalOnMissingBean
     public CallbackWechatMessageHandler callbackWechatMessageHandler(
-        ObjectProvider<AbstractWechatMessageListener> messageListeners, WechatClient wechatClient) {
-        return new CallbackWechatMessageHandler(messageListeners, wechatClient);
-    }
-
-    /**
-     * @return {@link SendMessageWechatClientRequestFactory }
-     * @author huangmuhong
-     * @date 2024/08/04
-     */
-    @Bean
-    public SendMessageWechatClientRequestFactory sendMessageWechatClientRequestFactory() {
-        return new SendMessageWechatClientRequestFactory();
-    }
-
-    /**
-     * @return {@link SendReferMessageWechatClientRequestFactory }
-     * @author huangmuhong
-     * @date 2024/08/04
-     */
-    @Bean
-    public SendReferMessageWechatClientRequestFactory sendReferMessageWechatClientRequestFactory() {
-        return new SendReferMessageWechatClientRequestFactory();
-    }
-
-    /**
-     * 微信客户端请求工厂提供商
-     *
-     * @param provider 提供者
-     * @return {@link WechatClientRequestFactoryProvider }
-     * @author huangmuhong
-     * @date 2024/08/04
-     */
-    @Bean
-    @ConditionalOnMissingBean
-    public WechatClientRequestFactoryProvider wechatClientRequestFactoryProvider(
-        ObjectProvider<WechatClientRequestFactory<?>> provider) {
-        return new DefaultWechatClientRequestFactoryProvider(provider);
+        ObjectProvider<AbstractWechatMessageListener> messageListeners) {
+        return new CallbackWechatMessageHandler(messageListeners);
     }
 
     @Override

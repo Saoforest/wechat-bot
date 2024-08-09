@@ -3,7 +3,7 @@ package top.xiaolinz.wechat.bot.core.message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContextAware;
 import top.xiaolinz.wechat.bot.core.model.message.WechatMessage;
-import top.xiaolinz.wechat.bot.core.model.properties.BaseMessageListenerProperties;
+import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 
 /**
  * 抽象微信回调

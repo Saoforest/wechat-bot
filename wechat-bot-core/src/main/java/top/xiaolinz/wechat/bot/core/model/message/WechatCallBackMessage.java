@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.model;
+package top.xiaolinz.wechat.bot.core.model.message;
 
 import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;

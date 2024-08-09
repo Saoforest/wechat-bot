@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.model.properties;
+package top.xiaolinz.wechat.bot.core.properties;
 
 import lombok.Data;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
