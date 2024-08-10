@@ -33,7 +33,7 @@ public enum WechatRequestMethodEnum {
     /**
      * 查询群组消息
      */
-    QUERY_GROUP_MESSAGES("queryGroup", "获取群组消息", new String[] {"wxid", "type"}),
+    QUERY_GROUP("queryGroup", "获取群组消息", new String[] {"wxid", "type"}),
     /**
      * 查询对象
      */

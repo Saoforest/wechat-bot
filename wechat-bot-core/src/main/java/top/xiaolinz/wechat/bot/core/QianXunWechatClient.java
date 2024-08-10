@@ -1,11 +1,10 @@
 package top.xiaolinz.wechat.bot.core;
 
-import com.alibaba.fastjson2.JSONObject;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestResponse;
+import com.dtflys.forest.utils.TypeReference;
 import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.util.List;
 import org.dromara.hutool.core.net.url.UrlBuilder;
 import org.dromara.hutool.core.net.url.UrlPath;
 import org.dromara.hutool.http.client.Request;
@@ -15,7 +14,10 @@ import top.xiaolinz.wechat.bot.core.enums.WechatRequestMethodEnum;
 import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestContext;
 import top.xiaolinz.wechat.bot.core.factory.WechatClientRequestFactory;
 import top.xiaolinz.wechat.bot.core.factory.WechatRequestParams;
-import top.xiaolinz.wechat.bot.core.model.trans.WechatClientRequestTrans;
+import top.xiaolinz.wechat.bot.core.model.dto.QueryGroupResultTransfer;
+import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
+import top.xiaolinz.wechat.bot.core.model.dto.WechatClientRequestTransfer;
+import top.xiaolinz.wechat.bot.core.model.dto.WechatClientResponseTransfer;
 
 /**
  * 千寻微信
@@ -52,33 +54,34 @@ public class QianXunWechatClient implements WechatClient {
 
     @Override
     public void sendText(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_TEXT, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_TEXT, Object.class, wxid, content);
     }
 
     @Override
-    public void sendImage(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_IMAGE, wxid, content);
+    public void sendImage(String wxid, String path, String fileName) {
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_IMAGE, Object.class, wxid, path, fileName);
     }
 
     @Override
     public void sendCard(String wxid, String content) {
-        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_CARD, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_CARD, Object.class, wxid, content);
     }
 
     @Override
     public void sendReferText(String wxid, String content, String referWxid) {
-        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_REFER_TEXT, referWxid, wxid, content);
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_REFER_TEXT, Object.class, referWxid, wxid, content);
     }
 
     @Override
-    public Object getGroupMessages(String wxid, QueryObjTypeEnum type) {
-        final ForestResponse<?> result = doExecuteQianXunPost(WechatRequestMethodEnum.QUERY_GROUP_MESSAGES, wxid, type);
-        return result.get(JSONObject.class);
+    public QueryGroupResultTransfer queryGroup(String wxid, QueryObjTypeEnum type) {
+        return doExecuteQianXunPost(WechatRequestMethodEnum.QUERY_GROUP, QueryGroupResultTransfer.class, wxid,
+                                    type).getResult();
     }
 
     @Override
-    public Object queryObj(String wxid, QueryObjTypeEnum type) {
-        return null;
+    public QueryObjResultTransfer queryObj(String wxid, QueryObjTypeEnum type) {
+        return doExecuteQianXunPost(WechatRequestMethodEnum.QUERY_OBJ, QueryObjResultTransfer.class, wxid,
+                                    type).getResult();
     }
 
     @Override
@@ -91,22 +94,6 @@ public class QianXunWechatClient implements WechatClient {
     }
 
     /**
-     * 发送文本切片
-     *
-     * @param message 信息
-     * @return {@link List }<{@link String }>
-     * @author huangmuhong
-     * @date 2024/07/31
-     */
-    private List<String> sendTextSlice(String message) {
-        // 由于微信文本最大只支持 2048字符，如果长度超出就分段发送
-        if (message.length() > 2048) {
-            return List.of(message.split("(?<=\\G.{" + 2048 + "})"));
-        }
-        return List.of(message);
-    }
-
-    /**
      * 执行千寻框架 post 请求
      *
      * @param type   请求类型
@@ -115,19 +102,22 @@ public class QianXunWechatClient implements WechatClient {
      * @author huangmuhong
      * @date 2024/07/14
      */
-    private ForestResponse<?> doExecuteQianXunPost(WechatRequestMethodEnum type, Object... params) {
+    private <T> WechatClientResponseTransfer<T> doExecuteQianXunPost(WechatRequestMethodEnum type, Class<T> resultClass,
+                                                                     Object... params) {
         final WechatRequestParams requestParams = new WechatRequestParams(type).param(params);
         final WechatClientRequestContext context = WechatClientRequestContext.builder()
                                                                              .requestMethod(type)
                                                                              .params(requestParams)
                                                                              .build();
-        final WechatClientRequestTrans clientRequest = WechatClientRequestFactory.createRequest(context);
+        final WechatClientRequestTransfer clientRequest = WechatClientRequestFactory.createRequest(context);
         return forestClient.post(buildRequestUrl(QIANXUN_POST_HTTP_PATH))
                            .addHeader(WXID_HEADER, WechatConfigHolder.getBindWxid())
                            .addHeader(SECRET_HEADER, WechatConfigHolder.getSecret())
                            .addBody(clientRequest)
                            .contentTypeJson()
-                           .executeAsResponse();
+                           .executeAsResponse()
+                           .get(new TypeReference<>() {
+                           });
     }
 
     /**

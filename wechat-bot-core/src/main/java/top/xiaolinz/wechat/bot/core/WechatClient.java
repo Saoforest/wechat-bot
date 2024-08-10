@@ -2,6 +2,8 @@ package top.xiaolinz.wechat.bot.core;
 
 import java.io.InputStream;
 import top.xiaolinz.wechat.bot.core.enums.QueryObjTypeEnum;
+import top.xiaolinz.wechat.bot.core.model.dto.QueryGroupResultTransfer;
+import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
 
 /**
  * 微信客户端
@@ -29,12 +31,13 @@ public interface WechatClient {
     /**
      * 发送图片信息
      *
-     * @param wxid    微信 id
-     * @param content 内容
+     * @param wxid     微信 id
+     * @param path     路径
+     * @param fileName 文件名
      * @author huangmuhong
      * @date 2024/07/14
      */
-    void sendImage(String wxid, String content);
+    void sendImage(String wxid, String path, String fileName);
 
     /**
      * 发送卡片
@@ -66,7 +69,7 @@ public interface WechatClient {
      * @author huangmuhong
      * @date 2024/07/14
      */
-    Object getGroupMessages(String wxid, QueryObjTypeEnum type);
+    QueryGroupResultTransfer queryGroup(String wxid, QueryObjTypeEnum type);
 
     /**
      * 查询对象
@@ -77,7 +80,7 @@ public interface WechatClient {
      * @author huangmuhong
      * @date 2024/08/08
      */
-    Object queryObj(String wxid, QueryObjTypeEnum type);
+    QueryObjResultTransfer queryObj(String wxid, QueryObjTypeEnum type);
 
     /**
      * 获取文件

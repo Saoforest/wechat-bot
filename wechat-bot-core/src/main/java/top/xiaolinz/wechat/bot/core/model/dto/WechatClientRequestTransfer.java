@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.model.trans;
+package top.xiaolinz.wechat.bot.core.model.dto;
 
 import java.util.Map;
 import lombok.Data;
@@ -14,7 +14,7 @@ import top.xiaolinz.wechat.bot.core.enums.WechatRequestMethodEnum;
  */
 @Accessors(chain = true)
 @Data
-public class WechatClientRequestTrans {
+public class WechatClientRequestTransfer {
 
     /**
      * 类型

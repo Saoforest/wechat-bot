@@ -2,7 +2,7 @@
 
 // YApi QuickType插件生成，具体参考文档:https://plugins.jetbrains.com/plugin/18847-yapi-quicktype/documentation
 
-package top.xiaolinz.wechat.bot.core.model.trans;
+package top.xiaolinz.wechat.bot.core.model.dto;
 
 import lombok.Data;
 
@@ -14,9 +14,9 @@ import lombok.Data;
  * @date 2024/07/04
  */
 @Data
-public class WechatClientResponseTrans {
+public class WechatClientResponseTransfer<T> {
     private String msg;
-    private String result;
+    private T result;
     private long   code;
     private String flag;
     private long   port;
