@@ -2,8 +2,8 @@ package top.xiaolinz.wechat.bot.config;
 
 import com.dtflys.forest.config.ForestConfiguration;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.ObjectProvider;
-import org.springframework.beans.factory.SmartInitializingSingleton;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.context.properties.PropertyMapper;
@@ -25,7 +25,7 @@ import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 @RequiredArgsConstructor
 @Configuration(proxyBeanMethods = false)
 @EnableConfigurationProperties(WeChatProperties.class)
-public class WeChatConfiguration implements SmartInitializingSingleton {
+public class WeChatConfiguration implements InitializingBean {
 
     private final WeChatProperties weChatProperties;
 
@@ -60,7 +60,7 @@ public class WeChatConfiguration implements SmartInitializingSingleton {
     }
 
     @Override
-    public void afterSingletonsInstantiated() {
+    public void afterPropertiesSet() throws Exception {
         final PropertyMapper mapper = PropertyMapper.get()
                                                     .alwaysApplyingWhenNonNull();
         mapper.from(weChatProperties::getWxid)

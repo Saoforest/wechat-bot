@@ -9,7 +9,7 @@
     <version>${revision}</version>
   </parent>
 
-  <artifactId>wechat-bot-plugin-group-management</artifactId>
+  <artifactId>wechat-bot-plugin-room-messages</artifactId>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>

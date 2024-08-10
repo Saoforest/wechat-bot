@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.plugin.group.management.config;
+package top.xiaolinz.wechat.bot.plugin.room.messages.config;
 
 import lombok.Data;
 
@@ -13,9 +13,9 @@ import lombok.Data;
 public class WithdrawalProperties {
 
     /**
-     * 撤回消息模板
+     * 撤回文本消息模板
      */
-    private String withdrawalTextMessageTemplate  = "监听到文本类型撤回信息，发送人：【#userInfo.name】,消息内容：【#msg】";
+    private String withdrawalTextMessageTemplate = "监听到文本类型撤回信息，发送人：【#userInfo.remark】,消息内容：【#msg】";
     /**
      * 其他撤回消息模板
      */

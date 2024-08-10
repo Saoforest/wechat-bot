@@ -1,10 +1,12 @@
-package top.xiaolinz.wechat.bot.plugin.group.management.config;
+package top.xiaolinz.wechat.bot.plugin.room.messages.config;
 
-import static top.xiaolinz.wechat.bot.plugin.group.management.config.RoomManagementPluginProperties.PREFIX;
+import static top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomManagementPluginProperties.PREFIX;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import top.xiaolinz.wechat.bot.core.WechatClient;
+import top.xiaolinz.wechat.bot.plugin.room.messages.WithdrawalWechatMessageListener;
 
 /**
  * 房间管理自动配置
@@ -27,6 +29,11 @@ public class RoomManagementAutoConfiguration {
     @ConfigurationProperties(prefix = PREFIX)
     public RoomManagementPluginProperties roomManagementPluginProperties() {
         return new RoomManagementPluginProperties();
+    }
+
+    @Bean
+    public WithdrawalWechatMessageListener withdrawalWechatMessageListener(WechatClient wechatClient) {
+        return new WithdrawalWechatMessageListener(wechatClient);
     }
 
 }

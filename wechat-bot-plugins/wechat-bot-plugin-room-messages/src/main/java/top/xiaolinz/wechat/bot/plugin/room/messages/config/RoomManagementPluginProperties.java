@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.plugin.group.management.config;
+package top.xiaolinz.wechat.bot.plugin.room.messages.config;
 
 import static top.xiaolinz.wechat.bot.core.constants.Wechat.GLOBAL_PROPERTIES_PREFIX;
 
