@@ -4,6 +4,7 @@
 
 package top.xiaolinz.wechat.bot.core.model.dto;
 
+import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;
 
 /**
@@ -14,14 +15,26 @@ import lombok.Data;
  * @date 2024/07/04
  */
 @Data
-public class WechatClientResponseTransfer<T> {
-    private String msg;
-    private T result;
-    private long   code;
+public class WechatClientResponseTransfer {
+    private String     msg;
+    private JSONObject result;
+    private long       code;
     private String flag;
     private long   port;
     private long   pid;
     private String wxid;
     private String timestamp;
+
+    /**
+     * 获取结果
+     *
+     * @param resultClass 结果类
+     * @return {@link T }
+     * @author huangmuhong
+     * @date 2024/08/10
+     */
+    public <T> T getResult(Class<T> resultClass) {
+        return result.to(resultClass);
+    }
 
 }

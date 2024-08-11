@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import xyz.tiegangan.tools.common.response.core.exception.BusinessException;
 
 /**
  * msg 内容类型枚举
@@ -83,6 +84,6 @@ public enum MessageContentTypeEnum {
                 return value;
             }
         }
-        return null;
+        throw new BusinessException("不支持的聊天内容消息体类型");
     }
 }

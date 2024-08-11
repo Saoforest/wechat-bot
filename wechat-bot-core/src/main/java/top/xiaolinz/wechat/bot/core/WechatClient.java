@@ -1,7 +1,7 @@
 package top.xiaolinz.wechat.bot.core;
 
 import java.io.InputStream;
-import top.xiaolinz.wechat.bot.core.enums.QueryObjTypeEnum;
+import top.xiaolinz.wechat.bot.core.enums.QueryDataTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.dto.QueryGroupResultTransfer;
 import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
 
@@ -69,7 +69,7 @@ public interface WechatClient {
      * @author huangmuhong
      * @date 2024/07/14
      */
-    QueryGroupResultTransfer queryGroup(String wxid, QueryObjTypeEnum type);
+    QueryGroupResultTransfer queryGroup(String wxid, QueryDataTypeEnum type);
 
     /**
      * 查询对象
@@ -80,7 +80,7 @@ public interface WechatClient {
      * @author huangmuhong
      * @date 2024/08/08
      */
-    QueryObjResultTransfer queryObj(String wxid, QueryObjTypeEnum type);
+    QueryObjResultTransfer queryObj(String wxid, QueryDataTypeEnum type);
 
     /**
      * 获取文件

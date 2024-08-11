@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * 查询对象类型枚举
+ * 查询数据类型枚举
  *
  * @author huangmuhong
  * @version 1.0.0
@@ -14,7 +14,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum QueryObjTypeEnum {
+public enum QueryDataTypeEnum {
 
     /**
      * 从缓存中获取

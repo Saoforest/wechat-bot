@@ -16,3 +16,5 @@ logging:
           chat:
             client:
               advisor: DEBUG
+forest:
+  log-response-content: true

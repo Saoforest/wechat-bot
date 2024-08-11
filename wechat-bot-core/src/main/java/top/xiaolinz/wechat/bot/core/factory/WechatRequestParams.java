@@ -33,7 +33,7 @@ public class WechatRequestParams {
      * @author huangmuhong
      * @date 2024/08/10
      */
-    public WechatRequestParams param(Object... params) {
+    public WechatRequestParams params(Object... params) {
         for (Object param : params) {
             if (index < keys.size()) {
                 this.params.put(keys.get(index++), param);

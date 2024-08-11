@@ -129,9 +129,7 @@ public class RoomChatWechatMessageListener
 
         // 转换为字符串
         final String msg = UnicodeUtil.toString(messageData.getMsg());
-
-        // 去除文本中的@信息
-
+        
         // 消息为空退出
         if (StrUtil.isBlank(msg)) {
             return;

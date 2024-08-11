@@ -17,7 +17,7 @@ public enum WechatRequestMethodEnum {
     /**
      * 发送文本
      */
-    SEND_TEXT("sentText", "发送文本", new String[] {"wxid", "msg"}),
+    SEND_TEXT("sendText", "发送文本", new String[] {"wxid", "msg"}),
     /**
      * 发送图片
      */
