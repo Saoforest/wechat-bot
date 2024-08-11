@@ -1,6 +1,6 @@
 package top.xiaolinz.wechat.bot.plugin.room.messages.config;
 
-import static top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomManagementPluginProperties.PREFIX;
+import static top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties.PREFIX;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -16,19 +16,19 @@ import top.xiaolinz.wechat.bot.plugin.room.messages.WithdrawalWechatMessageListe
  * @date 2024/8/8
  */
 @AutoConfiguration
-public class RoomManagementAutoConfiguration {
+public class RoomMessagesAutoConfiguration {
 
     /**
      * 房间管理插件属性
      *
-     * @return {@link RoomManagementPluginProperties }
+     * @return {@link RoomMessagesPluginProperties }
      * @author huangmuhong
      * @date 2024/08/08
      */
     @Bean
     @ConfigurationProperties(prefix = PREFIX)
-    public RoomManagementPluginProperties roomManagementPluginProperties() {
-        return new RoomManagementPluginProperties();
+    public RoomMessagesPluginProperties roomManagementPluginProperties() {
+        return new RoomMessagesPluginProperties();
     }
 
     @Bean

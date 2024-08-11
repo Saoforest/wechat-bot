@@ -15,7 +15,6 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum QueryDataTypeEnum {
-
     /**
      * 从缓存中获取
      */

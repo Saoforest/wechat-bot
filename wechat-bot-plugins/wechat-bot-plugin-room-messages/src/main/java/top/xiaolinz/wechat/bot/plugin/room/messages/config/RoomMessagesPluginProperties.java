@@ -15,7 +15,7 @@ import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
  * @see BaseMessageListenerProperties
  */
 @Data
-public class RoomManagementPluginProperties extends BaseMessageListenerProperties {
+public class RoomMessagesPluginProperties extends BaseMessageListenerProperties {
 
     public static final String PREFIX = GLOBAL_PROPERTIES_PREFIX + CharPool.DOT + "group-management";
 

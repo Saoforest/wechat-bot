@@ -9,7 +9,7 @@ import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
 import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
 import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
 import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage.RecallData;
-import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomManagementPluginProperties;
+import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties;
 import top.xiaolinz.wechat.bot.plugin.room.messages.config.WithdrawalProperties;
 import xyz.tiegangan.tools.common.core.utils.SpelUtil;
 
@@ -22,7 +22,7 @@ import xyz.tiegangan.tools.common.core.utils.SpelUtil;
  * @see AbstractWechatMessageListener
  */
 public class WithdrawalWechatMessageListener
-    extends AbstractWechatMessageListener<RoomManagementPluginProperties, RecallMessageWechatMessage> {
+    extends AbstractWechatMessageListener<RoomMessagesPluginProperties, RecallMessageWechatMessage> {
 
     private final WechatClient wechatClient;
 

@@ -11,9 +11,18 @@ import org.dromara.hutool.core.text.CharPool;
  */
 public class Wechat {
 
+    /**
+     * 微信前缀
+     */
     public static final String WECHAT_PREFIX = "tiegangan.wechat";
 
+    /**
+     * 微信属性前缀
+     */
     public static final String WECHAT_PROPERTIES_PREFIX = WECHAT_PREFIX + CharPool.DOT + "config";
 
+    /**
+     * 全局属性前缀
+     */
     public static final String GLOBAL_PROPERTIES_PREFIX = WECHAT_PREFIX + CharPool.DOT + "plugin";
 }

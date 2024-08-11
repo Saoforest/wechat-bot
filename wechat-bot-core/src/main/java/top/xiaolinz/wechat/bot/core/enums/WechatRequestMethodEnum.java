@@ -39,9 +39,18 @@ public enum WechatRequestMethodEnum {
      */
     QUERY_OBJ("queryObj", "查询对象信息", new String[] {"wxid", "type"});
 
+    /**
+     * 请求方法
+     */
     @JsonValue
     private String   method;
+    /**
+     * 描述
+     */
     private String   desc;
+    /**
+     * 参数键
+     */
     private String[] paramKeys;
 
 }
