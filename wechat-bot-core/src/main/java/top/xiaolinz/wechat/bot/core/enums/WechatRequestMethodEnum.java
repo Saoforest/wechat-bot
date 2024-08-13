@@ -31,6 +31,10 @@ public enum WechatRequestMethodEnum {
      */
     SEND_REFER_TEXT("sendReferText", "发送引用文本", new String[] {"msgId", "wxid", "msg"}),
     /**
+     * 发送 xml 消息
+     */
+    SEND_XML("sendXml", "发送 xml 消息", new String[] {"wxid", "msg"}),
+    /**
      * 查询群组消息
      */
     QUERY_GROUP("queryGroup", "获取群组消息", new String[] {"wxid", "type"}),

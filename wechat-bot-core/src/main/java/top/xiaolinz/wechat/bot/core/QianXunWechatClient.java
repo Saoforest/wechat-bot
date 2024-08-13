@@ -72,6 +72,11 @@ public class QianXunWechatClient implements WechatClient {
     }
 
     @Override
+    public void sendXml(String wxid, String content) {
+        doExecuteQianXunPost(WechatRequestMethodEnum.SEND_XML, wxid, content);
+    }
+
+    @Override
     public QueryGroupResultTransfer queryGroup(String wxid, QueryDataTypeEnum type) {
         return doExecuteQianXunPost(WechatRequestMethodEnum.QUERY_GROUP, wxid, type).getResult(
             QueryGroupResultTransfer.class);

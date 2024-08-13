@@ -7,9 +7,6 @@ import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
 
 /**
  * 微信客户端
- *
- *
- *
  * 封装了调用微信接口的方法
  *
  * @author huangmuhong
@@ -61,11 +58,21 @@ public interface WechatClient {
     void sendReferText(String wxid, String content, String referWxid);
 
     /**
+     * 发送 xml 消息
+     *
+     * @param wxid    微信 id
+     * @param content 内容
+     * @author huangmuhong
+     * @date 2024/08/13
+     */
+    void sendXml(String wxid, String content);
+
+    /**
      * 获取群组消息
      *
-     * @param wxid 編號
+     * @param wxid 微信 id
      * @param type 类型
-     * @return {@link Object }
+     * @return {@link QueryGroupResultTransfer }
      * @author huangmuhong
      * @date 2024/07/14
      */
@@ -74,9 +81,9 @@ public interface WechatClient {
     /**
      * 查询对象
      *
-     * @param wxid 編號
+     * @param wxid 微信 id
      * @param type 类型
-     * @return {@link Object }
+     * @return {@link QueryObjResultTransfer }
      * @author huangmuhong
      * @date 2024/08/08
      */

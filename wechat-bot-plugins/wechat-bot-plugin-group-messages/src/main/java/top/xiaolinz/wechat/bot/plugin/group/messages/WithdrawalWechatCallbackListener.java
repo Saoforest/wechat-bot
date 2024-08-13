@@ -56,9 +56,9 @@ public class WithdrawalWechatCallbackListener implements WechatCallbackListener<
                     SpelUtil.parseTemplate(context, withdrawalConfig.getWithdrawalImageMessageTemplate());
                 // 发送消息
                 wechatClient.sendText(fromWxid, text);
-                // 解析图片地址
-                final String imagePath = recallData.getMsg();
-                wechatClient.sendImage(fromWxid, imagePath, null);
+                // 解析 xml 成对象
+                final String xmlContent = recallData.getMsg();
+                wechatClient.sendXml(fromWxid, xmlContent);
             }
             default -> {
             }
