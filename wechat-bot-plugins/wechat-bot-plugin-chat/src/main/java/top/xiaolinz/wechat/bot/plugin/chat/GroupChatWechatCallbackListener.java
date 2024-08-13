@@ -22,8 +22,8 @@ import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import reactor.core.publisher.Flux;
+import top.xiaolinz.wechat.bot.core.WechatBotManager;
 import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
-import top.xiaolinz.wechat.bot.core.WechatManager;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageWechatCallback;
 import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageWechatCallback.MessageData;
@@ -67,8 +67,8 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
         if (wxidList.isEmpty()) {
             return false;
         }
-        return wxidList.size() == 1 && wxidList.contains(WechatManager.getWeChatBotConfig()
-                                                                      .getWxid());
+        return wxidList.size() == 1 && wxidList.contains(WechatBotManager.getWeChatBotConfig()
+                                                                         .getWxid());
 
     }
 
@@ -138,8 +138,8 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
         final String msgId = messageData.getMsgId();
         if (SensitiveWordHelper.contains(msg)) {
             final List<String> sensitiveWords = SensitiveWordHelper.findAll(msg);
-            WechatManager.getWechatClient()
-                         .sendReferText(groupId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
+            WechatBotManager.getWechatClient()
+                            .sendReferText(groupId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
             return;
         }
 
@@ -167,8 +167,8 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
         final String text = renderer.render(document);
 
         // 发送消息，并替换敏感词
-        WechatManager.getWechatClient()
-                     .sendReferText(groupId, SensitiveWordHelper.replace(text), msgId);
+        WechatBotManager.getWechatClient()
+                        .sendReferText(groupId, SensitiveWordHelper.replace(text), msgId);
     }
 
     @Override

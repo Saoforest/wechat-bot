@@ -86,8 +86,8 @@ public class QianXunWechatClient implements WechatClient {
     @Override
     public InputStream getFile(String remoteFilePath) throws Exception {
         final ForestResponse<?> result = forestClient.get(buildRequestUrl(QIANXUN_GET_FILE_HTTP_PATH))
-                                                     .addQuery(SECRET_HEADER, WechatManager.getWeChatBotConfig()
-                                                                                           .getSecret())
+                                                     .addQuery(SECRET_HEADER, WechatBotManager.getWeChatBotConfig()
+                                                                                              .getSecret())
                                                      .addQuery("path", remoteFilePath)
                                                      .executeAsResponse();
         return result.getInputStream();
@@ -112,10 +112,10 @@ public class QianXunWechatClient implements WechatClient {
         final WechatClientRequestTransfer clientRequest = WechatClientRequestFactory.createRequest(context);
 
         return forestClient.post(buildRequestUrl(QIANXUN_POST_HTTP_PATH))
-                           .addHeader(WXID_HEADER, WechatManager.getWeChatBotConfig()
-                                                                .getWxid())
-                           .addHeader(SECRET_HEADER, WechatManager.getWeChatBotConfig()
-                                                                  .getSecret())
+                           .addHeader(WXID_HEADER, WechatBotManager.getWeChatBotConfig()
+                                                                   .getWxid())
+                           .addHeader(SECRET_HEADER, WechatBotManager.getWeChatBotConfig()
+                                                                     .getSecret())
                            .addBody(clientRequest)
                            .contentTypeJson()
                            .execute(WechatClientResponseTransfer.class);
@@ -130,8 +130,8 @@ public class QianXunWechatClient implements WechatClient {
      * @date 2024/07/23
      */
     private String buildRequestUrl(String path) {
-        return UrlBuilder.of(WechatManager.getWeChatBotConfig()
-                                          .getHost())
+        return UrlBuilder.of(WechatBotManager.getWeChatBotConfig()
+                                             .getHost())
                          .setPath(new UrlPath().parse(path, Charset.defaultCharset()))
                          .build();
     }

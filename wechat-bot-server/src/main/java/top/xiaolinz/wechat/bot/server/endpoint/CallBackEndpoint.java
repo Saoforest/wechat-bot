@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.core.WechatManager;
+import top.xiaolinz.wechat.bot.core.WechatBotManager;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 
 /**
@@ -27,8 +27,8 @@ public class CallBackEndpoint {
      */
     @PostMapping
     public void callback(@RequestBody WechatCallBackRequest message) {
-        WechatManager.getCallbackWechatRequestHandler()
-                     .handle(message);
+        WechatBotManager.getCallbackWechatRequestHandler()
+                        .handle(message);
     }
 
 }

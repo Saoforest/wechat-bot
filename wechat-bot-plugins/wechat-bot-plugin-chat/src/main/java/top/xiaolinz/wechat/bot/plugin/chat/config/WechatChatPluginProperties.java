@@ -11,7 +11,6 @@ import lombok.Data;
 import org.dromara.hutool.core.text.CharPool;
 import org.springframework.ai.openai.OpenAiChatOptions;
 import org.springframework.validation.annotation.Validated;
-import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 
 /**
  * 聊天微信扩展配置
@@ -19,11 +18,10 @@ import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/25
- * @see BaseMessageListenerProperties
  */
 @Validated
 @Data
-public class WechatChatPluginProperties extends BaseMessageListenerProperties {
+public class WechatChatPluginProperties {
 
     public static final String PREFIX = WECHAT_BOT_PLUGIN_PREFIX + CharPool.DOT + "chat";
 

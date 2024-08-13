@@ -6,22 +6,22 @@ import top.xiaolinz.wechat.bot.config.WeChatBotConfig;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 
 /**
- * 微信经理
+ * 微信机器人 bean 管理器
  *
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/8/13
  */
 @UtilityClass
-public class WechatManager {
+public class WechatBotManager {
 
     /**
-     * 微信回调请求处理程序
+     * 回调微信请求处理程序
      */
     @Getter
     static                      WechatRequestHandler<WechatCallBackRequest> callbackWechatRequestHandler;
     /**
-     * 微信聊天配置
+     * 微信机器人配置
      */
     @Getter
     private static volatile     WeChatBotConfig                             weChatBotConfig;
@@ -39,7 +39,7 @@ public class WechatManager {
      * @date 2024/08/13
      */
     public static void setWeChatBotConfig(WeChatBotConfig weChatBotConfig) {
-        WechatManager.weChatBotConfig = weChatBotConfig;
+        WechatBotManager.weChatBotConfig = weChatBotConfig;
     }
 
     /**
@@ -50,7 +50,7 @@ public class WechatManager {
      * @date 2024/08/13
      */
     public void setWechatClient(WechatClient wechatClient) {
-        WechatManager.wechatClient = wechatClient;
+        WechatBotManager.wechatClient = wechatClient;
     }
 
     /**
@@ -61,7 +61,7 @@ public class WechatManager {
      * @date 2024/08/13
      */
     public void setCallbackWechatRequestHandler(WechatRequestHandler<WechatCallBackRequest> wechatRequestHandler) {
-        WechatManager.callbackWechatRequestHandler = wechatRequestHandler;
+        WechatBotManager.callbackWechatRequestHandler = wechatRequestHandler;
     }
 
 }
