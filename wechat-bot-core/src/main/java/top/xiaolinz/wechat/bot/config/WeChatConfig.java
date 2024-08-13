@@ -3,7 +3,7 @@ package top.xiaolinz.wechat.bot.config;
 import lombok.Data;
 
 /**
- * wx 聊天配置
+ * 微信配置相关
  *
  * @author huangmuhong
  * @version 1.0.0
