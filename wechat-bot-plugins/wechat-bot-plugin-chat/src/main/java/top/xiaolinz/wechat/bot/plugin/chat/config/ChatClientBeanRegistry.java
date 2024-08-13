@@ -45,6 +45,5 @@ public class ChatClientBeanRegistry implements ResourceLoaderAware {
 
     @Override
     public void setResourceLoader(ResourceLoader resourceLoader) {
-
     }
 }

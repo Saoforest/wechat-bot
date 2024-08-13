@@ -9,8 +9,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="wechat-bot-core" />
-        <module name="wechat-bot-plugin-room-messages" />
         <module name="wechat-bot-server" />
+        <module name="wechat-bot-plugin-group-messages" />
         <module name="wechat-bot-plugin-chat" />
       </profile>
     </annotationProcessing>
@@ -29,8 +29,8 @@
       <module name="wechat-bot-core" options="-parameters" />
       <module name="wechat-bot-plugin-chat" options="-parameters" />
       <module name="wechat-bot-plugin-group-management" options="" />
+      <module name="wechat-bot-plugin-group-messages" options="-parameters" />
       <module name="wechat-bot-plugin-openai" options="" />
-      <module name="wechat-bot-plugin-room-messages" options="-parameters" />
       <module name="wechat-bot-plugins" options="-parameters" />
       <module name="wechat-bot-server" options="-parameters" />
       <module name="wechat-llm-module" options="-parameters" />

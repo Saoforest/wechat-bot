@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.plugin.room.messages.config;
+package top.xiaolinz.wechat.bot.plugin.group.messages.config;
 
 import lombok.Data;
 

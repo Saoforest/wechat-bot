@@ -1,6 +1,6 @@
 package top.xiaolinz.wechat.bot.plugin.chat.config;
 
-import static top.xiaolinz.wechat.bot.core.constants.Wechat.GLOBAL_PROPERTIES_PREFIX;
+import static top.xiaolinz.wechat.bot.core.constants.WechatBot.WECHAT_BOT_PLUGIN_PREFIX;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -25,7 +25,7 @@ import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
 @Data
 public class WechatChatPluginProperties extends BaseMessageListenerProperties {
 
-    public static final String PREFIX = GLOBAL_PROPERTIES_PREFIX + CharPool.DOT + "chat";
+    public static final String PREFIX = WECHAT_BOT_PLUGIN_PREFIX + CharPool.DOT + "chat";
 
     /**
      * 上下文过期时间

@@ -27,7 +27,7 @@ public class CallbackWechatRequestHandler implements WechatRequestHandler<Wechat
     @Override
     public void handle(WechatCallBackRequest message) {
         // 如果消息的发送者不是当前绑定的微信账号，则不处理
-        if (!StrUtil.equals(message.getWxid(), WechatManager.getWeChatConfig()
+        if (!StrUtil.equals(message.getWxid(), WechatManager.getWeChatBotConfig()
                                                             .getWxid())) {
             return;
         }

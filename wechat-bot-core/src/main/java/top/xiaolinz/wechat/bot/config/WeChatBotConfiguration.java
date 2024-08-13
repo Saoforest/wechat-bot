@@ -1,11 +1,9 @@
 package top.xiaolinz.wechat.bot.config;
 
-import static top.xiaolinz.wechat.bot.core.constants.Wechat.WECHAT_PROPERTIES_PREFIX;
+import static top.xiaolinz.wechat.bot.core.constants.WechatBot.WECHAT_BOT_CONFIG_PREFIX;
 
 import com.dtflys.forest.config.ForestConfiguration;
 import lombok.RequiredArgsConstructor;
-import org.dromara.hutool.core.lang.Assert;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -16,7 +14,6 @@ import top.xiaolinz.wechat.bot.core.CallbackWechatRequestHandler;
 import top.xiaolinz.wechat.bot.core.QianXunWechatClient;
 import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
 import top.xiaolinz.wechat.bot.core.WechatClient;
-import top.xiaolinz.wechat.bot.core.WechatManager;
 
 /**
  * 微信配置
@@ -27,14 +24,14 @@ import top.xiaolinz.wechat.bot.core.WechatManager;
  */
 @RequiredArgsConstructor
 @Configuration(proxyBeanMethods = false)
-public class WeChatConfiguration implements InitializingBean {
+public class WeChatBotConfiguration {
 
     private final ConfigurableApplicationContext applicationContext;
 
     @Bean
-    @ConfigurationProperties(prefix = WECHAT_PROPERTIES_PREFIX)
-    public WeChatConfig weChatConfig() {
-        return new WeChatConfig();
+    @ConfigurationProperties(prefix = WECHAT_BOT_CONFIG_PREFIX)
+    public WeChatBotConfig weChatConfig() {
+        return new WeChatBotConfig();
     }
 
     /**
@@ -53,35 +50,18 @@ public class WeChatConfiguration implements InitializingBean {
     }
 
     /**
-     * 回调微信信息处理程序
+     * 回调微信请求处理程序
      *
      * @param messageListeners 消息监听器
      * @return {@link CallbackWechatRequestHandler }
      * @author huangmuhong
      * @date 2024/08/04
      */
-    @Bean("callbackWechatMessageHandler")
+    @Bean("callbackWechatRequestHandler")
     @ConditionalOnMissingBean
-    public CallbackWechatRequestHandler callbackWechatMessageHandler(
+    public CallbackWechatRequestHandler callbackWechatRequestHandler(
         ObjectProvider<WechatCallbackListener<?>> messageListeners) {
         return new CallbackWechatRequestHandler(messageListeners);
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-        // 配置注入管理
-        final WeChatConfig weChatConfig = applicationContext.getBean(WeChatConfig.class);
-        Assert.notNull(weChatConfig, "WeChatConfig bean not found");
-        WechatManager.setWeChatConfig(weChatConfig);
-        // client 注入管理
-        final WechatClient wechatClient = applicationContext.getBean(WechatClient.class);
-        Assert.notNull(wechatClient, "WechatClient bean not found");
-        WechatManager.setWechatClient(wechatClient);
-        // 回调消息处理器注入管理
-        final CallbackWechatRequestHandler callbackWechatMessageHandler =
-            applicationContext.getBean("callbackWechatMessageHandler", CallbackWechatRequestHandler.class);
-        Assert.notNull(callbackWechatMessageHandler, "CallbackWechatMessageHandler bean not found");
-        WechatManager.setWechatCallbackMessageHandler(callbackWechatMessageHandler);
-
-    }
 }

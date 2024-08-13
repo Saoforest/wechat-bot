@@ -13,7 +13,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>wechat-bot-plugin-chat</module>
-    <module>wechat-bot-plugin-room-messages</module>
+    <module>wechat-bot-plugin-group-messages</module>
   </modules>
 
   <properties>

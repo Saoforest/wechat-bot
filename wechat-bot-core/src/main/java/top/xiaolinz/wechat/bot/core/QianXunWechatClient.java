@@ -86,7 +86,7 @@ public class QianXunWechatClient implements WechatClient {
     @Override
     public InputStream getFile(String remoteFilePath) throws Exception {
         final ForestResponse<?> result = forestClient.get(buildRequestUrl(QIANXUN_GET_FILE_HTTP_PATH))
-                                                     .addQuery(SECRET_HEADER, WechatManager.getWeChatConfig()
+                                                     .addQuery(SECRET_HEADER, WechatManager.getWeChatBotConfig()
                                                                                            .getSecret())
                                                      .addQuery("path", remoteFilePath)
                                                      .executeAsResponse();
@@ -112,9 +112,9 @@ public class QianXunWechatClient implements WechatClient {
         final WechatClientRequestTransfer clientRequest = WechatClientRequestFactory.createRequest(context);
 
         return forestClient.post(buildRequestUrl(QIANXUN_POST_HTTP_PATH))
-                           .addHeader(WXID_HEADER, WechatManager.getWeChatConfig()
+                           .addHeader(WXID_HEADER, WechatManager.getWeChatBotConfig()
                                                                 .getWxid())
-                           .addHeader(SECRET_HEADER, WechatManager.getWeChatConfig()
+                           .addHeader(SECRET_HEADER, WechatManager.getWeChatBotConfig()
                                                                   .getSecret())
                            .addBody(clientRequest)
                            .contentTypeJson()
@@ -130,7 +130,7 @@ public class QianXunWechatClient implements WechatClient {
      * @date 2024/07/23
      */
     private String buildRequestUrl(String path) {
-        return UrlBuilder.of(WechatManager.getWeChatConfig()
+        return UrlBuilder.of(WechatManager.getWeChatBotConfig()
                                           .getHost())
                          .setPath(new UrlPath().parse(path, Charset.defaultCharset()))
                          .build();

@@ -2,7 +2,7 @@ package top.xiaolinz.wechat.bot.core;
 
 import lombok.Getter;
 import lombok.experimental.UtilityClass;
-import top.xiaolinz.wechat.bot.config.WeChatConfig;
+import top.xiaolinz.wechat.bot.config.WeChatBotConfig;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 
 /**
@@ -15,22 +15,31 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 @UtilityClass
 public class WechatManager {
 
+    /**
+     * 微信回调请求处理程序
+     */
     @Getter
-    static                  WechatRequestHandler<WechatCallBackRequest> wechatRequestHandler;
+    static                      WechatRequestHandler<WechatCallBackRequest> callbackWechatRequestHandler;
+    /**
+     * 微信聊天配置
+     */
     @Getter
-    private static volatile WeChatConfig                                weChatConfig;
+    private static volatile     WeChatBotConfig                             weChatBotConfig;
+    /**
+     * 微信客户端
+     */
     @Getter
     private static          WechatClient                                wechatClient;
 
     /**
      * 设置微信配置
      *
-     * @param weChatConfig 我们聊天配置
+     * @param weChatBotConfig 我们聊天配置
      * @author huangmuhong
      * @date 2024/08/13
      */
-    public static void setWeChatConfig(WeChatConfig weChatConfig) {
-        WechatManager.weChatConfig = weChatConfig;
+    public static void setWeChatBotConfig(WeChatBotConfig weChatBotConfig) {
+        WechatManager.weChatBotConfig = weChatBotConfig;
     }
 
     /**
@@ -51,8 +60,8 @@ public class WechatManager {
      * @author huangmuhong
      * @date 2024/08/13
      */
-    public void setWechatCallbackMessageHandler(WechatRequestHandler<WechatCallBackRequest> wechatRequestHandler) {
-        WechatManager.wechatRequestHandler = wechatRequestHandler;
+    public void setCallbackWechatRequestHandler(WechatRequestHandler<WechatCallBackRequest> wechatRequestHandler) {
+        WechatManager.callbackWechatRequestHandler = wechatRequestHandler;
     }
 
 }

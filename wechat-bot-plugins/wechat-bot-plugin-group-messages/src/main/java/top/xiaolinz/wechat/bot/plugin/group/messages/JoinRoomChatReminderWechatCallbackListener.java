@@ -1,10 +1,10 @@
-package top.xiaolinz.wechat.bot.plugin.room.messages;
+package top.xiaolinz.wechat.bot.plugin.group.messages;
 
 import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback;
-import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties;
+import top.xiaolinz.wechat.bot.plugin.group.messages.config.groupMessagesPluginProperties;
 
 /**
  * 加入房间聊天提醒微信消息监听
@@ -16,10 +16,10 @@ import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginPro
  */
 public class JoinRoomChatReminderWechatCallbackListener implements WechatCallbackListener<RecallMessageWechatCallback> {
 
-    private final WechatClient wechatClient;
-    private final RoomMessagesPluginProperties config;
+    private final WechatClient                  wechatClient;
+    private final groupMessagesPluginProperties config;
 
-    public JoinRoomChatReminderWechatCallbackListener(WechatClient wechatClient, RoomMessagesPluginProperties config) {
+    public JoinRoomChatReminderWechatCallbackListener(WechatClient wechatClient, groupMessagesPluginProperties config) {
         this.wechatClient = wechatClient;
         this.config = config;
     }

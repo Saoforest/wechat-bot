@@ -15,8 +15,8 @@
     <file url="file://$PROJECT_DIR$/wechat-bot-plugins/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-chat/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-chat/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-room-messages/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-room-messages/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-group-messages/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wechat-bot-plugins/wechat-bot-plugin-group-messages/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-bot-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/wechat-modules/src/main/java" charset="UTF-8" />

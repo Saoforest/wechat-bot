@@ -67,7 +67,7 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
         if (wxidList.isEmpty()) {
             return false;
         }
-        return wxidList.size() == 1 && wxidList.contains(WechatManager.getWeChatConfig()
+        return wxidList.size() == 1 && wxidList.contains(WechatManager.getWeChatBotConfig()
                                                                       .getWxid());
 
     }
@@ -102,11 +102,11 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
             return;
         }
 
-        final String roomId = messageData.getFromWxid();
+        final String groupId = messageData.getFromWxid();
         final GroupMappingConfig mappingConfig = config.getGroupMappingConfig()
                                                             .stream()
                                                             .filter(config -> config.getRoomId()
-                                                                                    .equals(roomId))
+                                                                                    .equals(groupId))
                                                             .findFirst()
                                                             .orElse(null);
         if (mappingConfig == null) {
@@ -139,11 +139,11 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
         if (SensitiveWordHelper.contains(msg)) {
             final List<String> sensitiveWords = SensitiveWordHelper.findAll(msg);
             WechatManager.getWechatClient()
-                         .sendReferText(roomId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
+                         .sendReferText(groupId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
             return;
         }
 
-        final ChatMemory chatMemory = cacheMemorys.get(roomId, key -> new InMemoryChatMemory());
+        final ChatMemory chatMemory = cacheMemorys.get(groupId, key -> new InMemoryChatMemory());
 
         // 发送请求
         final Flux<String> contentFlux = chatClient.prompt()
@@ -168,7 +168,7 @@ public class GroupChatWechatCallbackListener implements WechatCallbackListener<R
 
         // 发送消息，并替换敏感词
         WechatManager.getWechatClient()
-                     .sendReferText(roomId, SensitiveWordHelper.replace(text), msgId);
+                     .sendReferText(groupId, SensitiveWordHelper.replace(text), msgId);
     }
 
     @Override

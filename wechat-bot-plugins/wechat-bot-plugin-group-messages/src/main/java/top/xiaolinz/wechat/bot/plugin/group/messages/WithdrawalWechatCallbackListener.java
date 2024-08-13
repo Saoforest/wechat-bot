@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.plugin.room.messages;
+package top.xiaolinz.wechat.bot.plugin.group.messages;
 
 import java.util.HashMap;
 import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
@@ -9,8 +9,8 @@ import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
 import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback;
 import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback.RecallData;
 import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
-import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties;
-import top.xiaolinz.wechat.bot.plugin.room.messages.config.WithdrawalListenerProperties;
+import top.xiaolinz.wechat.bot.plugin.group.messages.config.WithdrawalListenerProperties;
+import top.xiaolinz.wechat.bot.plugin.group.messages.config.groupMessagesPluginProperties;
 import xyz.tiegangan.tools.common.core.utils.SpelUtil;
 
 /**
@@ -23,10 +23,10 @@ import xyz.tiegangan.tools.common.core.utils.SpelUtil;
  */
 public class WithdrawalWechatCallbackListener implements WechatCallbackListener<RecallMessageWechatCallback> {
 
-    private final WechatClient                 wechatClient;
-    private final RoomMessagesPluginProperties config;
+    private final WechatClient                  wechatClient;
+    private final groupMessagesPluginProperties config;
 
-    public WithdrawalWechatCallbackListener(WechatClient wechatClient, RoomMessagesPluginProperties config) {
+    public WithdrawalWechatCallbackListener(WechatClient wechatClient, groupMessagesPluginProperties config) {
         this.wechatClient = wechatClient;
         this.config = config;
     }

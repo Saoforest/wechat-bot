@@ -10,7 +10,7 @@ import lombok.Data;
  * @date 2024/7/2
  */
 @Data
-public class WeChatConfig {
+public class WeChatBotConfig {
 
     /**
      * 微信框架 HTTP API 地址

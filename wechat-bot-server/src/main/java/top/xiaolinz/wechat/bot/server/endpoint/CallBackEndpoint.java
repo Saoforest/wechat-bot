@@ -1,11 +1,10 @@
 package top.xiaolinz.wechat.bot.server.endpoint;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.xiaolinz.wechat.bot.core.WechatRequestHandler;
+import top.xiaolinz.wechat.bot.core.WechatManager;
 import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 
 /**
@@ -19,13 +18,6 @@ import top.xiaolinz.wechat.bot.core.model.WechatCallBackRequest;
 @RestController
 public class CallBackEndpoint {
 
-    private final WechatRequestHandler<WechatCallBackRequest> handler;
-
-    public CallBackEndpoint(
-        @Qualifier("callbackWechatMessageHandler") WechatRequestHandler<WechatCallBackRequest> handler) {
-        this.handler = handler;
-    }
-
     /**
      * 回调消息
      *
@@ -35,7 +27,8 @@ public class CallBackEndpoint {
      */
     @PostMapping
     public void callback(@RequestBody WechatCallBackRequest message) {
-        handler.handle(message);
+        WechatManager.getCallbackWechatRequestHandler()
+                     .handle(message);
     }
 
 }

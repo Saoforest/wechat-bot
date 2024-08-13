@@ -49,7 +49,7 @@
 
     <dependency>
       <groupId>top.xiaolinz</groupId>
-      <artifactId>wechat-bot-plugin-room-messages</artifactId>
+      <artifactId>wechat-bot-plugin-group-messages</artifactId>
       <version>${revision}</version>
     </dependency>
 
