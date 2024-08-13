@@ -10,7 +10,7 @@ import lombok.Data;
  * @date 2024/8/8
  */
 @Data
-public class WithdrawalProperties {
+public class WithdrawalListenerProperties {
 
     /**
      * 撤回文本消息模板

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -13,15 +14,27 @@
         <module name="wechat-bot-plugin-chat" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="wechat-bot-callback" target="21" />
+      <module name="wechat-bot-plugin-group-management" target="21" />
+      <module name="wechat-bot-plugin-openai" target="21" />
+      <module name="wechat-llm-module" target="21" />
+      <module name="wechat-modules" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="wechat-bot" options="-parameters" />
+      <module name="wechat-bot-callback" options="-parameters" />
       <module name="wechat-bot-core" options="-parameters" />
       <module name="wechat-bot-plugin-chat" options="-parameters" />
+      <module name="wechat-bot-plugin-group-management" options="" />
+      <module name="wechat-bot-plugin-openai" options="" />
       <module name="wechat-bot-plugin-room-messages" options="-parameters" />
       <module name="wechat-bot-plugins" options="-parameters" />
       <module name="wechat-bot-server" options="-parameters" />
+      <module name="wechat-llm-module" options="-parameters" />
+      <module name="wechat-modules" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.model.message;
+package top.xiaolinz.wechat.bot.core.model;
 
 import com.alibaba.fastjson2.JSONObject;
 import lombok.Data;
@@ -12,7 +12,7 @@ import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
  * @date 2024/07/02
  */
 @Data
-public class WechatCallBackMessage {
+public class WechatCallBackRequest {
     /**
      * 数据
      */

@@ -1,4 +1,4 @@
-package top.xiaolinz.wechat.bot.core.model.message;
+package top.xiaolinz.wechat.bot.core.model.callback;
 
 import lombok.Data;
 
@@ -10,7 +10,7 @@ import lombok.Data;
  * @date 2024/7/8
  */
 @Data
-public class WechatMessage<T> {
+public class WechatCallback<T> {
     private String type;
     private String des;
     private Long   port;

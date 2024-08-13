@@ -1,6 +1,6 @@
 package top.xiaolinz.wechat.bot.plugin.chat.config;
 
-import static top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties.PREFIX;
+import static top.xiaolinz.wechat.bot.plugin.chat.config.WechatChatPluginProperties.PREFIX;
 
 import java.util.Map;
 import org.springframework.ai.chat.client.ChatClient;
@@ -9,8 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
-import top.xiaolinz.wechat.bot.core.WechatClient;
-import top.xiaolinz.wechat.bot.plugin.chat.RoomChatWechatMessageListener;
+import top.xiaolinz.wechat.bot.plugin.chat.GroupChatWechatCallbackListener;
 
 /**
  * 聊天自动配置
@@ -24,8 +23,8 @@ public class ChatPluginAutoConfiguration {
 
     @Bean
     @ConfigurationProperties(prefix = PREFIX)
-    public ChatPluginProperties chatPluginProperties() {
-        return new ChatPluginProperties();
+    public WechatChatPluginProperties chatPluginProperties() {
+        return new WechatChatPluginProperties();
     }
 
     /**
@@ -36,10 +35,10 @@ public class ChatPluginAutoConfiguration {
      * @date 2024/08/04
      */
     @Bean
-    public ChatClientBeanRegistry chatClientBeanRegistry(ChatPluginProperties chatPluginProperties,
+    public ChatClientBeanRegistry chatClientBeanRegistry(WechatChatPluginProperties wechatChatPluginProperties,
                                                          ConfigurableApplicationContext applicationContext) {
         final ChatClientBeanRegistry registry =
-            new ChatClientBeanRegistry(chatPluginProperties.getChatClientConfig(), applicationContext);
+            new ChatClientBeanRegistry(wechatChatPluginProperties.getChatClientConfig(), applicationContext);
         registry.registerChatClient();
         return registry;
     }
@@ -48,14 +47,14 @@ public class ChatPluginAutoConfiguration {
      * 房间聊天微信消息监听
      *
      * @param chatClientMap 聊天客户端地图
-     * @return {@link RoomChatWechatMessageListener }
+     * @return {@link GroupChatWechatCallbackListener }
      * @author huangmuhong
      * @date 2024/08/04
      */
     @DependsOn("chatClientBeanRegistry")
     @Bean
-    public RoomChatWechatMessageListener roomChatWechatMessageListener(Map<String, ChatClient> chatClientMap,
-                                                                       WechatClient wechatClient) {
-        return new RoomChatWechatMessageListener(chatClientMap, wechatClient);
+    public GroupChatWechatCallbackListener roomChatWechatMessageListener(Map<String, ChatClient> chatClientMap,
+                                                                         WechatChatPluginProperties config) {
+        return new GroupChatWechatCallbackListener(chatClientMap, config);
     }
 }

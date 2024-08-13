@@ -1,16 +1,16 @@
 package top.xiaolinz.wechat.bot.core;
 
 /**
- * 微信消息处理器
+ * 微信请求处理器
  *
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/28
  */
-public interface WechatMessageHandler<T> {
+public interface WechatRequestHandler<T> {
 
     /**
-     * 处理消息
+     * 处理请求
      *
      * @param message 信息
      * @author huangmuhong

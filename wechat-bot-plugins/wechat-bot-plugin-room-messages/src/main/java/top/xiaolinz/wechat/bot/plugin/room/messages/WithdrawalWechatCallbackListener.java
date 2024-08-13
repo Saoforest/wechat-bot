@@ -1,16 +1,16 @@
 package top.xiaolinz.wechat.bot.plugin.room.messages;
 
 import java.util.HashMap;
+import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.enums.MessageContentTypeEnum;
 import top.xiaolinz.wechat.bot.core.enums.QueryDataTypeEnum;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
-import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
+import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback;
+import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback.RecallData;
 import top.xiaolinz.wechat.bot.core.model.dto.QueryObjResultTransfer;
-import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
-import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage.RecallData;
 import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties;
-import top.xiaolinz.wechat.bot.plugin.room.messages.config.WithdrawalProperties;
+import top.xiaolinz.wechat.bot.plugin.room.messages.config.WithdrawalListenerProperties;
 import xyz.tiegangan.tools.common.core.utils.SpelUtil;
 
 /**
@@ -19,28 +19,29 @@ import xyz.tiegangan.tools.common.core.utils.SpelUtil;
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/8/8
- * @see AbstractWechatMessageListener
+ * @see WechatCallbackListener
  */
-public class WithdrawalWechatMessageListener
-    extends AbstractWechatMessageListener<RoomMessagesPluginProperties, RecallMessageWechatMessage> {
+public class WithdrawalWechatCallbackListener implements WechatCallbackListener<RecallMessageWechatCallback> {
 
-    private final WechatClient wechatClient;
+    private final WechatClient                 wechatClient;
+    private final RoomMessagesPluginProperties config;
 
-    public WithdrawalWechatMessageListener(WechatClient wechatClient) {
+    public WithdrawalWechatCallbackListener(WechatClient wechatClient, RoomMessagesPluginProperties config) {
         this.wechatClient = wechatClient;
+        this.config = config;
     }
 
     @Override
-    public void listener(RecallMessageWechatMessage data) {
+    public void listener(RecallMessageWechatCallback data) {
         final RecallData             recallData = data.getData();
         final String fromWxid  = recallData.getFromWxid();
         final String finalWxid = recallData.getFinalFromWxid();
         // 查询对象信息 （缓存）
         final QueryObjResultTransfer objResultTransfer =
             wechatClient.queryObj(finalWxid, QueryDataTypeEnum.FETCH_FROM_CACHE);
-        final MessageContentTypeEnum msgType    = recallData.getMsgType();
-        final WithdrawalProperties    withdrawalConfig = getConfig().getWithdrawalConfig();
-        final HashMap<String, Object> context          = new HashMap<>(2);
+        final MessageContentTypeEnum       msgType          = recallData.getMsgType();
+        final WithdrawalListenerProperties withdrawalConfig = config.getWithdrawalConfig();
+        final HashMap<String, Object>      context          = new HashMap<>(2);
         context.put("userInfo", objResultTransfer);
         context.put("msg", recallData.getMsg());
         switch (msgType) {

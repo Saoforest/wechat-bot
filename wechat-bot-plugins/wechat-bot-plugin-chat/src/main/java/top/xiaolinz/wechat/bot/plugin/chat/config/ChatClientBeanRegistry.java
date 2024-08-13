@@ -12,7 +12,7 @@ import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.ResourceLoaderAware;
 import org.springframework.core.io.ResourceLoader;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties.ChatClientConfig;
+import top.xiaolinz.wechat.bot.plugin.chat.config.WechatChatPluginProperties.ChatClientConfig;
 
 /**
  * 聊天客户端 bean 注册

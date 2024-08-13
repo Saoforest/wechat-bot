@@ -13,8 +13,9 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 @RefreshScope
 @Data
 public abstract class BaseMessageListenerProperties {
+
     /**
-     * 是否启用拓展
+     * 是否启用监听器
      */
-    private boolean enable = true;
+    private boolean enableListener = true;
 }

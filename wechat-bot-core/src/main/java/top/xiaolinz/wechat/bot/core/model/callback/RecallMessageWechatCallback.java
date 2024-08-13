@@ -1,9 +1,9 @@
-package top.xiaolinz.wechat.bot.core.model.message;
+package top.xiaolinz.wechat.bot.core.model.callback;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import top.xiaolinz.wechat.bot.core.enums.MessageContentTypeEnum;
-import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage.RecallData;
+import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback.RecallData;
 
 /**
  * 撤回消息
@@ -11,11 +11,11 @@ import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage.Rec
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/8
- * @see WechatMessage
+ * @see WechatCallback
  */
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class RecallMessageWechatMessage extends WechatMessage<RecallData> {
+public class RecallMessageWechatCallback extends WechatCallback<RecallData> {
 
     /**
      * 撤回数据

@@ -4,8 +4,8 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
-import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
+import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback;
+import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageWechatCallback;
 import xyz.tiegangan.tools.common.response.core.exception.BusinessException;
 
 /**
@@ -27,11 +27,11 @@ public enum WechatMessageTypeEnum {
     /**
      * 收到群聊消息事件
      */
-    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageWechatMessage.class),
+    GROUP_MESSAGE(10008, "收到群聊消息事件", ReceiveMessageWechatCallback.class),
     /**
      * 收到私聊消息事件
      */
-    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageWechatMessage.class),
+    PRIVATE_MESSAGE(10009, "收到私聊消息事件", ReceiveMessageWechatCallback.class),
     /**
      * 自己发出消息事件
      */
@@ -43,7 +43,7 @@ public enum WechatMessageTypeEnum {
     /**
      * 撤回事件
      */
-    RECALL(10013, "撤回事件", RecallMessageWechatMessage.class),
+    RECALL(10013, "撤回事件", RecallMessageWechatCallback.class),
     /**
      * 好友请求事件
      */

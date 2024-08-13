@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import top.xiaolinz.wechat.bot.core.WechatClient;
-import top.xiaolinz.wechat.bot.plugin.room.messages.WithdrawalWechatMessageListener;
+import top.xiaolinz.wechat.bot.plugin.room.messages.WithdrawalWechatCallbackListener;
 
 /**
  * 房间管理自动配置
@@ -32,8 +32,9 @@ public class RoomMessagesAutoConfiguration {
     }
 
     @Bean
-    public WithdrawalWechatMessageListener withdrawalWechatMessageListener(WechatClient wechatClient) {
-        return new WithdrawalWechatMessageListener(wechatClient);
+    public WithdrawalWechatCallbackListener withdrawalWechatMessageListener(WechatClient wechatClient,
+                                                                            RoomMessagesPluginProperties roomMessagesPluginProperties) {
+        return new WithdrawalWechatCallbackListener(wechatClient, roomMessagesPluginProperties);
     }
 
 }

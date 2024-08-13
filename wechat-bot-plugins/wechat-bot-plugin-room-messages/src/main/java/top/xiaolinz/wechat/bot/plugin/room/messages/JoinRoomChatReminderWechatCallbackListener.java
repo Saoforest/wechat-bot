@@ -1,9 +1,9 @@
 package top.xiaolinz.wechat.bot.plugin.room.messages;
 
+import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
 import top.xiaolinz.wechat.bot.core.WechatClient;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
-import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
-import top.xiaolinz.wechat.bot.core.model.message.RecallMessageWechatMessage;
+import top.xiaolinz.wechat.bot.core.model.callback.RecallMessageWechatCallback;
 import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginProperties;
 
 /**
@@ -12,19 +12,20 @@ import top.xiaolinz.wechat.bot.plugin.room.messages.config.RoomMessagesPluginPro
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/8/11
- * @see AbstractWechatMessageListener
+ * @see WechatCallbackListener
  */
-public class JoinRoomChatReminderWechatMessageListener
-    extends AbstractWechatMessageListener<RoomMessagesPluginProperties, RecallMessageWechatMessage> {
+public class JoinRoomChatReminderWechatCallbackListener implements WechatCallbackListener<RecallMessageWechatCallback> {
 
     private final WechatClient wechatClient;
+    private final RoomMessagesPluginProperties config;
 
-    public JoinRoomChatReminderWechatMessageListener(WechatClient wechatClient) {
+    public JoinRoomChatReminderWechatCallbackListener(WechatClient wechatClient, RoomMessagesPluginProperties config) {
         this.wechatClient = wechatClient;
+        this.config = config;
     }
 
     @Override
-    public void listener(RecallMessageWechatMessage data) {
+    public void listener(RecallMessageWechatCallback data) {
 
     }
 

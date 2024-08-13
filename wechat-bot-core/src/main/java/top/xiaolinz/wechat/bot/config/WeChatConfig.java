@@ -1,9 +1,6 @@
 package top.xiaolinz.wechat.bot.config;
 
-import static top.xiaolinz.wechat.bot.core.constants.Wechat.WECHAT_PROPERTIES_PREFIX;
-
 import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * wx 聊天配置
@@ -13,8 +10,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @date 2024/7/2
  */
 @Data
-@ConfigurationProperties(prefix = WECHAT_PROPERTIES_PREFIX)
-public class WeChatProperties {
+public class WeChatConfig {
 
     /**
      * 微信框架 HTTP API 地址

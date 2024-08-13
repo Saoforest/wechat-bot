@@ -22,5 +22,5 @@ public class RoomMessagesPluginProperties extends BaseMessageListenerProperties 
     /**
      * 撤回配置
      */
-    private WithdrawalProperties withdrawalConfig = new WithdrawalProperties();
+    private WithdrawalListenerProperties withdrawalConfig = new WithdrawalListenerProperties();
 }

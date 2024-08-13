@@ -23,7 +23,7 @@ import top.xiaolinz.wechat.bot.core.properties.BaseMessageListenerProperties;
  */
 @Validated
 @Data
-public class ChatPluginProperties extends BaseMessageListenerProperties {
+public class WechatChatPluginProperties extends BaseMessageListenerProperties {
 
     public static final String PREFIX = GLOBAL_PROPERTIES_PREFIX + CharPool.DOT + "chat";
 

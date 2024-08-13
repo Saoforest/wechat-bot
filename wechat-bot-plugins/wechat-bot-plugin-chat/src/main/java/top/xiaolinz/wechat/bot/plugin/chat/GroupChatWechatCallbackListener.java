@@ -22,25 +22,23 @@ import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
 import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.ai.chat.memory.InMemoryChatMemory;
 import reactor.core.publisher.Flux;
-import top.xiaolinz.wechat.bot.core.WechatClient;
-import top.xiaolinz.wechat.bot.core.WechatConfigHolder;
+import top.xiaolinz.wechat.bot.core.WechatCallbackListener;
+import top.xiaolinz.wechat.bot.core.WechatManager;
 import top.xiaolinz.wechat.bot.core.enums.WechatMessageTypeEnum;
-import top.xiaolinz.wechat.bot.core.message.AbstractWechatMessageListener;
-import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage;
-import top.xiaolinz.wechat.bot.core.model.message.ReceiveMessageWechatMessage.MessageData;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties;
-import top.xiaolinz.wechat.bot.plugin.chat.config.ChatPluginProperties.GroupMappingConfig;
+import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageWechatCallback;
+import top.xiaolinz.wechat.bot.core.model.callback.ReceiveMessageWechatCallback.MessageData;
+import top.xiaolinz.wechat.bot.plugin.chat.config.WechatChatPluginProperties;
+import top.xiaolinz.wechat.bot.plugin.chat.config.WechatChatPluginProperties.GroupMappingConfig;
 
 /**
- * 房间聊天微信消息监听
+ * 群聊天微信回调监听
  *
  * @author huangmuhong
  * @version 1.0.0
  * @date 2024/7/14
- * @see AbstractWechatMessageListener
+ * @see WechatCallbackListener
  */
-public class RoomChatWechatMessageListener
-    extends AbstractWechatMessageListener<ChatPluginProperties, ReceiveMessageWechatMessage> {
+public class GroupChatWechatCallbackListener implements WechatCallbackListener<ReceiveMessageWechatCallback> {
 
     private static final String                  AT_REGEX = "@.+\\p{Zs}[1]";
     private static final String                    BLACK_LIST_MESSAGE = "检测到敏感词，已自动过滤！非法词：";
@@ -49,11 +47,11 @@ public class RoomChatWechatMessageListener
                                                                                 .expireAfterAccess(300,
                                                                                                    TimeUnit.SECONDS)
                                                                                 .build();
-    private final WechatClient wechatClient;
+    private final WechatChatPluginProperties config;
 
-    public RoomChatWechatMessageListener(Map<String, ChatClient> chatClientMap, WechatClient wechatClient) {
+    public GroupChatWechatCallbackListener(Map<String, ChatClient> chatClientMap, WechatChatPluginProperties config) {
         this.chatClientMap = chatClientMap;
-        this.wechatClient = wechatClient;
+        this.config = config;
     }
 
     /**
@@ -64,12 +62,13 @@ public class RoomChatWechatMessageListener
      * @author huangmuhong
      * @date 2024/07/14
      */
-    protected boolean isAtMe(ReceiveMessageWechatMessage.MessageData messageData) {
+    protected boolean isAtMe(ReceiveMessageWechatCallback.MessageData messageData) {
         final List<String> wxidList = messageData.getAtWxidList();
         if (wxidList.isEmpty()) {
             return false;
         }
-        return wxidList.size() == 1 && wxidList.contains(WechatConfigHolder.getBindWxid());
+        return wxidList.size() == 1 && wxidList.contains(WechatManager.getWeChatConfig()
+                                                                      .getWxid());
 
     }
 
@@ -96,7 +95,7 @@ public class RoomChatWechatMessageListener
     }
 
     @Override
-    public void listener(ReceiveMessageWechatMessage data) {
+    public void listener(ReceiveMessageWechatCallback data) {
         final MessageData messageData = data.getData();
 
         if (!isAtMe(messageData)) {
@@ -104,7 +103,7 @@ public class RoomChatWechatMessageListener
         }
 
         final String roomId = messageData.getFromWxid();
-        final GroupMappingConfig mappingConfig = getConfig().getGroupMappingConfig()
+        final GroupMappingConfig mappingConfig = config.getGroupMappingConfig()
                                                             .stream()
                                                             .filter(config -> config.getRoomId()
                                                                                     .equals(roomId))
@@ -139,7 +138,8 @@ public class RoomChatWechatMessageListener
         final String msgId = messageData.getMsgId();
         if (SensitiveWordHelper.contains(msg)) {
             final List<String> sensitiveWords = SensitiveWordHelper.findAll(msg);
-            wechatClient.sendReferText(roomId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
+            WechatManager.getWechatClient()
+                         .sendReferText(roomId, BLACK_LIST_MESSAGE + StrUtil.join(",", sensitiveWords), msgId);
             return;
         }
 
@@ -167,7 +167,8 @@ public class RoomChatWechatMessageListener
         final String text = renderer.render(document);
 
         // 发送消息，并替换敏感词
-        wechatClient.sendReferText(roomId, SensitiveWordHelper.replace(text), msgId);
+        WechatManager.getWechatClient()
+                     .sendReferText(roomId, SensitiveWordHelper.replace(text), msgId);
     }
 
     @Override
